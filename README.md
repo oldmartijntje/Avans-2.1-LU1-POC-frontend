@@ -1,4 +1,4 @@
-# Avans-2.1-LU1-POC-backend
-This is the backend for the avans 2.1 LU1 B assignment.
+# Avans-2.1-LU1-POC-frontend
+This is the frontend for the avans 2.1 LU1 B assignment.
 
 Read more in the `docs` folder
