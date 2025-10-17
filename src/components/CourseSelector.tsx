@@ -31,7 +31,9 @@ const CourseSelector: React.FC<CourseSelectorProps> = ({ onCourseChange }) => {
         'dashboard.course.success',
         'dashboard.course.error',
         'dashboard.course.loadingCourses',
-        'dashboard.course.errorLoadingCourses'
+        'dashboard.course.errorLoadingCourses',
+        'dashboard.course.noTitle',
+        'dashboard.course.noDescription'
     ], []);
 
     const { t } = useTranslations({
@@ -39,11 +41,13 @@ const CourseSelector: React.FC<CourseSelectorProps> = ({ onCourseChange }) => {
     });
 
     const getLocalizedTitle = (course: Course) => {
-        return course.title[currentLanguage as keyof typeof course.title] || course.title.english;
+        if (!course.title) return t('dashboard.course.noTitle') || `Course ${course.uuid}`;
+        return course.title[currentLanguage as keyof typeof course.title] || course.title.english || t('dashboard.course.noTitle') || `Course ${course.uuid}`;
     };
 
     const getLocalizedDescription = (course: Course) => {
-        return course.description[currentLanguage as keyof typeof course.description] || course.description.english;
+        if (!course.description) return t('dashboard.course.noDescription') || 'No description available';
+        return course.description[currentLanguage as keyof typeof course.description] || course.description.english || t('dashboard.course.noDescription') || 'No description available';
     };
 
     useEffect(() => {

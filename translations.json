@@ -191,8 +191,8 @@
   },
   {
     "uiKey": "translationManagement.loadTranslations",
-    "dutch": "Vertalingen Laden",
-    "english": "Load Translations"
+    "dutch": "UI Vertalingen Laden",
+    "english": "Load UI Translations"
   },
   {
     "uiKey": "translationManagement.uiKey",
@@ -256,8 +256,38 @@
   },
   {
     "uiKey": "translationManagement.noTranslations",
-    "dutch": "Geen vertalingen geladen. Klik op \"Vertalingen Laden\" om alle vertalingen op te halen.",
-    "english": "No translations loaded. Click \"Load Translations\" to fetch all translations."
+    "dutch": "Geen vertalingen geladen. Klik op \"UI Vertalingen Laden\" om alle vertalingen op te halen.",
+    "english": "No translations loaded. Click \"Load UI Translations\" to fetch all translations."
+  },
+  {
+    "uiKey": "translationManagement.loadOrphans",
+    "dutch": "Orphans Laden",
+    "english": "Load Orphaned"
+  },
+  {
+    "uiKey": "translationManagement.deleteOrphans",
+    "dutch": "Orphans Verwijderen",
+    "english": "Delete Orphaned"
+  },
+  {
+    "uiKey": "translationManagement.orphansTitle",
+    "dutch": "Orphan Vertalingen",
+    "english": "Orphaned Translations"
+  },
+  {
+    "uiKey": "translationManagement.orphansSubtitle",
+    "dutch": "Ongebruikte vertalingen die database ruimte verspillen",
+    "english": "Unused translations that waste database space"
+  },
+  {
+    "uiKey": "translationManagement.noOrphans",
+    "dutch": "Geen Orphan vertalingen gevonden. Klik op \"Orphans Laden\" om te controleren op ongebruikte vertalingen.",
+    "english": "No orphaned translations found. Click \"Load Orphaned\" to check for unused translations."
+  },
+  {
+    "uiKey": "translationManagement.confirmDeleteOrphans",
+    "dutch": "Weet je zeker dat je alle Orphan vertalingen wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.",
+    "english": "Are you sure you want to delete all orphaned translations? This action cannot be undone."
   },
   {
     "uiKey": "form.password.label",
@@ -588,6 +618,16 @@
     "uiKey": "dashboard.course.errorLoadingCourses",
     "dutch": "Fout bij laden van keuzemodules",
     "english": "Error loading elective modules"
+  },
+  {
+    "uiKey": "dashboard.course.noTitle",
+    "dutch": "Onbekende keuzemodule",
+    "english": "Unknown course"
+  },
+  {
+    "uiKey": "dashboard.course.noDescription",
+    "dutch": "Geen beschrijving beschikbaar",
+    "english": "No description available"
   },
   {
     "uiKey": "nav.management",

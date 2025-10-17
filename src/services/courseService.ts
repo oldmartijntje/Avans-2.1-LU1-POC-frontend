@@ -26,8 +26,8 @@ export interface CourseTag {
 export interface Course {
     _id: string;
     uuid: string;
-    title: CourseTitle;
-    description: CourseDescription;
+    title: CourseTitle | null;
+    description: CourseDescription | null;
     languages: string[];
     tags: CourseTag[];
     __v: number;

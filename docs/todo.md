@@ -22,10 +22,10 @@
 - [x] As a student, I want buttons to add subjects to my favorites so that I can save subjects I am interested in. 
     - [x] backend
     - [x] frontend 
-- [ ] As a student, I want a button for “more info” to access additional details or links.  
+- [x] As a student, I want a button for “more info” to access additional details or links.  
     - additional info field
     - [x] backend
-    - [ ] frontend
+    - [x] frontend
 
 ### Epic 3: Favorites
 - [x] As a student, I want to save subjects as favorites so that I can easily access them later.  
@@ -125,6 +125,3 @@
 - [x] As a student, I want be able to view the study that I am enrolled in so that I can see whether it is correct.
     - [x] backend
     - [x] frontend
-
-
-- [x] re-enable signup

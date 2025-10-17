@@ -13,6 +13,14 @@ interface Translation {
     __v?: number;
 }
 
+interface OrphanedTranslation {
+    _id: string;
+    dutch?: string;
+    english?: string;
+    creatorUuid?: string;
+    __v?: number;
+}
+
 const TranslationManagement: React.FC = () => {
     const { user } = useAuth();
     const { t } = useTranslations({
@@ -20,6 +28,10 @@ const TranslationManagement: React.FC = () => {
             'translationManagement.title',
             'translationManagement.subtitle',
             'translationManagement.loadTranslations',
+            'translationManagement.loadOrphans',
+            'translationManagement.deleteOrphans',
+            'translationManagement.orphansTitle',
+            'translationManagement.orphansSubtitle',
             'translationManagement.uiKey',
             'translationManagement.dutch',
             'translationManagement.english',
@@ -32,17 +44,21 @@ const TranslationManagement: React.FC = () => {
             'translationManagement.success',
             'translationManagement.error',
             'translationManagement.accessDenied',
-            'translationManagement.noTranslations'
+            'translationManagement.noTranslations',
+            'translationManagement.noOrphans',
+            'translationManagement.confirmDeleteOrphans'
         ]
     });
 
     const [translations, setTranslations] = useState<Translation[]>([]);
+    const [orphanedTranslations, setOrphanedTranslations] = useState<OrphanedTranslation[]>([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
     const [success, setSuccess] = useState<string | null>(null);
     const [showEditModal, setShowEditModal] = useState(false);
     const [editingTranslation, setEditingTranslation] = useState<Translation | null>(null);
     const [editForm, setEditForm] = useState({ dutch: '', english: '' });
+    const [activeTab, setActiveTab] = useState<'ui' | 'orphans'>('ui');
 
     // Check if user has access
     const hasAccess = user?.role === 'TEACHER' || user?.role === 'ADMIN';
@@ -64,6 +80,61 @@ const TranslationManagement: React.FC = () => {
         } catch (err: any) {
             console.error('Error loading translations:', err);
             setError(err.response?.data?.message || err.message || t('translationManagement.error'));
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    const loadOrphanedTranslations = async () => {
+        setLoading(true);
+        setError(null);
+
+        try {
+            console.log('Fetching orphaned translations with JWT token');
+            const response = await api.get('/display-text/orphans');
+
+            if (Array.isArray(response.data)) {
+                setOrphanedTranslations(response.data);
+                setSuccess(`Found ${response.data.length} orphaned translations`);
+                setActiveTab('orphans');
+            } else {
+                throw new Error('Invalid response format');
+            }
+        } catch (err: any) {
+            console.error('Error loading orphaned translations:', err);
+            if (err.response?.status === 404) {
+                setError('No orphaned translations found');
+                setOrphanedTranslations([]);
+            } else {
+                setError(err.response?.data?.message || err.message || 'Failed to load orphaned translations');
+            }
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    const deleteAllOrphanedTranslations = async () => {
+        if (!window.confirm(t('translationManagement.confirmDeleteOrphans') || 'Are you sure you want to delete all orphaned translations? This action cannot be undone.')) {
+            return;
+        }
+
+        setLoading(true);
+        setError(null);
+
+        try {
+            console.log('Deleting all orphaned translations with JWT token');
+            const response = await api.delete('/display-text/orphans');
+
+            if (response.data?.deletedCount !== undefined) {
+                setSuccess(`Successfully deleted ${response.data.deletedCount} orphaned translations`);
+                setOrphanedTranslations([]);
+            } else {
+                setSuccess('Orphaned translations deleted successfully');
+                setOrphanedTranslations([]);
+            }
+        } catch (err: any) {
+            console.error('Error deleting orphaned translations:', err);
+            setError(err.response?.data?.message || err.message || 'Failed to delete orphaned translations');
         } finally {
             setLoading(false);
         }
@@ -159,21 +230,78 @@ const TranslationManagement: React.FC = () => {
                                 {t('translationManagement.subtitle')}
                             </p>
                         </div>
-                        <Button
-                            variant="primary"
-                            onClick={loadAllTranslations}
-                            disabled={loading}
-                            className="mt-3 mt-sm-0"
-                        >
-                            {loading ? (
-                                <>
-                                    <Spinner size="sm" className="me-2" />
-                                    {t('translationManagement.loading')}
-                                </>
-                            ) : (
-                                t('translationManagement.loadTranslations')
-                            )}
-                        </Button>
+                        <div className="d-flex mt-3 mt-sm-0 btn-group">
+                            <Button
+                                variant={activeTab === 'ui' ? 'primary' : 'outline-primary'}
+                                onClick={() => setActiveTab('ui')}
+                                disabled={loading}
+                            >
+                                UI Translations
+                            </Button>
+                            <Button
+                                variant={activeTab === 'orphans' ? 'primary' : 'outline-primary'}
+                                onClick={() => setActiveTab('orphans')}
+                                disabled={loading}
+                            >
+                                Orphaned
+                            </Button>
+                        </div>
+                    </div>
+
+                    {/* Action Buttons */}
+                    <div className="d-flex flex-column flex-sm-row gap-2 mb-4">
+                        {activeTab === 'ui' && (
+                            <Button
+                                variant="success"
+                                onClick={loadAllTranslations}
+                                disabled={loading}
+                            >
+                                {loading ? (
+                                    <>
+                                        <Spinner size="sm" className="me-2" />
+                                        {t('translationManagement.loading')}
+                                    </>
+                                ) : (
+                                    t('translationManagement.loadTranslations')
+                                )}
+                            </Button>
+                        )}
+
+                        {activeTab === 'orphans' && (
+                            <>
+                                <Button
+                                    variant="warning"
+                                    onClick={loadOrphanedTranslations}
+                                    disabled={loading}
+                                >
+                                    {loading ? (
+                                        <>
+                                            <Spinner size="sm" className="me-2" />
+                                            {t('translationManagement.loading')}
+                                        </>
+                                    ) : (
+                                        t('translationManagement.loadOrphans')
+                                    )}
+                                </Button>
+
+                                {orphanedTranslations.length > 0 && (
+                                    <Button
+                                        variant="danger"
+                                        onClick={deleteAllOrphanedTranslations}
+                                        disabled={loading}
+                                    >
+                                        {loading ? (
+                                            <>
+                                                <Spinner size="sm" className="me-2" />
+                                                {t('translationManagement.loading')}
+                                            </>
+                                        ) : (
+                                            t('translationManagement.deleteOrphans')
+                                        )}
+                                    </Button>
+                                )}
+                            </>
+                        )}
                     </div>
 
                     {/* Alerts */}
@@ -193,59 +321,112 @@ const TranslationManagement: React.FC = () => {
                     <Card className="bg-darker-custom border-dark">
                         <Card.Header className="bg-dark-custom border-dark">
                             <div className="d-flex justify-content-between align-items-center">
-                                <h5 className="mb-0 text-light-custom">All Translations</h5>
-                                <Badge bg="primary">{translations.length} translations</Badge>
+                                <h5 className="mb-0 text-light-custom">
+                                    {activeTab === 'ui' ? 'UI Translations' : 'Orphaned Translations'}
+                                </h5>
+                                <Badge bg="primary">
+                                    {activeTab === 'ui' ? translations.length : orphanedTranslations.length} translations
+                                </Badge>
                             </div>
                         </Card.Header>
                         <Card.Body className="p-0 bg-darker-custom">
-                            {translations.length === 0 ? (
-                                <div className="text-center py-5">
-                                    <p className="text-muted-custom">
-                                        {t('translationManagement.noTranslations')}
-                                    </p>
-                                </div>
-                            ) : (
-                                <div className="table-responsive">
-                                    <Table variant="dark" striped hover className="mb-0">
-                                        <thead>
-                                            <tr>
-                                                <th className="text-light-custom">{t('translationManagement.uiKey')}</th>
-                                                <th className="text-light-custom">{t('translationManagement.dutch')}</th>
-                                                <th className="text-light-custom">{t('translationManagement.english')}</th>
-                                                <th className="text-center text-light-custom">{t('translationManagement.actions')}</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            {translations.map((translation) => (
-                                                <tr key={translation._id || translation.uiKey}>
-                                                    <td>
-                                                        <code className="text-primary">{translation.uiKey}</code>
-                                                    </td>
-                                                    <td>
-                                                        <span className="text-light-custom">
-                                                            {translation.dutch || <em className="text-muted-custom">No Dutch translation</em>}
-                                                        </span>
-                                                    </td>
-                                                    <td>
-                                                        <span className="text-light-custom">
-                                                            {translation.english || <em className="text-muted-custom">No English translation</em>}
-                                                        </span>
-                                                    </td>
-                                                    <td className="text-center">
-                                                        <Button
-                                                            variant="outline-primary"
-                                                            size="sm"
-                                                            onClick={() => handleEditClick(translation)}
-                                                            disabled={loading}
-                                                        >
-                                                            {t('translationManagement.edit')}
-                                                        </Button>
-                                                    </td>
+                            {activeTab === 'ui' ? (
+                                // UI Translations Table
+                                translations.length === 0 ? (
+                                    <div className="text-center py-5">
+                                        <p className="text-muted-custom">
+                                            {t('translationManagement.noTranslations')}
+                                        </p>
+                                    </div>
+                                ) : (
+                                    <div className="table-responsive">
+                                        <Table variant="dark" striped hover className="mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th className="text-light-custom">{t('translationManagement.uiKey')}</th>
+                                                    <th className="text-light-custom">{t('translationManagement.dutch')}</th>
+                                                    <th className="text-light-custom">{t('translationManagement.english')}</th>
+                                                    <th className="text-center text-light-custom">{t('translationManagement.actions')}</th>
                                                 </tr>
-                                            ))}
-                                        </tbody>
-                                    </Table>
-                                </div>
+                                            </thead>
+                                            <tbody>
+                                                {translations.map((translation) => (
+                                                    <tr key={translation._id || translation.uiKey}>
+                                                        <td>
+                                                            <code className="text-primary">{translation.uiKey}</code>
+                                                        </td>
+                                                        <td>
+                                                            <span className="text-light-custom">
+                                                                {translation.dutch || <em className="text-muted-custom">No Dutch translation</em>}
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <span className="text-light-custom">
+                                                                {translation.english || <em className="text-muted-custom">No English translation</em>}
+                                                            </span>
+                                                        </td>
+                                                        <td className="text-center">
+                                                            <Button
+                                                                variant="outline-primary"
+                                                                size="sm"
+                                                                onClick={() => handleEditClick(translation)}
+                                                                disabled={loading}
+                                                            >
+                                                                {t('translationManagement.edit')}
+                                                            </Button>
+                                                        </td>
+                                                    </tr>
+                                                ))}
+                                            </tbody>
+                                        </Table>
+                                    </div>
+                                )
+                            ) : (
+                                // Orphaned Translations Table
+                                orphanedTranslations.length === 0 ? (
+                                    <div className="text-center py-5">
+                                        <p className="text-muted-custom">
+                                            {t('translationManagement.noOrphans') || 'No orphaned translations found. Click "Load Orphaned" to check for unused translations.'}
+                                        </p>
+                                    </div>
+                                ) : (
+                                    <div className="table-responsive">
+                                        <Table variant="dark" striped hover className="mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th className="text-light-custom">ID</th>
+                                                    <th className="text-light-custom">{t('translationManagement.dutch')}</th>
+                                                    <th className="text-light-custom">{t('translationManagement.english')}</th>
+                                                    <th className="text-light-custom">Creator</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {orphanedTranslations.map((orphan) => (
+                                                    <tr key={orphan._id}>
+                                                        <td>
+                                                            <code className="text-warning">{orphan._id}</code>
+                                                        </td>
+                                                        <td>
+                                                            <span className="text-light-custom">
+                                                                {orphan.dutch || <em className="text-muted-custom">No Dutch translation</em>}
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <span className="text-light-custom">
+                                                                {orphan.english || <em className="text-muted-custom">No English translation</em>}
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <code className="text-muted-custom">
+                                                                {orphan.creatorUuid || 'Unknown'}
+                                                            </code>
+                                                        </td>
+                                                    </tr>
+                                                ))}
+                                            </tbody>
+                                        </Table>
+                                    </div>
+                                )
                             )}
                         </Card.Body>
                     </Card>
