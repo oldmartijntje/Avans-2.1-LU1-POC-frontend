@@ -15,6 +15,9 @@ const Management: React.FC = () => {
             'management.tools.translationManagement.title',
             'management.tools.translationManagement.description',
             'management.tools.translationManagement.button',
+            'management.tools.subjectManagement.title',
+            'management.tools.subjectManagement.description',
+            'management.tools.subjectManagement.button',
             'management.comingSoon.title',
             'management.comingSoon.description'
         ]
@@ -89,17 +92,38 @@ const Management: React.FC = () => {
                             </Card>
                         </Col>
 
+                        {/* Subject Management Tool */}
+                        <Col lg={6} xl={4}>
+                            <Card className="bg-darker-custom border-dark h-100">
+                                <Card.Header className="bg-dark-custom border-dark">
+                                    <h5 className="mb-0 text-light-custom">
+                                        {t('management.tools.subjectManagement.title')}
+                                    </h5>
+                                </Card.Header>
+                                <Card.Body className="d-flex flex-column">
+                                    <p className="text-muted-custom flex-grow-1">
+                                        {t('management.tools.subjectManagement.description')}
+                                    </p>
+                                    <Link to="/subject-management" className="text-decoration-none">
+                                        <Button variant="primary" className="w-100">
+                                            {t('management.tools.subjectManagement.button')}
+                                        </Button>
+                                    </Link>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+
                         {/* Placeholder for future tools */}
                         <Col lg={6} xl={4}>
                             <Card className="bg-darker-custom border-dark h-100 opacity-75">
                                 <Card.Header className="bg-dark-custom border-dark">
                                     <h5 className="mb-0 text-muted-custom">
-                                        Course Management
+                                        User Management
                                     </h5>
                                 </Card.Header>
                                 <Card.Body className="d-flex flex-column">
                                     <p className="text-muted-custom flex-grow-1">
-                                        Create, edit, and manage elective modules and courses.
+                                        Manage user accounts, roles, and permissions.
                                     </p>
                                     <Button variant="outline-secondary" className="w-100" disabled>
                                         Coming Soon

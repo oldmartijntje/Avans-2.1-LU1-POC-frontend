@@ -8,6 +8,7 @@ import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import Management from './pages/Management';
 import TranslationManagement from './pages/TranslationManagement';
+import SubjectManagement from './pages/SubjectManagement';
 import NotFound from './pages/NotFound';
 import './App.css'
 
@@ -47,6 +48,11 @@ function App() {
                     <Route path="/translation-management" element={
                         <TeacherRoute>
                             <TranslationManagement />
+                        </TeacherRoute>
+                    } />
+                    <Route path="/subject-management" element={
+                        <TeacherRoute>
+                            <SubjectManagement />
                         </TeacherRoute>
                     } />
 
