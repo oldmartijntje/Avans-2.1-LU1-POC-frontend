@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from './pages/About';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Logout from './pages/Logout';
 import Dashboard from './pages/Dashboard';
 import Management from './pages/Management';
 import TranslationManagement from './pages/TranslationManagement';
@@ -27,6 +28,10 @@ function App() {
                     {/* Anonymous routes - accessible to everyone */}
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
+
+                    {/* Logout route - accessible to everyone, handles logout and redirect */}
+                    <Route path="/logout" element={<Logout />} />
+
                     {/* Auth routes - only accessible when not authenticated */}
                     <Route path="/login" element={
                         <AnonymousRoute>

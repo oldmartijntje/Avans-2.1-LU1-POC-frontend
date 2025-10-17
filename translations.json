@@ -1398,5 +1398,20 @@
     "uiKey": "courseManagement.actions.delete",
     "dutch": "Verwijderen",
     "english": "Delete"
+  },
+  {
+    "uiKey": "logout.title",
+    "dutch": "Uitloggen",
+    "english": "Logging Out"
+  },
+  {
+    "uiKey": "logout.message",
+    "dutch": "Je bent succesvol uitgelogd.",
+    "english": "You have been logged out successfully."
+  },
+  {
+    "uiKey": "logout.redirecting",
+    "dutch": "Doorverwijzen naar inlogpagina...",
+    "english": "Redirecting to login page..."
   }
 ]

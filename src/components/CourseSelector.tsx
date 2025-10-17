@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Card, Form, Button, Alert, Spinner } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { courseService } from '../services/courseService';
 import type { Course } from '../services/courseService';
 import { useTranslations } from '../hooks/useTranslations';
 import { useTranslation } from '../contexts/TranslationContext';
+import { handleApiError } from '../utils/errorHandler';
 
 interface CourseSelectorProps {
     onCourseChange?: (course: Course | null) => void;
@@ -15,7 +17,7 @@ const CourseSelector: React.FC<CourseSelectorProps> = ({ onCourseChange }) => {
     const [selectedCourseUuid, setSelectedCourseUuid] = useState<string>('');
     const [loading, setLoading] = useState(true);
     const [saving, setSaving] = useState(false);
-    const [message, setMessage] = useState<{ type: 'success' | 'danger'; text: string } | null>(null);
+    const [message, setMessage] = useState<{ type: 'success' | 'danger'; text: string; isUnauthorized?: boolean } | null>(null);
 
     const { currentLanguage } = useTranslation();
     const { t } = useTranslations({
@@ -68,10 +70,11 @@ const CourseSelector: React.FC<CourseSelectorProps> = ({ onCourseChange }) => {
                 onCourseChange?.(null);
             }
         } catch (error) {
-            console.error('Error loading courses:', error);
+            const errorInfo = handleApiError(error, t('dashboard.course.errorLoadingCourses') || 'Failed to load courses');
             setMessage({
                 type: 'danger',
-                text: t('dashboard.course.errorLoadingCourses')
+                text: errorInfo.message,
+                isUnauthorized: errorInfo.shouldShowLoginPrompt
             });
         } finally {
             setLoading(false);
@@ -102,10 +105,11 @@ const CourseSelector: React.FC<CourseSelectorProps> = ({ onCourseChange }) => {
             // Clear success message after 3 seconds
             setTimeout(() => setMessage(null), 3000);
         } catch (error) {
-            console.error('Error joining course:', error);
+            const errorInfo = handleApiError(error, t('dashboard.course.error') || 'Failed to join course');
             setMessage({
                 type: 'danger',
-                text: t('dashboard.course.error')
+                text: errorInfo.message,
+                isUnauthorized: errorInfo.shouldShowLoginPrompt
             });
         } finally {
             setSaving(false);
@@ -148,6 +152,9 @@ const CourseSelector: React.FC<CourseSelectorProps> = ({ onCourseChange }) => {
                 {message && (
                     <Alert variant={message.type} className="mb-3">
                         {message.text}
+                        {message.isUnauthorized && (
+                            <> <Link to="/logout" className="text-decoration-underline">Click here to log back in</Link>.</>
+                        )}
                     </Alert>
                 )}
 

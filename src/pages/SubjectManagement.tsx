@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import {
     Container,
     Row,
@@ -21,6 +21,7 @@ import type {
     CreateSubjectRequest
 } from '../services/subjectService';
 import { subjectService } from '../services/subjectService';
+import { handleApiError } from '../utils/errorHandler';
 
 const SubjectManagement: React.FC = () => {
     const { user } = useAuth();
@@ -74,6 +75,7 @@ const SubjectManagement: React.FC = () => {
     const [subjects, setSubjects] = useState<Subject[]>([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
+    const [isUnauthorizedError, setIsUnauthorizedError] = useState(false);
     const [success, setSuccess] = useState<string | null>(null);
     const [showModal, setShowModal] = useState(false);
     const [editingSubject, setEditingSubject] = useState<Subject | null>(null);
@@ -115,6 +117,7 @@ const SubjectManagement: React.FC = () => {
     const loadSubjects = async () => {
         setLoading(true);
         setError(null);
+        setIsUnauthorizedError(false);
         try {
             const filterParams = {
                 ...(filters.level && { level: filters.level }),
@@ -126,7 +129,9 @@ const SubjectManagement: React.FC = () => {
             setSubjects(data);
             setSuccess(t('subjectManagement.success') || 'Subjects loaded successfully');
         } catch (err) {
-            setError(err instanceof Error ? err.message : t('subjectManagement.error') || 'Failed to load subjects');
+            const errorInfo = handleApiError(err, t('subjectManagement.error') || 'Failed to load subjects');
+            setError(errorInfo.message);
+            setIsUnauthorizedError(errorInfo.shouldShowLoginPrompt);
         } finally {
             setLoading(false);
         }
@@ -176,6 +181,7 @@ const SubjectManagement: React.FC = () => {
         e.preventDefault();
         setIsSubmitting(true);
         setError(null);
+        setIsUnauthorizedError(false);
 
         try {
             if (editingSubject) {
@@ -188,7 +194,9 @@ const SubjectManagement: React.FC = () => {
             setShowModal(false);
             loadSubjects();
         } catch (err) {
-            setError(err instanceof Error ? err.message : t('subjectManagement.error') || 'Operation failed');
+            const errorInfo = handleApiError(err, t('subjectManagement.error') || 'Operation failed');
+            setError(errorInfo.message);
+            setIsUnauthorizedError(errorInfo.shouldShowLoginPrompt);
         } finally {
             setIsSubmitting(false);
         }
@@ -203,7 +211,9 @@ const SubjectManagement: React.FC = () => {
                 setSuccess(t('subjectManagement.delete.success') || 'Subject deleted successfully');
                 loadSubjects();
             } catch (err) {
-                setError(err instanceof Error ? err.message : t('subjectManagement.delete.error') || 'Failed to delete subject');
+                const errorInfo = handleApiError(err, t('subjectManagement.delete.error') || 'Failed to delete subject');
+                setError(errorInfo.message);
+                setIsUnauthorizedError(errorInfo.shouldShowLoginPrompt);
             }
         }
     };
@@ -283,8 +293,11 @@ const SubjectManagement: React.FC = () => {
 
                     {/* Alerts */}
                     {error && (
-                        <Alert variant="danger" dismissible onClose={() => setError(null)}>
+                        <Alert variant="danger" dismissible onClose={() => { setError(null); setIsUnauthorizedError(false); }}>
                             {error}
+                            {isUnauthorizedError && (
+                                <> <Link to="/logout" className="text-decoration-underline">Click here to log back in</Link>.</>
+                            )}
                         </Alert>
                     )}
                     {success && (

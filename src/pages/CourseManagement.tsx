@@ -12,10 +12,12 @@ import {
     Spinner,
     Badge
 } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { useTranslations } from '../hooks/useTranslations';
 import { courseService } from '../services/courseService';
 import type { Course, CreateCourseRequest } from '../services/courseService';
+import { handleApiError } from '../utils/errorHandler';
 
 const CourseManagement: React.FC = () => {
     const { user } = useAuth();
@@ -57,6 +59,7 @@ const CourseManagement: React.FC = () => {
     const [courses, setCourses] = useState<Course[]>([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
+    const [isUnauthorizedError, setIsUnauthorizedError] = useState(false);
     const [success, setSuccess] = useState<string | null>(null);
 
     // Modal state
@@ -95,21 +98,14 @@ const CourseManagement: React.FC = () => {
     const loadCourses = async () => {
         setLoading(true);
         setError(null);
+        setIsUnauthorizedError(false);
         try {
             const data = await courseService.getAllCourses();
             setCourses(data);
         } catch (err) {
-            if (err instanceof Error) {
-                if (err.message.includes('404')) {
-                    setError(t('courseManagement.error') || 'No courses found');
-                } else if (err.message.includes('401')) {
-                    setError(t('courseManagement.error') || 'Unauthorized access');
-                } else {
-                    setError(err.message);
-                }
-            } else {
-                setError(t('courseManagement.error') || 'Failed to load courses');
-            }
+            const errorInfo = handleApiError(err, t('courseManagement.error') || 'Failed to load courses');
+            setError(errorInfo.message);
+            setIsUnauthorizedError(errorInfo.shouldShowLoginPrompt);
         } finally {
             setLoading(false);
         }
@@ -150,11 +146,9 @@ const CourseManagement: React.FC = () => {
                 setSuccess(t('courseManagement.delete.success') || 'Course deleted successfully');
                 loadCourses();
             } catch (err) {
-                if (err instanceof Error) {
-                    setError(err.message);
-                } else {
-                    setError(t('courseManagement.delete.error') || 'Failed to delete course');
-                }
+                const errorInfo = handleApiError(err, t('courseManagement.delete.error') || 'Failed to delete course');
+                setError(errorInfo.message);
+                setIsUnauthorizedError(errorInfo.shouldShowLoginPrompt);
             }
         }
     };
@@ -162,6 +156,7 @@ const CourseManagement: React.FC = () => {
     const handleSave = async () => {
         setSaving(true);
         setError(null);
+        setIsUnauthorizedError(false);
 
         try {
             // Parse tags from input
@@ -179,11 +174,9 @@ const CourseManagement: React.FC = () => {
             setShowModal(false);
             loadCourses();
         } catch (err) {
-            if (err instanceof Error) {
-                setError(err.message);
-            } else {
-                setError(t('courseManagement.error') || 'Failed to save course');
-            }
+            const errorInfo = handleApiError(err, t('courseManagement.error') || 'Failed to save course');
+            setError(errorInfo.message);
+            setIsUnauthorizedError(errorInfo.shouldShowLoginPrompt);
         } finally {
             setSaving(false);
         }
@@ -193,6 +186,7 @@ const CourseManagement: React.FC = () => {
         setShowModal(false);
         setEditingCourse(null);
         setError(null);
+        setIsUnauthorizedError(false);
     };
 
     const handleInputChange = (field: keyof CreateCourseRequest, value: any) => {
@@ -255,8 +249,11 @@ const CourseManagement: React.FC = () => {
 
                     {/* Alerts */}
                     {error && (
-                        <Alert variant="danger" dismissible onClose={() => setError(null)}>
+                        <Alert variant="danger" dismissible onClose={() => { setError(null); setIsUnauthorizedError(false); }}>
                             {error}
+                            {isUnauthorizedError && (
+                                <> <Link to="/logout" className="text-decoration-underline">Click here to log back in</Link>.</>
+                            )}
                         </Alert>
                     )}
                     {success && (

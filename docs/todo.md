@@ -46,9 +46,9 @@
     - [x] frontend
 
 ### Epic 5: Accessibility & Inclusivity
-- [ ] As a student, I want a language toggle (NL/EN) so that I can use the app in my preferred language.  
+- [x] As a student, I want a language toggle (NL/EN) so that I can use the app in my preferred language.  
     - [x] backend
-    - [ ] frontend
+    - [x] frontend
 
 ### Epic 6: PWA Feature
 - [ ] As a student, I want to install the app on my phone so that I can access it like a native app.  
@@ -60,9 +60,9 @@
 - [x] As a developer, I want to ensure no secrets or API keys are hardcoded so that the app is secure.  
     - [x] backend
     - [x] frontend
-- [ ] As a user, I want failed requests to be handled gracefully so that I understand what went wrong.
+- [x] As a user, I want failed requests to be handled gracefully so that I understand what went wrong.
     - [x] backend
-    - [ ] frontend
+    - [x] frontend
 
 ### Epic 8: User Registration and login
 - [x] As a student, I want to register for an account so that I can access personalized features.
@@ -83,9 +83,9 @@
 - [x] As a user, I want to log out of my account so that I can secure my session.
     - [x] backend
     - [x] frontend
-- [ ] As a user, I want to see clear error messages if login fails so that I can correct any issues.
+- [x] As a user, I want to see clear error messages if login fails so that I can correct any issues.
     - [x] backend
-    - [ ] frontend
+    - [x] frontend
 
 ### Epic 9: Subject Management
 - [x] As a teacher, I want to add new subjects so that I can manage the curriculum.  

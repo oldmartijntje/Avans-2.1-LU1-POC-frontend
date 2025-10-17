@@ -1,5 +1,6 @@
 import { api } from '../contexts/AuthContext';
 import { config } from '../config/config';
+import { handleApiError } from '../utils/errorHandler';
 
 type Language = typeof config.LANGUAGES[number];
 
@@ -191,7 +192,8 @@ class TranslationService {
             return result;
 
         } catch (error) {
-            console.error('Failed to fetch translations:', error);
+            const errorInfo = handleApiError(error, 'Failed to fetch translations');
+            console.error('Translation service error:', errorInfo.message);
 
             // Return fallback translations using the keys as values
             const fallbackTranslations: Record<string, string> = {};

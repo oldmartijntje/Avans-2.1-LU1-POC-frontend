@@ -1,4 +1,5 @@
 import { api } from '../contexts/AuthContext';
+import { handleApiError } from '../utils/errorHandler';
 
 export interface CourseTitle {
     _id: string;
@@ -76,8 +77,8 @@ class CourseService {
             const response = await api.get('/course');
             return response.data;
         } catch (error) {
-            console.error('Error fetching courses:', error);
-            throw error;
+            const errorInfo = handleApiError(error, 'Failed to load courses');
+            throw new Error(errorInfo.message);
         }
     }
 
@@ -89,8 +90,8 @@ class CourseService {
             const response = await api.post(`/course/joined/${courseUuid}`);
             return response.data;
         } catch (error) {
-            console.error('Error joining course:', error);
-            throw error;
+            const errorInfo = handleApiError(error, 'Failed to join course');
+            throw new Error(errorInfo.message);
         }
     }
 
@@ -102,8 +103,8 @@ class CourseService {
             const response = await api.get('/course/joined');
             return response.data;
         } catch (error) {
-            console.error('Error fetching joined course:', error);
-            throw error;
+            const errorInfo = handleApiError(error, 'Failed to fetch joined course');
+            throw new Error(errorInfo.message);
         }
     }
 
@@ -114,8 +115,8 @@ class CourseService {
         try {
             await api.delete('/course/joined');
         } catch (error) {
-            console.error('Error leaving course:', error);
-            throw error;
+            const errorInfo = handleApiError(error, 'Failed to leave course');
+            throw new Error(errorInfo.message);
         }
     }
 
@@ -129,8 +130,8 @@ class CourseService {
             const response = await api.post('/course', courseData);
             return response.data;
         } catch (error) {
-            console.error('Error creating course:', error);
-            throw error;
+            const errorInfo = handleApiError(error, 'Failed to create course');
+            throw new Error(errorInfo.message);
         }
     }
 
@@ -142,8 +143,8 @@ class CourseService {
             const response = await api.patch(`/course/${uuid}`, courseData);
             return response.data;
         } catch (error) {
-            console.error('Error updating course:', error);
-            throw error;
+            const errorInfo = handleApiError(error, 'Failed to update course');
+            throw new Error(errorInfo.message);
         }
     }
 
@@ -155,8 +156,8 @@ class CourseService {
             const response = await api.delete(`/course/${uuid}`);
             return response.data;
         } catch (error) {
-            console.error('Error deleting course:', error);
-            throw error;
+            const errorInfo = handleApiError(error, 'Failed to delete course');
+            throw new Error(errorInfo.message);
         }
     }
 }

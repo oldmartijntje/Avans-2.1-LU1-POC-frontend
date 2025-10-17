@@ -1,4 +1,5 @@
 import { config } from '../config/config';
+import { handleApiError } from '../utils/errorHandler';
 
 export interface Subject {
     uuid?: string;
@@ -84,8 +85,21 @@ class SubjectService {
 
     private async handleResponse<T>(response: Response): Promise<T> {
         if (!response.ok) {
-            const errorData: ApiError = await response.json();
-            throw new Error(`${errorData.message} (${errorData.statusCode})`);
+            let errorData: ApiError;
+            try {
+                errorData = await response.json();
+            } catch {
+                // If response doesn't have JSON, create a generic error
+                errorData = {
+                    message: response.statusText || 'Request failed',
+                    statusCode: response.status
+                };
+            }
+
+            // Create a proper error object that will be handled by handleApiError
+            const error = new Error(`${errorData.message} (${errorData.statusCode})`);
+            const errorInfo = handleApiError(error, 'Request failed');
+            throw new Error(errorInfo.message);
         }
         return response.json();
     }
@@ -99,122 +113,172 @@ class SubjectService {
     }
 
     async getAllSubjects(filters?: SubjectFilters): Promise<Subject[]> {
-        let url = this.baseUrl;
+        try {
+            let url = this.baseUrl;
 
-        if (filters) {
-            const params = new URLSearchParams();
-            if (filters.level) params.append('level', filters.level);
-            if (filters.points) params.append('points', filters.points.toString());
-            if (filters.tag) params.append('tag', filters.tag);
+            if (filters) {
+                const params = new URLSearchParams();
+                if (filters.level) params.append('level', filters.level);
+                if (filters.points) params.append('points', filters.points.toString());
+                if (filters.tag) params.append('tag', filters.tag);
 
-            if (params.toString()) {
-                url += '?' + params.toString();
+                if (params.toString()) {
+                    url += '?' + params.toString();
+                }
             }
+
+            const response = await fetch(url, {
+                method: 'GET',
+                headers: this.getAuthHeaders()
+            });
+
+            return this.handleResponse<Subject[]>(response);
+        } catch (error) {
+            const errorInfo = handleApiError(error, 'Failed to load subjects');
+            throw new Error(errorInfo.message);
         }
-
-        const response = await fetch(url, {
-            method: 'GET',
-            headers: this.getAuthHeaders()
-        });
-
-        return this.handleResponse<Subject[]>(response);
     }
 
     async getSubjectById(uuid: string): Promise<Subject> {
-        const response = await fetch(`${this.baseUrl}/${uuid}`, {
-            method: 'GET',
-            headers: this.getAuthHeaders()
-        });
+        try {
+            const response = await fetch(`${this.baseUrl}/${uuid}`, {
+                method: 'GET',
+                headers: this.getAuthHeaders()
+            });
 
-        return this.handleResponse<Subject>(response);
+            return this.handleResponse<Subject>(response);
+        } catch (error) {
+            const errorInfo = handleApiError(error, 'Failed to load subject');
+            throw new Error(errorInfo.message);
+        }
     }
 
     async createSubject(subjectData: CreateSubjectRequest): Promise<Subject> {
-        const response = await fetch(this.baseUrl, {
-            method: 'POST',
-            headers: this.getAuthHeaders(),
-            body: JSON.stringify(subjectData)
-        });
+        try {
+            const response = await fetch(this.baseUrl, {
+                method: 'POST',
+                headers: this.getAuthHeaders(),
+                body: JSON.stringify(subjectData)
+            });
 
-        return this.handleResponse<Subject>(response);
+            return this.handleResponse<Subject>(response);
+        } catch (error) {
+            const errorInfo = handleApiError(error, 'Failed to create subject');
+            throw new Error(errorInfo.message);
+        }
     }
 
     async updateSubject(uuid: string, subjectData: UpdateSubjectRequest): Promise<Subject> {
-        const response = await fetch(`${this.baseUrl}/${uuid}`, {
-            method: 'PATCH',
-            headers: this.getAuthHeaders(),
-            body: JSON.stringify(subjectData)
-        });
+        try {
+            const response = await fetch(`${this.baseUrl}/${uuid}`, {
+                method: 'PATCH',
+                headers: this.getAuthHeaders(),
+                body: JSON.stringify(subjectData)
+            });
 
-        return this.handleResponse<Subject>(response);
+            return this.handleResponse<Subject>(response);
+        } catch (error) {
+            const errorInfo = handleApiError(error, 'Failed to update subject');
+            throw new Error(errorInfo.message);
+        }
     }
 
     async deleteSubject(uuid: string): Promise<{ message: string }> {
-        const response = await fetch(`${this.baseUrl}/${uuid}`, {
-            method: 'DELETE',
-            headers: this.getAuthHeaders()
-        });
+        try {
+            const response = await fetch(`${this.baseUrl}/${uuid}`, {
+                method: 'DELETE',
+                headers: this.getAuthHeaders()
+            });
 
-        return this.handleResponse<{ message: string }>(response);
+            return this.handleResponse<{ message: string }>(response);
+        } catch (error) {
+            const errorInfo = handleApiError(error, 'Failed to delete subject');
+            throw new Error(errorInfo.message);
+        }
     }
 
     async addToFavourites(uuid: string): Promise<any> {
-        const response = await fetch(`${this.baseUrl}/favourite/${uuid}`, {
-            method: 'POST',
-            headers: this.getAuthHeaders()
-        });
+        try {
+            const response = await fetch(`${this.baseUrl}/favourite/${uuid}`, {
+                method: 'POST',
+                headers: this.getAuthHeaders()
+            });
 
-        return this.handleResponse<any>(response);
+            return this.handleResponse<any>(response);
+        } catch (error) {
+            const errorInfo = handleApiError(error, 'Failed to add subject to favourites');
+            throw new Error(errorInfo.message);
+        }
     }
 
     async removeFromFavourites(uuid: string): Promise<any> {
-        const response = await fetch(`${this.baseUrl}/favourite/${uuid}`, {
-            method: 'DELETE',
-            headers: this.getAuthHeaders()
-        });
+        try {
+            const response = await fetch(`${this.baseUrl}/favourite/${uuid}`, {
+                method: 'DELETE',
+                headers: this.getAuthHeaders()
+            });
 
-        return this.handleResponse<any>(response);
+            return this.handleResponse<any>(response);
+        } catch (error) {
+            const errorInfo = handleApiError(error, 'Failed to remove subject from favourites');
+            throw new Error(errorInfo.message);
+        }
     }
 
     // Public methods for user-facing subject browsing
     async getAllSubjectsPublic(filters?: SubjectFilters): Promise<Subject[]> {
-        let url = this.baseUrl;
+        try {
+            let url = this.baseUrl;
 
-        if (filters) {
-            const params = new URLSearchParams();
-            if (filters.level) params.append('level', filters.level);
-            if (filters.points) params.append('points', filters.points.toString());
-            if (filters.tag) params.append('tag', filters.tag);
+            if (filters) {
+                const params = new URLSearchParams();
+                if (filters.level) params.append('level', filters.level);
+                if (filters.points) params.append('points', filters.points.toString());
+                if (filters.tag) params.append('tag', filters.tag);
 
-            if (params.toString()) {
-                url += '?' + params.toString();
+                if (params.toString()) {
+                    url += '?' + params.toString();
+                }
             }
+
+            const response = await fetch(url, {
+                method: 'GET',
+                headers: this.getAuthHeaders()
+            });
+
+            return this.handleResponse<Subject[]>(response);
+        } catch (error) {
+            const errorInfo = handleApiError(error, 'Failed to load subjects');
+            throw new Error(errorInfo.message);
         }
-
-        const response = await fetch(url, {
-            method: 'GET',
-            headers: this.getAuthHeaders()
-        });
-
-        return this.handleResponse<Subject[]>(response);
     }
 
     async getRecommendedSubjects(): Promise<RecommendedSubject[]> {
-        const response = await fetch(`${this.baseUrl}/reccomended`, {
-            method: 'GET',
-            headers: this.getAuthHeaders()
-        });
+        try {
+            const response = await fetch(`${this.baseUrl}/reccomended`, {
+                method: 'GET',
+                headers: this.getAuthHeaders()
+            });
 
-        return this.handleResponse<RecommendedSubject[]>(response);
+            return this.handleResponse<RecommendedSubject[]>(response);
+        } catch (error) {
+            const errorInfo = handleApiError(error, 'Failed to load recommended subjects');
+            throw new Error(errorInfo.message);
+        }
     }
 
     async getFavouriteSubjects(): Promise<Subject[]> {
-        const response = await fetch(`${this.baseUrl}/favourites`, {
-            method: 'GET',
-            headers: this.getAuthHeaders()
-        });
+        try {
+            const response = await fetch(`${this.baseUrl}/favourites`, {
+                method: 'GET',
+                headers: this.getAuthHeaders()
+            });
 
-        return this.handleResponse<Subject[]>(response);
+            return this.handleResponse<Subject[]>(response);
+        } catch (error) {
+            const errorInfo = handleApiError(error, 'Failed to load favourite subjects');
+            throw new Error(errorInfo.message);
+        }
     }
 }
 

@@ -8,11 +8,12 @@ import {
     Alert,
     Spinner
 } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useTranslations } from '../hooks/useTranslations';
 import { subjectService } from '../services/subjectService';
 import type { RecommendedSubject } from '../services/subjectService';
 import SubjectList from '../components/SubjectList';
+import { handleApiError } from '../utils/errorHandler';
 
 const RecommendedSubjectsPage: React.FC = () => {
     const navigate = useNavigate();
@@ -34,6 +35,7 @@ const RecommendedSubjectsPage: React.FC = () => {
     const [subjects, setSubjects] = useState<RecommendedSubject[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
+    const [isUnauthorizedError, setIsUnauthorizedError] = useState(false);
     const [success, setSuccess] = useState<string | null>(null);
 
     // Load recommended subjects on component mount
@@ -52,6 +54,7 @@ const RecommendedSubjectsPage: React.FC = () => {
     const loadRecommendedSubjects = async (showSuccessMessage: boolean = false) => {
         setLoading(true);
         setError(null);
+        setIsUnauthorizedError(false);
         try {
             const data = await subjectService.getRecommendedSubjects();
             // Sort by match percentage in descending order
@@ -65,17 +68,9 @@ const RecommendedSubjectsPage: React.FC = () => {
                 setTimeout(() => setSuccess(null), 3000);
             }
         } catch (err) {
-            if (err instanceof Error) {
-                if (err.message.includes('404')) {
-                    setError(t('recommendedSubjects.noRecommendations') || 'No recommendations found');
-                } else if (err.message.includes('401')) {
-                    setError(t('recommendedSubjects.error') || 'Unauthorized access');
-                } else {
-                    setError(err.message);
-                }
-            } else {
-                setError(t('recommendedSubjects.error') || 'Failed to load recommendations');
-            }
+            const errorInfo = handleApiError(err, t('recommendedSubjects.error') || 'Failed to load recommendations');
+            setError(errorInfo.message);
+            setIsUnauthorizedError(errorInfo.shouldShowLoginPrompt);
         } finally {
             setLoading(false);
         }
@@ -124,8 +119,11 @@ const RecommendedSubjectsPage: React.FC = () => {
 
                     {/* Alerts */}
                     {error && (
-                        <Alert variant="danger" dismissible onClose={() => setError(null)}>
+                        <Alert variant="danger" dismissible onClose={() => { setError(null); setIsUnauthorizedError(false); }}>
                             {error}
+                            {isUnauthorizedError && (
+                                <> <Link to="/logout" className="text-decoration-underline">Click here to log back in</Link>.</>
+                            )}
                         </Alert>
                     )}
                     {success && (
