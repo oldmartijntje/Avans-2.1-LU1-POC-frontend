@@ -125,3 +125,6 @@
 - [ ] As a student, I want be able to view the study that I am enrolled in so that I can see whether it is correct.
     - [x] backend
     - [ ] frontend
+
+
+- [ ] re-enable signup
