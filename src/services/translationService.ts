@@ -33,7 +33,47 @@ export interface TranslationCache {
 class TranslationService {
     private cache: Map<string, TranslationCache> = new Map();
     private notFoundKeys: Set<string> = new Set(); // Global tracking of missing keys
-    private currentLanguage: Language = config.DEFAULT_LANGUAGE;
+    private currentLanguage: Language = this.initializeLanguage();
+
+    private initializeLanguage(): Language {
+        // Check localStorage first
+        const storedLanguage = localStorage.getItem('selectedLanguage') as Language;
+        if (storedLanguage && config.LANGUAGES.includes(storedLanguage)) {
+            return storedLanguage;
+        }
+
+        // Check device language preference
+        const deviceLanguage = this.getDeviceLanguagePreference();
+        if (deviceLanguage) {
+            return deviceLanguage;
+        }
+
+        // Fall back to default
+        return config.DEFAULT_LANGUAGE;
+    }
+
+    private getDeviceLanguagePreference(): Language | null {
+        const browserLanguage = navigator.language.toLowerCase();
+
+        // Check for exact matches or language prefixes
+        if (browserLanguage.startsWith('nl') || browserLanguage.startsWith('dutch')) {
+            return 'dutch';
+        } else if (browserLanguage.startsWith('en') || browserLanguage.startsWith('english')) {
+            return 'english';
+        }
+
+        // Check navigator.languages array for additional preferences
+        for (const lang of navigator.languages) {
+            const langLower = lang.toLowerCase();
+            if (langLower.startsWith('nl')) {
+                return 'dutch';
+            } else if (langLower.startsWith('en')) {
+                return 'english';
+            }
+        }
+
+        return null;
+    }
 
     private getCacheKey(keys: string[]): string {
         return keys.sort().join('|');
@@ -237,6 +277,10 @@ class TranslationService {
     setLanguage(language: Language): void {
         if (this.currentLanguage !== language) {
             this.currentLanguage = language;
+
+            // Store the selected language in localStorage
+            localStorage.setItem('selectedLanguage', language);
+
             // Clear cache when language changes to force re-fetching with new language
             this.clearCache();
         }
@@ -244,6 +288,31 @@ class TranslationService {
 
     getCurrentLanguage(): Language {
         return this.currentLanguage;
+    }
+
+    getStoredLanguagePreference(): Language | null {
+        const storedLanguage = localStorage.getItem('selectedLanguage') as Language;
+        return storedLanguage && config.LANGUAGES.includes(storedLanguage) ? storedLanguage : null;
+    }
+
+    clearStoredLanguagePreference(): void {
+        localStorage.removeItem('selectedLanguage');
+    }
+
+    getLanguageDebugInfo(): {
+        current: Language;
+        stored: Language | null;
+        devicePreference: Language | null;
+        browserLanguage: string;
+        browserLanguages: readonly string[];
+    } {
+        return {
+            current: this.currentLanguage,
+            stored: this.getStoredLanguagePreference(),
+            devicePreference: this.getDeviceLanguagePreference(),
+            browserLanguage: navigator.language,
+            browserLanguages: navigator.languages
+        };
     }
 }
 

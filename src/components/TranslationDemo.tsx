@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Card, Button, Alert, Badge } from 'react-bootstrap';
 import { useTranslations } from '../hooks/useTranslations';
 import { useTranslation } from '../contexts/TranslationContext';
+import { translationService } from '../services/translationService';
 
 const TranslationDemo: React.FC = () => {
     const { t, loading, error } = useTranslations({
@@ -101,6 +102,47 @@ const TranslationDemo: React.FC = () => {
                                             </span>
                                         </div>
                                     ))}
+                                </Card.Body>
+                            </Card>
+
+                            {/* Language Debug Information */}
+                            <Card className="mt-4">
+                                <Card.Header>
+                                    <h5 className="mb-0">Language Debug Information</h5>
+                                </Card.Header>
+                                <Card.Body>
+                                    {(() => {
+                                        const debugInfo = translationService.getLanguageDebugInfo();
+                                        return (
+                                            <div>
+                                                <p className="text-muted-custom">
+                                                    <strong>Current Language:</strong> <Badge bg="success">{debugInfo.current}</Badge>
+                                                </p>
+                                                <p className="text-muted-custom">
+                                                    <strong>Stored in localStorage:</strong> {debugInfo.stored ? <Badge bg="primary">{debugInfo.stored}</Badge> : <Badge bg="secondary">None</Badge>}
+                                                </p>
+                                                <p className="text-muted-custom">
+                                                    <strong>Device Preference:</strong> {debugInfo.devicePreference ? <Badge bg="info">{debugInfo.devicePreference}</Badge> : <Badge bg="secondary">None detected</Badge>}
+                                                </p>
+                                                <p className="text-muted-custom">
+                                                    <strong>Browser Language:</strong> <code>{debugInfo.browserLanguage}</code>
+                                                </p>
+                                                <p className="text-muted-custom">
+                                                    <strong>All Browser Languages:</strong> <code>{debugInfo.browserLanguages.join(', ')}</code>
+                                                </p>
+                                                <Button
+                                                    variant="outline-warning"
+                                                    size="sm"
+                                                    onClick={() => {
+                                                        translationService.clearStoredLanguagePreference();
+                                                        window.location.reload();
+                                                    }}
+                                                >
+                                                    Clear localStorage & Reload
+                                                </Button>
+                                            </div>
+                                        );
+                                    })()}
                                 </Card.Body>
                             </Card>
 

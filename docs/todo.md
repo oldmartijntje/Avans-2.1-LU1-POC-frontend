@@ -51,7 +51,7 @@
     - [x] frontend
 
 ### Epic 6: PWA Feature
-- [ ] As a student, I want to install the app on my phone so that I can access it like a native app.  
+- [x] As a student, I want to install the app on my phone so that I can access it like a native app.  
 
 ### Epic 7: Security & Authentication
 - [x] As a user, I want secure communication between frontend and backend using JWT so that my data is protected.  
