@@ -8,7 +8,7 @@ export default defineConfig({
     server: {
         proxy: {
             '/api': {
-                target: 'http://45.8.150.86:6969',
+                target: 'https://avans-yourself.oldmartijntje.nl',
                 changeOrigin: true,
                 rewrite: (path) => path.replace(/^\/api/, ''),
                 configure: (proxy) => {

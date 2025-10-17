@@ -21,7 +21,7 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 // Use the proxy in development, direct URL in production
-const API_BASE_URL = import.meta.env.DEV ? '/api' : 'http://45.8.150.86:6969';
+const API_BASE_URL = import.meta.env.DEV ? '/api' : 'https://avans-yourself.oldmartijntje.nl';
 
 // Create axios instance with interceptor for auth token
 const api = axios.create({
