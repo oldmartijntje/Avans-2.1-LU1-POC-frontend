@@ -4,6 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
     plugins: [react()],
+    base: '/Avans-2.1-LU1-POC-frontend/',
     server: {
         proxy: {
             '/api': {
