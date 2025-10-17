@@ -45,22 +45,22 @@ const Navigation: React.FC = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to="/" onClick={handleNavClick}>
-                            {t('nav.home', 'Home')}
+                            {t('nav.home')}
                         </Nav.Link>
                         <Nav.Link as={Link} to="/about" onClick={handleNavClick}>
-                            {t('nav.about', 'About')}
+                            {t('nav.about')}
                         </Nav.Link>
                         <Nav.Link as={Link} to="/translation-example" onClick={handleNavClick}>
-                            {t('nav.translations', 'Translation Demo')}
+                            {t('nav.translations')}
                         </Nav.Link>
                         {isAuthenticated && (
                             <Nav.Link as={Link} to="/dashboard" onClick={handleNavClick}>
-                                {t('nav.dashboard', 'Dashboard')}
+                                {t('nav.dashboard')}
                             </Nav.Link>
                         )}
                         {isAuthenticated && (user?.role === 'TEACHER' || user?.role === 'ADMIN') && (
                             <Nav.Link as={Link} to="/translation-management" onClick={handleNavClick}>
-                                {t('nav.translationManagement', 'Translation Management')}
+                                {t('nav.translationManagement')}
                             </Nav.Link>
                         )}
                     </Nav>
@@ -72,26 +72,26 @@ const Navigation: React.FC = () => {
                         {isAuthenticated ? (
                             <div className="d-flex flex-column flex-lg-row align-items-lg-center gap-2">
                                 <span className="text-light-custom small">
-                                    {t('nav.welcome', 'Welcome')}, <strong>{user?.username}</strong>
+                                    {t('nav.welcome')}, <strong>{user?.username}</strong>
                                 </span>
                                 <Button
                                     variant="outline-danger"
                                     size="sm"
                                     onClick={handleLogout}
                                 >
-                                    {t('nav.logout', 'Logout')}
+                                    {t('nav.logout')}
                                 </Button>
                             </div>
                         ) : (
                             <div className="d-flex flex-column flex-lg-row gap-2">
                                 <Link to="/login" className="text-decoration-none" onClick={handleNavClick}>
                                     <Button variant="primary" size="sm" className="w-100">
-                                        {t('nav.login', 'Login')}
+                                        {t('nav.login')}
                                     </Button>
                                 </Link>
                                 <Link to="/register" className="text-decoration-none" onClick={handleNavClick}>
                                     <Button variant="outline-primary" size="sm" className="w-100">
-                                        {t('nav.register', 'Register')}
+                                        {t('nav.register')}
                                     </Button>
                                 </Link>
                             </div>

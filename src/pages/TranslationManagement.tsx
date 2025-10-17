@@ -57,13 +57,13 @@ const TranslationManagement: React.FC = () => {
 
             if (Array.isArray(response.data)) {
                 setTranslations(response.data);
-                setSuccess(t('translationManagement.success', 'Translations loaded successfully'));
+                setSuccess(t('translationManagement.success'));
             } else {
                 throw new Error('Invalid response format');
             }
         } catch (err: any) {
             console.error('Error loading translations:', err);
-            setError(err.response?.data?.message || err.message || t('translationManagement.error', 'Failed to load translations'));
+            setError(err.response?.data?.message || err.message || t('translationManagement.error'));
         } finally {
             setLoading(false);
         }
@@ -136,7 +136,7 @@ const TranslationManagement: React.FC = () => {
                 <Row className="justify-content-center">
                     <Col md={8}>
                         <Alert variant="danger">
-                            <Alert.Heading>{t('translationManagement.accessDenied', 'Access Denied')}</Alert.Heading>
+                            <Alert.Heading>{t('translationManagement.accessDenied')}</Alert.Heading>
                             <p>This page is only accessible to Teachers and Administrators.</p>
                         </Alert>
                     </Col>
@@ -153,10 +153,10 @@ const TranslationManagement: React.FC = () => {
                     <div className="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center mb-4">
                         <div>
                             <h1 className="h2 fw-bold text-light-custom mb-1">
-                                {t('translationManagement.title', 'Translation Management')}
+                                {t('translationManagement.title')}
                             </h1>
                             <p className="text-muted-custom mb-0">
-                                {t('translationManagement.subtitle', 'Manage translations for the application')}
+                                {t('translationManagement.subtitle')}
                             </p>
                         </div>
                         <Button
@@ -168,10 +168,10 @@ const TranslationManagement: React.FC = () => {
                             {loading ? (
                                 <>
                                     <Spinner size="sm" className="me-2" />
-                                    {t('translationManagement.loading', 'Loading...')}
+                                    {t('translationManagement.loading')}
                                 </>
                             ) : (
-                                t('translationManagement.loadTranslations', 'Load Translations')
+                                t('translationManagement.loadTranslations')
                             )}
                         </Button>
                     </div>
@@ -201,7 +201,7 @@ const TranslationManagement: React.FC = () => {
                             {translations.length === 0 ? (
                                 <div className="text-center py-5">
                                     <p className="text-muted-custom">
-                                        {t('translationManagement.noTranslations', 'No translations loaded. Click "Load Translations" to fetch all translations.')}
+                                        {t('translationManagement.noTranslations')}
                                     </p>
                                 </div>
                             ) : (
@@ -209,10 +209,10 @@ const TranslationManagement: React.FC = () => {
                                     <Table variant="dark" striped hover className="mb-0">
                                         <thead>
                                             <tr>
-                                                <th className="text-light-custom">{t('translationManagement.uiKey', 'UI Key')}</th>
-                                                <th className="text-light-custom">{t('translationManagement.dutch', 'Dutch')}</th>
-                                                <th className="text-light-custom">{t('translationManagement.english', 'English')}</th>
-                                                <th className="text-center text-light-custom">{t('translationManagement.actions', 'Actions')}</th>
+                                                <th className="text-light-custom">{t('translationManagement.uiKey')}</th>
+                                                <th className="text-light-custom">{t('translationManagement.dutch')}</th>
+                                                <th className="text-light-custom">{t('translationManagement.english')}</th>
+                                                <th className="text-center text-light-custom">{t('translationManagement.actions')}</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -238,7 +238,7 @@ const TranslationManagement: React.FC = () => {
                                                             onClick={() => handleEditClick(translation)}
                                                             disabled={loading}
                                                         >
-                                                            {t('translationManagement.edit', 'Edit')}
+                                                            {t('translationManagement.edit')}
                                                         </Button>
                                                     </td>
                                                 </tr>
@@ -254,7 +254,7 @@ const TranslationManagement: React.FC = () => {
                     <Modal show={showEditModal} onHide={handleCloseModal} size="lg" data-bs-theme="dark">
                         <Modal.Header closeButton className="bg-dark-custom border-dark">
                             <Modal.Title className="text-light-custom">
-                                {t('translationManagement.editTitle', 'Edit Translation')}
+                                {t('translationManagement.editTitle')}
                             </Modal.Title>
                         </Modal.Header>
                         <Modal.Body className="bg-darker-custom">
@@ -271,7 +271,7 @@ const TranslationManagement: React.FC = () => {
                                     </Form.Group>
 
                                     <Form.Group className="mb-3">
-                                        <Form.Label className="text-light-custom">{t('translationManagement.dutch', 'Dutch Translation')}</Form.Label>
+                                        <Form.Label className="text-light-custom">{t('translationManagement.dutch')}</Form.Label>
                                         <Form.Control
                                             as="textarea"
                                             rows={3}
@@ -283,7 +283,7 @@ const TranslationManagement: React.FC = () => {
                                     </Form.Group>
 
                                     <Form.Group className="mb-3">
-                                        <Form.Label className="text-light-custom">{t('translationManagement.english', 'English Translation')}</Form.Label>
+                                        <Form.Label className="text-light-custom">{t('translationManagement.english')}</Form.Label>
                                         <Form.Control
                                             as="textarea"
                                             rows={3}
@@ -298,16 +298,16 @@ const TranslationManagement: React.FC = () => {
                         </Modal.Body>
                         <Modal.Footer className="bg-dark-custom border-dark">
                             <Button variant="secondary" onClick={handleCloseModal} disabled={loading}>
-                                {t('translationManagement.cancel', 'Cancel')}
+                                {t('translationManagement.cancel')}
                             </Button>
                             <Button variant="primary" onClick={handleSaveTranslation} disabled={loading}>
                                 {loading ? (
                                     <>
                                         <Spinner size="sm" className="me-2" />
-                                        {t('translationManagement.loading', 'Loading...')}
+                                        {t('translationManagement.loading')}
                                     </>
                                 ) : (
-                                    t('translationManagement.save', 'Save Changes')
+                                    t('translationManagement.save')
                                 )}
                             </Button>
                         </Modal.Footer>

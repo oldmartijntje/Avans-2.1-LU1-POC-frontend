@@ -57,10 +57,10 @@ const TranslationExample: React.FC = () => {
                     {/* Header */}
                     <div className="text-center mb-5">
                         <h1 className="display-4 fw-bold text-light-custom mb-3">
-                            {t('header.title', 'Translation System Demo')}
+                            {t('header.title')}
                         </h1>
                         <p className="lead text-muted-custom">
-                            {t('header.subtitle', 'This page demonstrates the translation system using your API endpoint')}
+                            {t('header.subtitle')}
                         </p>
 
                         {/* Language Switcher */}

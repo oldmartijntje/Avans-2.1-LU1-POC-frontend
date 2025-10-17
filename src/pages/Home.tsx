@@ -29,37 +29,37 @@ const Home: React.FC = () => {
                     {/* Hero Section */}
                     <div className="text-center mb-5">
                         <h1 className="display-4 fw-bold text-light-custom mb-3">
-                            {t('home.hero.title', 'Discover Your Perfect ')}
-                            <span className="text-primary">{t('home.hero.elective', 'Elective Module')}</span>
+                            {t('home.hero.title')}
+                            <span className="text-primary">{t('home.hero.elective')}</span>
                         </h1>
                         <p className="lead text-muted-custom mb-4">
-                            {t('home.hero.subtitle', 'Find and enroll in elective modules that match your interests and career goals')}
+                            {t('home.hero.subtitle')}
                         </p>
                         {!isAuthenticated && (
                             <div className="d-flex flex-column flex-sm-row gap-2 justify-content-center">
                                 <Link to="/register" className="text-decoration-none">
-                                    <Button variant="primary" size="lg">{t('home.hero.browseModules', 'Browse Modules')}</Button>
+                                    <Button variant="primary" size="lg">{t('home.hero.browseModules')}</Button>
                                 </Link>
                                 <Link to="/login" className="text-decoration-none">
-                                    <Button variant="outline-primary" size="lg">{t('home.hero.signIn', 'Sign In')}</Button>
+                                    <Button variant="outline-primary" size="lg">{t('home.hero.signIn')}</Button>
                                 </Link>
                             </div>
                         )}
                         {isAuthenticated && (
                             <div className="d-flex flex-column flex-sm-row gap-2 justify-content-center">
                                 <Link to="/dashboard" className="text-decoration-none">
-                                    <Button variant="primary" size="lg">{t('home.hero.myModules', 'My Modules')}</Button>
+                                    <Button variant="primary" size="lg">{t('home.hero.myModules')}</Button>
                                 </Link>
                             </div>
                         )}
                     </div>                    {/* Features Card */}
                     <Card className="mb-4">
                         <Card.Header>
-                            <h3 className="card-title mb-0">{t('home.alinea.title', 'Welcome to the Elective Module selector')}</h3>
+                            <h3 className="card-title mb-0">{t('home.alinea.title')}</h3>
                         </Card.Header>
                         <Card.Body>
                             <Row>
-                                <p className="text-muted-custom small mb-0">{t('home.alinea.text', 'This is the Avans Elective Module selector, here you can choose which module you want to use')}</p>
+                                <p className="text-muted-custom small mb-0">{t('home.alinea.text')}</p>
                             </Row>
                         </Card.Body>
                     </Card>
@@ -67,14 +67,14 @@ const Home: React.FC = () => {
                     {/* Quick Links */}
                     <Card>
                         <Card.Body>
-                            <h5 className="card-title">{t('home.quickActions.title', 'Quick Actions')}</h5>
+                            <h5 className="card-title">{t('home.quickActions.title')}</h5>
                             <div className="d-flex flex-wrap gap-2">
                                 <Link to="/about" className="text-decoration-none">
-                                    <Button variant="outline-primary" size="sm">{t('home.quickActions.learnMore', 'Learn More')}</Button>
+                                    <Button variant="outline-primary" size="sm">{t('home.quickActions.learnMore')}</Button>
                                 </Link>
                                 {isAuthenticated && (
                                     <Link to="/dashboard" className="text-decoration-none">
-                                        <Button variant="primary" size="sm">{t('home.quickActions.myModules', 'My Modules')}</Button>
+                                        <Button variant="primary" size="sm">{t('home.quickActions.myModules')}</Button>
                                     </Link>
                                 )}
                             </div>

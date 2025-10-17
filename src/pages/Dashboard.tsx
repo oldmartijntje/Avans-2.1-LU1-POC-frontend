@@ -45,15 +45,15 @@ const Dashboard: React.FC = () => {
                     {/* Header */}
                     <div className="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center mb-4">
                         <div>
-                            <h1 className="h2 fw-bold text-light-custom mb-1">{t('dashboard.title', 'My Elective Modules')}</h1>
-                            <p className="text-muted-custom mb-0">{t('dashboard.subtitle', 'Manage your elective module selections')}</p>
+                            <h1 className="h2 fw-bold text-light-custom mb-1">{t('dashboard.title')}</h1>
+                            <p className="text-muted-custom mb-0">{t('dashboard.subtitle')}</p>
                         </div>
                         <Button
                             variant="outline-danger"
                             onClick={handleLogout}
                             className="mt-3 mt-sm-0"
                         >
-                            {t('dashboard.logout', 'Logout')}
+                            {t('dashboard.logout')}
                         </Button>
                     </div>
 
@@ -67,9 +67,9 @@ const Dashboard: React.FC = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <h5 className="text-light-custom mb-1">{t('dashboard.welcome.title', 'Welcome, {{username}}!').replace('{{username}}', user?.username || '')}</h5>
+                                    <h5 className="text-light-custom mb-1">{t('dashboard.welcome.title').replace('{{username}}', user?.username || '')}</h5>
                                     <p className="text-muted-custom mb-0">
-                                        {t('dashboard.welcome.description', 'Find and enroll in elective modules that complement your study program.')}
+                                        {t('dashboard.welcome.description')}
                                     </p>
                                 </div>
                             </div>
@@ -84,27 +84,27 @@ const Dashboard: React.FC = () => {
                                     <Card.Header>
                                         <h5 className="card-title mb-0">
                                             <i className="me-2">👤</i>
-                                            {t('dashboard.account.title', 'Account Information')}
+                                            {t('dashboard.account.title')}
                                         </h5>
                                     </Card.Header>
                                     <Card.Body>
                                         <div className="d-flex flex-column gap-3">
                                             <div className="d-flex justify-content-between align-items-center">
-                                                <span className="fw-medium text-muted-custom">{t('dashboard.account.username', 'Username')}:</span>
+                                                <span className="fw-medium text-muted-custom">{t('dashboard.account.username')}:</span>
                                                 <span className="text-light-custom">{user.username}</span>
                                             </div>
                                             <div className="d-flex justify-content-between align-items-center">
-                                                <span className="fw-medium text-muted-custom">{t('dashboard.account.email', 'Email')}:</span>
+                                                <span className="fw-medium text-muted-custom">{t('dashboard.account.email')}:</span>
                                                 <span className="text-light-custom">{user.email}</span>
                                             </div>
                                             <div className="d-flex justify-content-between align-items-center">
-                                                <span className="fw-medium text-muted-custom">{t('dashboard.account.role', 'Role')}:</span>
+                                                <span className="fw-medium text-muted-custom">{t('dashboard.account.role')}:</span>
                                                 <Badge bg={getRoleBadgeVariant(user.role)} className="text-uppercase">
                                                     {user.role}
                                                 </Badge>
                                             </div>
                                             <div className="d-flex justify-content-between align-items-center">
-                                                <span className="fw-medium text-muted-custom">{t('dashboard.account.userId', 'User ID')}:</span>
+                                                <span className="fw-medium text-muted-custom">{t('dashboard.account.userId')}:</span>
                                                 <code className="text-primary small">{user.uuid}</code>
                                             </div>
                                         </div>
@@ -118,7 +118,7 @@ const Dashboard: React.FC = () => {
                                     <Card.Header>
                                         <h5 className="card-title mb-0">
                                             <i className="me-2">🔐</i>
-                                            {t('dashboard.access.title', 'Access Level')}
+                                            {t('dashboard.access.title')}
                                         </h5>
                                     </Card.Header>
                                     <Card.Body>
@@ -126,13 +126,13 @@ const Dashboard: React.FC = () => {
                                             <div className="bg-success rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style={{ width: '80px', height: '80px' }}>
                                                 <i className="text-white fs-2">✓</i>
                                             </div>
-                                            <h6 className="text-light-custom mb-2">{t('dashboard.access.verified', 'Access Verified')}</h6>
+                                            <h6 className="text-light-custom mb-2">{t('dashboard.access.verified')}</h6>
                                             <p className="text-muted-custom mb-3">
-                                                As a <strong className="text-primary">{user.role}</strong>, you can {user.role === 'TEACHER' ? t('dashboard.access.teacherDescription', 'create and manage elective modules') : t('dashboard.access.studentDescription', 'browse and enroll in available elective modules')}.
+                                                As a <strong className="text-primary">{user.role}</strong>, you can {user.role === 'TEACHER' ? t('dashboard.access.teacherDescription') : t('dashboard.access.studentDescription')}.
                                             </p>
                                             <Badge bg="success" className="px-3 py-2">
                                                 <i className="me-1">🛡️</i>
-                                                {t('dashboard.access.authenticated', 'Authenticated User')}
+                                                {t('dashboard.access.authenticated')}
                                             </Badge>
                                         </div>
                                     </Card.Body>

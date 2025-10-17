@@ -17,10 +17,10 @@ const About: React.FC = () => {
                 <Col lg={8} xl={7}>
                     <div className="text-center mb-5">
                         <h1 className="display-4 fw-bold text-light-custom mb-3">
-                            {t('about.hero.title', 'About ')} <span className="text-primary">{t('about.hero.electiveHub', 'Elective Hub')}</span>
+                            {t('about.hero.title')} <span className="text-primary">{t('about.hero.electiveHub')}</span>
                         </h1>
                         <p className="lead text-muted-custom">
-                            {t('about.hero.subtitle', 'Helping Avans students discover and enroll in the perfect elective modules')}
+                            {t('about.hero.subtitle')}
                         </p>
                     </div>
                 </Col>

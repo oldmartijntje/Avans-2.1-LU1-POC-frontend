@@ -17,7 +17,7 @@ const TranslationDemo: React.FC = () => {
         ]
     });
 
-    const { language, setLanguage, translations } = useTranslation();
+    const { currentLanguage, setLanguage, translations } = useTranslation();
 
     const sampleKeys = [
         'nav.brand',
@@ -34,26 +34,26 @@ const TranslationDemo: React.FC = () => {
                     <Card>
                         <Card.Header>
                             <h3 className="card-title mb-0">
-                                {t('demo.title', 'Translation System Demo')}
+                                {t('demo.title')}
                             </h3>
                         </Card.Header>
                         <Card.Body>
                             <p className="text-muted-custom mb-4">
-                                {t('demo.description', 'This demo shows how the translation system works with your API endpoint.')}
+                                {t('demo.description')}
                             </p>
 
                             {/* Current Language */}
                             <div className="mb-3">
-                                <strong>{t('demo.current_language', 'Current Language')}: </strong>
+                                <strong>{t('demo.current_language')}: </strong>
                                 <Badge bg="primary" className="ms-2 text-capitalize">
-                                    {language}
+                                    {currentLanguage}
                                 </Badge>
                             </div>
 
                             {/* Language Switcher */}
                             <div className="mb-4">
                                 <Button
-                                    variant={language === 'english' ? 'primary' : 'outline-primary'}
+                                    variant={currentLanguage === 'english' ? 'primary' : 'outline-primary'}
                                     size="sm"
                                     className="me-2"
                                     onClick={() => setLanguage('english')}
@@ -61,7 +61,7 @@ const TranslationDemo: React.FC = () => {
                                     🇺🇸 English
                                 </Button>
                                 <Button
-                                    variant={language === 'dutch' ? 'primary' : 'outline-primary'}
+                                    variant={currentLanguage === 'dutch' ? 'primary' : 'outline-primary'}
                                     size="sm"
                                     onClick={() => setLanguage('dutch')}
                                 >
@@ -74,7 +74,7 @@ const TranslationDemo: React.FC = () => {
                                 <Alert variant="info">
                                     <div className="d-flex align-items-center">
                                         <div className="spinner-avans me-2"></div>
-                                        {t('demo.loading_message', 'Loading translations...')}
+                                        {t('demo.loading_message')}
                                     </div>
                                 </Alert>
                             )}
@@ -82,7 +82,7 @@ const TranslationDemo: React.FC = () => {
                             {/* Error State */}
                             {error && (
                                 <Alert variant="danger">
-                                    <strong>{t('demo.error_message', 'Error loading translations')}: </strong>
+                                    <strong>{t('demo.error_message')}: </strong>
                                     {error}
                                 </Alert>
                             )}
@@ -90,14 +90,14 @@ const TranslationDemo: React.FC = () => {
                             {/* Sample Translation Keys */}
                             <Card className="mt-4">
                                 <Card.Header>
-                                    <h5 className="mb-0">{t('demo.sample_keys', 'Sample Translation Keys')}</h5>
+                                    <h5 className="mb-0">{t('demo.sample_keys')}</h5>
                                 </Card.Header>
                                 <Card.Body>
                                     {sampleKeys.map(key => (
                                         <div key={key} className="mb-2">
                                             <code className="text-primary">{key}</code>:
                                             <span className="ms-2 text-light-custom">
-                                                "{translations[key]?.[language] || key}"
+                                                "{translations[key] || key}"
                                             </span>
                                         </div>
                                     ))}
