@@ -258,5 +258,95 @@
     "uiKey": "translationManagement.noTranslations",
     "dutch": "Geen vertalingen geladen. Klik op \"Vertalingen Laden\" om alle vertalingen op te halen.",
     "english": "No translations loaded. Click \"Load Translations\" to fetch all translations."
+  },
+  {
+    "uiKey": "form.password.label",
+    "dutch": "Wachtwoord",
+    "english": "Password"
+  },
+  {
+    "uiKey": "navigation.home",
+    "dutch": "Home",
+    "english": "Home"
+  },
+  {
+    "uiKey": "footer.copyright",
+    "dutch": "© 2025 Avans Hogeschool. Alle rechten voorbehouden.",
+    "english": "© 2025 Avans University of Applied Sciences. All rights reserved."
+  },
+  {
+    "uiKey": "message.welcome",
+    "dutch": "Welkom bij Avans Elective Hub",
+    "english": "Welcome to Avans Elective Hub"
+  },
+  {
+    "uiKey": "navigation.dashboard",
+    "dutch": "Dashboard",
+    "english": "Dashboard"
+  },
+  {
+    "uiKey": "button.cancel",
+    "dutch": "Annuleren",
+    "english": "Cancel"
+  },
+  {
+    "uiKey": "header.subtitle",
+    "dutch": "Deze pagina toont het vertaalsysteem met behulp van je API endpoint",
+    "english": "This page demonstrates the translation system using your API endpoint"
+  },
+  {
+    "uiKey": "button.submit",
+    "dutch": "Versturen",
+    "english": "Submit"
+  },
+  {
+    "uiKey": "button.save",
+    "dutch": "Opslaan",
+    "english": "Save"
+  },
+  {
+    "uiKey": "form.username.label",
+    "dutch": "Gebruikersnaam",
+    "english": "Username"
+  },
+  {
+    "uiKey": "navigation.about",
+    "dutch": "Over",
+    "english": "About"
+  },
+  {
+    "uiKey": "header.title",
+    "dutch": "Vertaalsysteem Demo",
+    "english": "Translation System Demo"
+  },
+  {
+    "uiKey": "message.error.generic",
+    "dutch": "Er is een fout opgetreden. Probeer het opnieuw.",
+    "english": "An error occurred. Please try again."
+  },
+  {
+    "uiKey": "translationManagement.bulkUpdateSuccess",
+    "dutch": "Alle vertalingen zijn succesvol bijgewerkt",
+    "english": "All translations updated successfully"
+  },
+  {
+    "uiKey": "translationManagement.bulkUpdate",
+    "dutch": "Bulk Update",
+    "english": "Bulk Update"
+  },
+  {
+    "uiKey": "translationManagement.bulkUpdateConfirm",
+    "dutch": "Weet je zeker dat je alle vertalingen wilt bijwerken?",
+    "english": "Are you sure you want to update all translations?"
+  },
+  {
+    "uiKey": "home.alinea.text",
+    "dutch": "Dit is de Avans Keuzemodule Selector, hier kun je kiezen welke module je wilt gebruiken",
+    "english": "This is the Avans Elective Module selector, here you can choose which module you want to use"
+  },
+  {
+    "uiKey": "home.alinea.title",
+    "dutch": "Welkom bij de Keuzemodule Selector",
+    "english": "Welcome to the Elective Module Selector"
   }
 ]
