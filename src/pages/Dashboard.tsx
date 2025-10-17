@@ -22,6 +22,8 @@ const Dashboard: React.FC = () => {
             'dashboard.access.teacherDescription',
             'dashboard.access.studentDescription',
             'dashboard.access.authenticated',
+            'dashboard.access.sentencePart1',
+            'dashboard.access.sentencePart2'
         ]
     });
 
@@ -128,7 +130,7 @@ const Dashboard: React.FC = () => {
                                             </div>
                                             <h6 className="text-light-custom mb-2">{t('dashboard.access.verified')}</h6>
                                             <p className="text-muted-custom mb-3">
-                                                As a <strong className="text-primary">{user.role}</strong>, you can {user.role === 'TEACHER' ? t('dashboard.access.teacherDescription') : t('dashboard.access.studentDescription')}.
+                                                {t('dashboard.access.sentencePart1')}<strong className="text-primary">{user.role}</strong>{t('dashboard.access.sentencePart2')}{user.role === 'TEACHER' ? t('dashboard.access.teacherDescription') : t('dashboard.access.studentDescription')}.
                                             </p>
                                             <Badge bg="success" className="px-3 py-2">
                                                 <i className="me-1">🛡️</i>
