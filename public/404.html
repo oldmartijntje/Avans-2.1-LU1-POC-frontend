@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        .loader {
+            border: 4px solid #333;
+            border-top: 4px solid #0d6efd;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 2s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .fallback {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .fallback a {
+            color: #0d6efd;
+            text-decoration: none;
+        }
+
+        .fallback a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader"></div>
+    <p>Redirecting to the application...</p>
+    <div class="fallback">
+        <p>If you are not redirected automatically, <a href="/Avans-2.1-LU1-POC-frontend/">click here</a>.</p>
+    </div>
+
+    <script>
+        // GitHub Pages SPA redirect script
+        (function (l) {
+            if (l.search[1] === '/') {
+                var decoded = l.search.slice(1).split('&').map(function (s) {
+                    return s.replace(/~and~/g, '&')
+                }).join('?');
+                window.history.replaceState(null, null,
+                    l.pathname.slice(0, -1) + decoded + l.hash
+                );
+            }
+        }(window.location))
+
+        // If no search parameter redirect, handle client-side routing
+        if (!window.location.search || window.location.search[1] !== '/') {
+            var path = window.location.pathname;
+            var basePath = '/Avans-2.1-LU1-POC-frontend';
+
+            // If we're on a GitHub Pages path that should be handled by React Router
+            if (path.startsWith(basePath) && path !== basePath && path !== basePath + '/') {
+                // Store the route in sessionStorage and redirect to base
+                var routePath = path.replace(basePath, '');
+                sessionStorage.setItem('redirectPath', routePath + window.location.search + window.location.hash);
+                window.location.replace(basePath + '/');
+            } else {
+                // Redirect to the main app
+                window.location.replace(basePath + '/');
+            }
+        }
+    </script>
+</body>
+
+</html>

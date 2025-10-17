@@ -508,5 +508,25 @@
     "uiKey": "login.error.invalid",
     "dutch": "Ongeldige gebruikersnaam of wachtwoord",
     "english": "Invalid username or password"
+  },
+  {
+    "uiKey": "pageNotFound",
+    "dutch": "Pagina niet gevonden",
+    "english": "Page Not Found"
+  },
+  {
+    "uiKey": "pageNotFoundMessage",
+    "dutch": "De pagina die u zoekt is mogelijk verwijderd, hernoemd of tijdelijk niet beschikbaar.",
+    "english": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable."
+  },
+  {
+    "uiKey": "goHome",
+    "dutch": "Naar Home",
+    "english": "Go Home"
+  },
+  {
+    "uiKey": "goBack",
+    "dutch": "Terug",
+    "english": "Go Back"
   }
 ]

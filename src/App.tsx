@@ -7,6 +7,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import TranslationManagement from './pages/TranslationManagement';
+import NotFound from './pages/NotFound';
 import './App.css'
 
 function App() {
@@ -42,6 +43,9 @@ function App() {
                             <TranslationManagement />
                         </ProtectedRoute>
                     } />
+
+                    {/* Catch-all route for 404 */}
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
             </main>
         </div>
