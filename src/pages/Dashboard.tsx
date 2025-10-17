@@ -2,6 +2,8 @@ import React from 'react';
 import { Container, Row, Col, Card, Button, Badge } from 'react-bootstrap';
 import { useAuth } from '../contexts/AuthContext';
 import { useTranslations } from '../hooks/useTranslations';
+import CourseSelector from '../components/CourseSelector';
+import type { Course } from '../services/courseService';
 
 const Dashboard: React.FC = () => {
     const { user, logout } = useAuth();
@@ -29,6 +31,12 @@ const Dashboard: React.FC = () => {
 
     const handleLogout = () => {
         logout();
+    };
+
+    const handleCourseChange = (course: Course | null) => {
+        // Course change is handled by the CourseSelector component itself
+        // This callback can be used for additional actions if needed
+        console.log('Course changed:', course);
     };
 
     const getRoleBadgeVariant = (role: string) => {
@@ -81,7 +89,7 @@ const Dashboard: React.FC = () => {
                     {user && (
                         <Row className="g-4">
                             {/* User Information Card */}
-                            <Col lg={6}>
+                            <Col lg={4}>
                                 <Card className="h-100">
                                     <Card.Header>
                                         <h5 className="card-title mb-0">
@@ -114,8 +122,13 @@ const Dashboard: React.FC = () => {
                                 </Card>
                             </Col>
 
+                            {/* Course Selection Card */}
+                            <Col lg={4}>
+                                <CourseSelector onCourseChange={handleCourseChange} />
+                            </Col>
+
                             {/* Access Level Card */}
-                            <Col lg={6}>
+                            <Col lg={4}>
                                 <Card className="h-100">
                                     <Card.Header>
                                         <h5 className="card-title mb-0">

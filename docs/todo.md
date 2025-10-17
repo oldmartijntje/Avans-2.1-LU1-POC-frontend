@@ -113,18 +113,18 @@
     - [ ] frontend
 
 ### Epic 11: Study Selection
-- [ ] As a student, I want to select a study so that I can tailor the app to my academic program.
+- [x] As a student, I want to select a study so that I can tailor the app to my academic program.
     - [x] backend
-    - [ ] frontend
+    - [x] frontend
 - [ ] As a teacher, I want to add new studies so that I can manage the curriculum.  
     - [x] backend
     - [ ] frontend
 - [ ] As a teacher, I want to delete and edit studies so that I can remove outdated or irrelevant ones.  
     - [x] backend
     - [ ] frontend
-- [ ] As a student, I want be able to view the study that I am enrolled in so that I can see whether it is correct.
+- [x] As a student, I want be able to view the study that I am enrolled in so that I can see whether it is correct.
     - [x] backend
-    - [ ] frontend
+    - [x] frontend
 
 
-- [ ] re-enable signup
+- [x] re-enable signup

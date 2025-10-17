@@ -528,5 +528,65 @@
     "uiKey": "goBack",
     "dutch": "Terug",
     "english": "Go Back"
+  },
+  {
+    "uiKey": "dashboard.access.sentencePart1",
+    "dutch": "Je hebt toegang als ",
+    "english": "You have access as "
+  },
+  {
+    "uiKey": "dashboard.access.sentencePart2",
+    "dutch": " om ",
+    "english": " to "
+  },
+  {
+    "uiKey": "dashboard.course.title",
+    "dutch": "Huidige Keuzemodule",
+    "english": "Current Elective Module"
+  },
+  {
+    "uiKey": "dashboard.course.selectCourse",
+    "dutch": "Selecteer Keuzemodule",
+    "english": "Select Elective Module"
+  },
+  {
+    "uiKey": "dashboard.course.noCourseSelected",
+    "dutch": "Geen keuzemodule geselecteerd",
+    "english": "No elective module selected"
+  },
+  {
+    "uiKey": "dashboard.course.selectPlaceholder",
+    "dutch": "Kies een keuzemodule...",
+    "english": "Choose an elective module..."
+  },
+  {
+    "uiKey": "dashboard.course.save",
+    "dutch": "Opslaan",
+    "english": "Save"
+  },
+  {
+    "uiKey": "dashboard.course.saving",
+    "dutch": "Bezig met opslaan...",
+    "english": "Saving..."
+  },
+  {
+    "uiKey": "dashboard.course.success",
+    "dutch": "Keuzemodule succesvol geselecteerd!",
+    "english": "Elective module selected successfully!"
+  },
+  {
+    "uiKey": "dashboard.course.error",
+    "dutch": "Fout bij selecteren van keuzemodule",
+    "english": "Error selecting elective module"
+  },
+  {
+    "uiKey": "dashboard.course.loadingCourses",
+    "dutch": "Keuzemodules laden...",
+    "english": "Loading elective modules..."
+  },
+  {
+    "uiKey": "dashboard.course.errorLoadingCourses",
+    "dutch": "Fout bij laden van keuzemodules",
+    "english": "Error loading elective modules"
   }
 ]
