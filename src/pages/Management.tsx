@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
@@ -6,24 +6,27 @@ import { useTranslations } from '../hooks/useTranslations';
 
 const Management: React.FC = () => {
     const { user } = useAuth();
+
+    const translationKeys = useMemo(() => [
+        'management.title',
+        'management.subtitle',
+        'management.accessDenied',
+        'management.tools.title',
+        'management.tools.translationManagement.title',
+        'management.tools.translationManagement.description',
+        'management.tools.translationManagement.button',
+        'management.tools.subjectManagement.title',
+        'management.tools.subjectManagement.description',
+        'management.tools.subjectManagement.button',
+        'management.tools.courseManagement.title',
+        'management.tools.courseManagement.description',
+        'management.tools.courseManagement.button',
+        'management.comingSoon.title',
+        'management.comingSoon.description'
+    ], []);
+
     const { t } = useTranslations({
-        keys: [
-            'management.title',
-            'management.subtitle',
-            'management.accessDenied',
-            'management.tools.title',
-            'management.tools.translationManagement.title',
-            'management.tools.translationManagement.description',
-            'management.tools.translationManagement.button',
-            'management.tools.subjectManagement.title',
-            'management.tools.subjectManagement.description',
-            'management.tools.subjectManagement.button',
-            'management.tools.courseManagement.title',
-            'management.tools.courseManagement.description',
-            'management.tools.courseManagement.button',
-            'management.comingSoon.title',
-            'management.comingSoon.description'
-        ]
+        keys: translationKeys
     });
 
     // Check if user has access (only teachers and admins)

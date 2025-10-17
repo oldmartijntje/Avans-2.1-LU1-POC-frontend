@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useMemo } from 'react';
 import { useTranslation } from '../contexts/TranslationContext';
 
 interface UseTranslationsOptions {
@@ -9,16 +9,19 @@ interface UseTranslationsOptions {
 export const useTranslations = ({ keys, loadOnMount = true }: UseTranslationsOptions) => {
     const { t, loadTranslations, loading, error } = useTranslation();
 
+    // Memoize the keys array to prevent unnecessary re-renders
+    const memoizedKeys = useMemo(() => keys, [JSON.stringify(keys)]);
+
     useEffect(() => {
-        if (loadOnMount && keys.length > 0) {
-            loadTranslations(keys);
+        if (loadOnMount && memoizedKeys.length > 0) {
+            loadTranslations(memoizedKeys);
         }
-    }, [keys, loadOnMount, loadTranslations]);
+    }, [memoizedKeys, loadOnMount, loadTranslations]);
 
     return {
         t,
         loading,
         error,
-        reload: () => loadTranslations(keys)
+        reload: () => loadTranslations(memoizedKeys)
     };
 };

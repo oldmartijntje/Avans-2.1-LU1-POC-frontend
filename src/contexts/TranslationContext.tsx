@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useCallback } from 'react';
+import React, { createContext, useContext, useState, useCallback, useRef } from 'react';
 import type { ReactNode } from 'react';
 import { translationService } from '../services/translationService';
 import { config } from '../config/config';
@@ -29,8 +29,34 @@ export const TranslationProvider: React.FC<TranslationProviderProps> = ({ childr
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
     const [currentLanguage, setCurrentLanguage] = useState<Language>(translationService.getCurrentLanguage());
+    const translationsRef = useRef(translations);
 
-    const refreshTranslations = async (keys: string[]) => {
+    // Keep ref in sync with state
+    translationsRef.current = translations;
+
+    const loadTranslations = useCallback(async (keys: string[]) => {
+        // Use a ref to access current translations to avoid dependency issues
+        const currentTranslations = translationsRef.current;
+        const notFoundKeys = translationService.getNotFoundKeys();
+        const missingKeys = keys.filter(key => !currentTranslations[key] && !notFoundKeys.includes(key));
+
+        if (missingKeys.length === 0) return;
+
+        // Inline the refresh logic to avoid circular dependencies
+        setLoading(true);
+        setError(null);
+
+        try {
+            const result = await translationService.fetchTranslations(missingKeys);
+            setTranslations(prev => ({ ...prev, ...result }));
+        } catch (err) {
+            setError(err instanceof Error ? err.message : 'Failed to load translations');
+        } finally {
+            setLoading(false);
+        }
+    }, []);
+
+    const refreshTranslations = useCallback(async (keys: string[]) => {
         setLoading(true);
         setError(null);
 
@@ -42,27 +68,18 @@ export const TranslationProvider: React.FC<TranslationProviderProps> = ({ childr
         } finally {
             setLoading(false);
         }
-    };
+    }, []);
 
-    const loadTranslations = async (keys: string[]) => {
-        const notFoundKeys = translationService.getNotFoundKeys();
-        const missingKeys = keys.filter(key => !translations[key] && !notFoundKeys.includes(key));
-
-        if (missingKeys.length === 0) return;
-
-        await refreshTranslations(missingKeys);
-    };
-
-    const setLanguage = async (language: Language) => {
+    const setLanguage = useCallback(async (language: Language) => {
         translationService.setLanguage(language);
         setCurrentLanguage(language);
 
         // Reload existing translations for the new language
-        const currentKeys = Object.keys(translations);
+        const currentKeys = Object.keys(translationsRef.current);
         if (currentKeys.length > 0) {
             await refreshTranslations(currentKeys);
         }
-    };
+    }, [refreshTranslations]);
 
     const t = useCallback((key: string, fallback?: string): string => {
         const translation = translations[key];

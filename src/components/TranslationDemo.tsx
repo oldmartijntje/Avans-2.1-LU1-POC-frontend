@@ -1,21 +1,23 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Container, Row, Col, Card, Button, Alert, Badge } from 'react-bootstrap';
 import { useTranslations } from '../hooks/useTranslations';
 import { useTranslation } from '../contexts/TranslationContext';
 import { translationService } from '../services/translationService';
 
 const TranslationDemo: React.FC = () => {
+    const translationKeys = useMemo(() => [
+        'demo.title',
+        'demo.description',
+        'demo.current_language',
+        'demo.load_translations',
+        'demo.sample_keys',
+        'demo.reload_button',
+        'demo.error_message',
+        'demo.loading_message'
+    ], []);
+
     const { t, loading, error } = useTranslations({
-        keys: [
-            'demo.title',
-            'demo.description',
-            'demo.current_language',
-            'demo.load_translations',
-            'demo.sample_keys',
-            'demo.reload_button',
-            'demo.error_message',
-            'demo.loading_message'
-        ]
+        keys: translationKeys
     });
 
     const { currentLanguage, setLanguage, translations } = useTranslation();

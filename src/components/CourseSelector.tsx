@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Card, Form, Button, Alert, Spinner } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { courseService } from '../services/courseService';
@@ -20,19 +20,22 @@ const CourseSelector: React.FC<CourseSelectorProps> = ({ onCourseChange }) => {
     const [message, setMessage] = useState<{ type: 'success' | 'danger'; text: string; isUnauthorized?: boolean } | null>(null);
 
     const { currentLanguage } = useTranslation();
+
+    const translationKeys = useMemo(() => [
+        'dashboard.course.title',
+        'dashboard.course.selectCourse',
+        'dashboard.course.noCourseSelected',
+        'dashboard.course.selectPlaceholder',
+        'dashboard.course.save',
+        'dashboard.course.saving',
+        'dashboard.course.success',
+        'dashboard.course.error',
+        'dashboard.course.loadingCourses',
+        'dashboard.course.errorLoadingCourses'
+    ], []);
+
     const { t } = useTranslations({
-        keys: [
-            'dashboard.course.title',
-            'dashboard.course.selectCourse',
-            'dashboard.course.noCourseSelected',
-            'dashboard.course.selectPlaceholder',
-            'dashboard.course.save',
-            'dashboard.course.saving',
-            'dashboard.course.success',
-            'dashboard.course.error',
-            'dashboard.course.loadingCourses',
-            'dashboard.course.errorLoadingCourses'
-        ]
+        keys: translationKeys
     });
 
     const getLocalizedTitle = (course: Course) => {

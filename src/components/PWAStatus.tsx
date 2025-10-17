@@ -1,17 +1,20 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Alert, Button } from 'react-bootstrap';
 import { usePWA } from '../hooks/usePWA';
 import { useTranslations } from '../hooks/useTranslations';
 
 export const InstallAppPrompt: React.FC = () => {
     const { isInstallable, showInstallPrompt, installApp, dismissInstallPrompt } = usePWA();
+
+    const installKeys = useMemo(() => [
+        'pwa.install.title',
+        'pwa.install.description',
+        'pwa.install.button',
+        'pwa.install.dismiss'
+    ], []);
+
     const { t } = useTranslations({
-        keys: [
-            'pwa.install.title',
-            'pwa.install.description',
-            'pwa.install.button',
-            'pwa.install.dismiss'
-        ]
+        keys: installKeys
     });
 
     if (!isInstallable || !showInstallPrompt) {
@@ -42,11 +45,14 @@ export const InstallAppPrompt: React.FC = () => {
 
 export const OfflineIndicator: React.FC = () => {
     const { isOffline } = usePWA();
+
+    const offlineKeys = useMemo(() => [
+        'pwa.offline.title',
+        'pwa.offline.description'
+    ], []);
+
     const { t } = useTranslations({
-        keys: [
-            'pwa.offline.title',
-            'pwa.offline.description'
-        ]
+        keys: offlineKeys
     });
 
     if (!isOffline) {
