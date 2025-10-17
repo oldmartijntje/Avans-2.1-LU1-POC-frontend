@@ -81,7 +81,7 @@ const Navigation: React.FC = () => {
                         ) : (
                             <div className="d-flex flex-column flex-lg-row gap-2">
                                 <Link to="/login" className="text-decoration-none" onClick={handleNavClick}>
-                                    <Button variant="primary" size="sm" className="w-100">
+                                    <Button variant="outline-primary" size="sm" className="w-100">
                                         {t('nav.login')}
                                     </Button>
                                 </Link>
