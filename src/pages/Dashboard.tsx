@@ -22,16 +22,6 @@ const Dashboard: React.FC = () => {
             'dashboard.access.teacherDescription',
             'dashboard.access.studentDescription',
             'dashboard.access.authenticated',
-            'dashboard.quickActions.title',
-            'dashboard.quickActions.createModule',
-            'dashboard.quickActions.myModules',
-            'dashboard.quickActions.enrollments',
-            'dashboard.quickActions.analytics',
-            'dashboard.quickActions.browseModules',
-            'dashboard.quickActions.myEnrollments',
-            'dashboard.quickActions.recommendations',
-            'dashboard.quickActions.schedule',
-            'dashboard.quickActions.comingSoon'
         ]
     });
 
@@ -144,83 +134,6 @@ const Dashboard: React.FC = () => {
                                                 <i className="me-1">🛡️</i>
                                                 {t('dashboard.access.authenticated', 'Authenticated User')}
                                             </Badge>
-                                        </div>
-                                    </Card.Body>
-                                </Card>
-                            </Col>
-
-                            {/* Quick Actions */}
-                            <Col xs={12}>
-                                <Card>
-                                    <Card.Header>
-                                        <h5 className="card-title mb-0">
-                                            <i className="me-2">⚡</i>
-                                            {t('dashboard.quickActions.title', 'Quick Actions')}
-                                        </h5>
-                                    </Card.Header>
-                                    <Card.Body>
-                                        <Row className="g-2">
-                                            {user?.role === 'TEACHER' ? (
-                                                <>
-                                                    <Col sm={6} md={3}>
-                                                        <Button variant="outline-primary" className="w-100" disabled>
-                                                            <i className="me-2">➕</i>
-                                                            {t('dashboard.quickActions.createModule', 'Create Module')}
-                                                        </Button>
-                                                    </Col>
-                                                    <Col sm={6} md={3}>
-                                                        <Button variant="outline-primary" className="w-100" disabled>
-                                                            <i className="me-2">📚</i>
-                                                            {t('dashboard.quickActions.myModules', 'My Modules')}
-                                                        </Button>
-                                                    </Col>
-                                                    <Col sm={6} md={3}>
-                                                        <Button variant="outline-primary" className="w-100" disabled>
-                                                            <i className="me-2">👥</i>
-                                                            {t('dashboard.quickActions.enrollments', 'Enrollments')}
-                                                        </Button>
-                                                    </Col>
-                                                    <Col sm={6} md={3}>
-                                                        <Button variant="outline-primary" className="w-100" disabled>
-                                                            <i className="me-2">📊</i>
-                                                            {t('dashboard.quickActions.analytics', 'Analytics')}
-                                                        </Button>
-                                                    </Col>
-                                                </>
-                                            ) : (
-                                                <>
-                                                    <Col sm={6} md={3}>
-                                                        <Button variant="outline-primary" className="w-100" disabled>
-                                                            <i className="me-2">🔍</i>
-                                                            {t('dashboard.quickActions.browseModules', 'Browse Modules')}
-                                                        </Button>
-                                                    </Col>
-                                                    <Col sm={6} md={3}>
-                                                        <Button variant="outline-primary" className="w-100" disabled>
-                                                            <i className="me-2">📋</i>
-                                                            {t('dashboard.quickActions.myEnrollments', 'My Enrollments')}
-                                                        </Button>
-                                                    </Col>
-                                                    <Col sm={6} md={3}>
-                                                        <Button variant="outline-primary" className="w-100" disabled>
-                                                            <i className="me-2">⭐</i>
-                                                            {t('dashboard.quickActions.recommendations', 'Recommendations')}
-                                                        </Button>
-                                                    </Col>
-                                                    <Col sm={6} md={3}>
-                                                        <Button variant="outline-primary" className="w-100" disabled>
-                                                            <i className="me-2">📅</i>
-                                                            {t('dashboard.quickActions.schedule', 'Schedule')}
-                                                        </Button>
-                                                    </Col>
-                                                </>
-                                            )}
-                                        </Row>
-                                        <div className="mt-3">
-                                            <small className="text-muted-custom">
-                                                <i className="me-1">ℹ️</i>
-                                                {t('dashboard.quickActions.comingSoon', 'These features are coming soon! This is a proof-of-concept demonstration.')}
-                                            </small>
                                         </div>
                                     </Card.Body>
                                 </Card>
