@@ -50,7 +50,7 @@ export interface PersistentCache {
 class TranslationService {
     private static readonly PERSISTENT_CACHE_KEY = 'Avans-2.1-LU1-POC-frontend.cached.translations';
     private static readonly PERSISTENT_CACHE_TTL = 7 * 24 * 60 * 60 * 1000; // 1 week in milliseconds
-    
+
     private cache: Map<string, TranslationCache> = new Map();
     private notFoundKeys: Set<string> = new Set(); // Global tracking of missing keys
     private currentLanguage: Language = this.initializeLanguage();
@@ -103,30 +103,42 @@ class TranslationService {
         return Date.now() - cache.timestamp < config.TRANSLATION_CACHE_TTL;
     }
 
-    private getFromCache(keys: string[]): Record<string, string> | null {
-        const cacheKey = this.getCacheKey(keys);
-        const cache = this.cache.get(cacheKey);
+    private getFromCache(keys: string[]): { found: Record<string, string>; missing: string[] } {
+        // Check all cache entries to find individual keys
+        const found: Record<string, string> = {};
+        const missing: string[] = [];
 
-        if (cache && this.isCacheValid(cache)) {
-            // Check if all requested keys are in cache (either as translations or known missing)
-            const hasAllKeys = keys.every(key =>
-                key in cache.translations || cache.notFoundKeys.has(key)
-            );
-            if (hasAllKeys) {
-                // Return only the requested keys with fallback for missing ones
-                const filteredTranslations: Record<string, string> = {};
-                keys.forEach(key => {
-                    if (cache.notFoundKeys.has(key)) {
-                        filteredTranslations[key] = key; // Use key as fallback
-                    } else {
-                        filteredTranslations[key] = cache.translations[key];
+        keys.forEach(key => {
+            let keyFound = false;
+
+            // Check if this key is globally known to be missing
+            if (this.notFoundKeys.has(key)) {
+                found[key] = key; // Use key as fallback
+                keyFound = true;
+            } else {
+                // Check all cache entries for this individual key
+                for (const [, cache] of this.cache.entries()) {
+                    if (this.isCacheValid(cache)) {
+                        if (key in cache.translations) {
+                            found[key] = cache.translations[key];
+                            keyFound = true;
+                            break;
+                        } else if (cache.notFoundKeys.has(key)) {
+                            found[key] = key; // Use key as fallback
+                            this.notFoundKeys.add(key); // Update global missing keys
+                            keyFound = true;
+                            break;
+                        }
                     }
-                });
-                return filteredTranslations;
+                }
             }
-        }
 
-        return null;
+            if (!keyFound) {
+                missing.push(key);
+            }
+        });
+
+        return { found, missing };
     }
 
     private saveToCache(keys: string[], translations: Record<string, string>, notFoundKeys: Set<string>): void {
@@ -150,7 +162,7 @@ class TranslationService {
             if (!cachedData) return null;
 
             const parsed: PersistentCache = JSON.parse(cachedData);
-            
+
             // Check if cache is still valid (not older than 1 week)
             if (Date.now() - parsed.timestamp > TranslationService.PERSISTENT_CACHE_TTL) {
                 this.clearPersistentCache();
@@ -179,7 +191,7 @@ class TranslationService {
             };
 
             localStorage.setItem(
-                TranslationService.PERSISTENT_CACHE_KEY, 
+                TranslationService.PERSISTENT_CACHE_KEY,
                 JSON.stringify(cacheData)
             );
         } catch (error) {
@@ -189,10 +201,10 @@ class TranslationService {
 
     private updatePersistentCache(newTranslationData: Record<string, PersistentTranslationData>): void {
         const existingCache = this.loadPersistentCache();
-        const mergedData = existingCache 
+        const mergedData = existingCache
             ? { ...existingCache.data, ...newTranslationData }
             : newTranslationData;
-        
+
         this.savePersistentCache(mergedData);
     }
 
@@ -210,20 +222,22 @@ class TranslationService {
         }
 
         // Check in-memory cache first
-        const cachedTranslations = this.getFromCache(keys);
-        if (cachedTranslations) {
-            console.log('Returning in-memory cached translations for keys:', keys);
-            return cachedTranslations;
+        const cacheResult = this.getFromCache(keys);
+        const result: Record<string, string> = { ...cacheResult.found };
+
+        if (cacheResult.missing.length === 0) {
+            console.log('All translations found in cache');
+            return result;
         }
 
-        // Check persistent localStorage cache
+        // Check persistent localStorage cache for missing keys
         const persistentCache = this.loadPersistentCache();
-        const result: Record<string, string> = {};
-        const persistentCacheHits: Record<string, string> = {};
-        let remainingKeysToFetch = [...keys];
+        let remainingKeysToFetch = [...cacheResult.missing];
 
         if (persistentCache) {
-            remainingKeysToFetch = keys.filter(key => {
+            const persistentCacheHits: string[] = [];
+
+            remainingKeysToFetch = cacheResult.missing.filter(key => {
                 const cachedItem = persistentCache.data[key];
                 if (cachedItem) {
                     if (cachedItem.notFound) {
@@ -234,7 +248,7 @@ class TranslationService {
                     } else {
                         // Get translation for current language
                         let translationText = key; // fallback to key
-                        
+
                         if (this.currentLanguage === 'dutch' && cachedItem.dutch) {
                             translationText = cachedItem.dutch;
                         } else if (this.currentLanguage === 'english' && cachedItem.english) {
@@ -246,17 +260,17 @@ class TranslationService {
                         } else if (cachedItem.dutch) {
                             translationText = cachedItem.dutch;
                         }
-                        
+
                         result[key] = translationText;
-                        persistentCacheHits[key] = translationText;
+                        persistentCacheHits.push(key);
                         return false; // Don't fetch this key
                     }
                 }
                 return true; // Key not in cache, needs to be fetched
             });
-            
-            if (Object.keys(persistentCacheHits).length > 0) {
-                console.log('Found translations in persistent cache:', Object.keys(persistentCacheHits));
+
+            if (persistentCacheHits.length > 0) {
+                console.log('Found translations in persistent cache:', persistentCacheHits);
             }
         }
 
@@ -272,7 +286,7 @@ class TranslationService {
 
         // If no keys need fetching, return the result
         if (keysToFetch.length === 0) {
-            console.log('All keys satisfied by cache or known to be missing, returning result');
+            console.log('All keys satisfied by cache or known to be missing');
             return result;
         }
 
@@ -347,8 +361,20 @@ class TranslationService {
                 });
             }
 
-            // Save to in-memory cache (including not found information)
-            this.saveToCache(keys, translations, notFoundKeys);
+            // Save to in-memory cache (save each key individually for better granularity)
+            const allTranslations = { ...translations };
+            const allNotFoundKeys = new Set(notFoundKeys);
+
+            // Create cache entry for the original request
+            this.saveToCache(keys, allTranslations, allNotFoundKeys);
+
+            // Also create individual cache entries for better future lookup
+            Object.entries(allTranslations).forEach(([key, value]) => {
+                this.saveToCache([key], { [key]: value }, new Set());
+            });
+            notFoundKeys.forEach(key => {
+                this.saveToCache([key], {}, new Set([key]));
+            });
 
             // Save to persistent cache
             const persistentData: Record<string, PersistentTranslationData> = {};
@@ -383,7 +409,7 @@ class TranslationService {
                     }
                 });
             }
-            
+
             this.updatePersistentCache(persistentData);
 
             console.log('Fetched translations:', translations);
@@ -395,13 +421,14 @@ class TranslationService {
             const errorInfo = handleApiError(error, 'Failed to fetch translations');
             console.error('Translation service error:', errorInfo.message);
 
-            // Return fallback translations using the keys as values
-            const fallbackTranslations: Record<string, string> = {};
-            keys.forEach(key => {
-                fallbackTranslations[key] = key; // Use key as fallback text
+            // Add fallbacks for any keys that weren't already in result
+            keysToFetch.forEach(key => {
+                if (!(key in result)) {
+                    result[key] = key; // Use key as fallback text
+                }
             });
 
-            return fallbackTranslations;
+            return result;
         }
     }
 
@@ -493,7 +520,7 @@ class TranslationService {
         sizeInKB?: number;
     } {
         const cache = this.loadPersistentCache();
-        
+
         if (!cache) {
             return { exists: false, size: 0 };
         }
