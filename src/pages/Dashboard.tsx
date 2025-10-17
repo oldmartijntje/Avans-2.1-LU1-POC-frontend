@@ -1,11 +1,13 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button, Badge } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { useTranslations } from '../hooks/useTranslations';
 import CourseSelector from '../components/CourseSelector';
 import type { Course } from '../services/courseService';
 
 const Dashboard: React.FC = () => {
+    const navigate = useNavigate();
     const { user, logout } = useAuth();
     const { t } = useTranslations({
         keys: [
@@ -25,7 +27,12 @@ const Dashboard: React.FC = () => {
             'dashboard.access.studentDescription',
             'dashboard.access.authenticated',
             'dashboard.access.sentencePart1',
-            'dashboard.access.sentencePart2'
+            'dashboard.access.sentencePart2',
+            'dashboard.modules.title',
+            'dashboard.modules.description',
+            'dashboard.modules.browseAll',
+            'dashboard.modules.viewRecommended',
+            'dashboard.modules.viewFavourites'
         ]
     });
 
@@ -155,6 +162,84 @@ const Dashboard: React.FC = () => {
                             </Col>
                         </Row>
                     )}
+
+                    {/* Module Discovery Section */}
+                    <Row className="mt-4">
+                        <Col>
+                            <Card className="bg-medium-dark-custom border-dark-custom">
+                                <Card.Header className="bg-light-dark border-dark-custom">
+                                    <h5 className="card-title mb-0 text-light-custom">
+                                        <i className="me-2">📚</i>
+                                        {t('dashboard.modules.title') || 'Discover Modules'}
+                                    </h5>
+                                </Card.Header>
+                                <Card.Body>
+                                    <p className="text-muted-custom mb-4">
+                                        {t('dashboard.modules.description') || 'Find the perfect elective modules for your study program'}
+                                    </p>
+                                    <Row className="g-3">
+                                        <Col md={4}>
+                                            <div className="d-grid">
+                                                <Button
+                                                    variant="primary"
+                                                    size="lg"
+                                                    onClick={() => navigate('/subjects')}
+                                                >
+                                                    <div className="d-flex flex-column align-items-center py-2">
+                                                        <i className="fs-2 mb-2">🔍</i>
+                                                        <span className="fw-bold">
+                                                            {t('dashboard.modules.browseAll') || 'Browse All Modules'}
+                                                        </span>
+                                                        <small className="opacity-75">
+                                                            Find all available modules
+                                                        </small>
+                                                    </div>
+                                                </Button>
+                                            </div>
+                                        </Col>
+                                        <Col md={4}>
+                                            <div className="d-grid">
+                                                <Button
+                                                    variant="outline-primary"
+                                                    size="lg"
+                                                    onClick={() => navigate('/subjects/recommended')}
+                                                >
+                                                    <div className="d-flex flex-column align-items-center py-2">
+                                                        <i className="fs-2 mb-2">⭐</i>
+                                                        <span className="fw-bold">
+                                                            {t('dashboard.modules.viewRecommended') || 'Recommended Modules'}
+                                                        </span>
+                                                        <small className="opacity-75">
+                                                            Personalized recommendations
+                                                        </small>
+                                                    </div>
+                                                </Button>
+                                            </div>
+                                        </Col>
+                                        <Col md={4}>
+                                            <div className="d-grid">
+                                                <Button
+                                                    variant="outline-warning"
+                                                    size="lg"
+                                                    onClick={() => navigate('/subjects/favourites')}
+                                                >
+                                                    <div className="d-flex flex-column align-items-center py-2">
+                                                        <i className="fs-2 mb-2">❤️</i>
+                                                        <span className="fw-bold">
+                                                            {t('dashboard.modules.viewFavourites') || 'Favourite Modules'}
+                                                        </span>
+                                                        <small className="opacity-75">
+                                                            Your saved modules
+                                                        </small>
+                                                    </div>
+                                                </Button>
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    </Row>
                 </Col>
             </Row>
         </Container>

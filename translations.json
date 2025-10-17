@@ -998,5 +998,245 @@
     "uiKey": "common.notAvailable",
     "dutch": "Niet beschikbaar",
     "english": "Not available"
+  },
+  {
+    "uiKey": "subjectList.viewDetails",
+    "dutch": "Details Bekijken",
+    "english": "View Details"
+  },
+  {
+    "uiKey": "subjectList.level",
+    "dutch": "Niveau",
+    "english": "Level"
+  },
+  {
+    "uiKey": "subjectList.studyPoints",
+    "dutch": "Studiepunten",
+    "english": "Study Points"
+  },
+  {
+    "uiKey": "subjectList.languages",
+    "dutch": "Talen",
+    "english": "Languages"
+  },
+  {
+    "uiKey": "subjectList.tags",
+    "dutch": "Tags",
+    "english": "Tags"
+  },
+  {
+    "uiKey": "subjectList.favourite",
+    "dutch": "Fav",
+    "english": "Fav"
+  },
+  {
+    "uiKey": "subjectList.matchPercentage",
+    "dutch": "match",
+    "english": "match"
+  },
+  {
+    "uiKey": "subjectList.points",
+    "dutch": "pts",
+    "english": "pts"
+  },
+  {
+    "uiKey": "subjectList.noSubjects",
+    "dutch": "Geen vakken gevonden",
+    "english": "No subjects found"
+  },
+  {
+    "uiKey": "subjectList.loading",
+    "dutch": "Vakken laden...",
+    "english": "Loading subjects..."
+  },
+  {
+    "uiKey": "subjects.title",
+    "dutch": "Beschikbare Vakken",
+    "english": "Available Subjects"
+  },
+  {
+    "uiKey": "subjects.subtitle",
+    "dutch": "Ontdek en bekijk keuzemodules",
+    "english": "Browse and discover elective modules"
+  },
+  {
+    "uiKey": "subjects.loadSubjects",
+    "dutch": "Zoeken",
+    "english": "Search"
+  },
+  {
+    "uiKey": "subjects.clearFilters",
+    "dutch": "Wissen",
+    "english": "Clear"
+  },
+  {
+    "uiKey": "subjects.loading",
+    "dutch": "Vakken laden...",
+    "english": "Loading subjects..."
+  },
+  {
+    "uiKey": "subjects.error",
+    "dutch": "Fout bij laden van vakken",
+    "english": "Failed to load subjects"
+  },
+  {
+    "uiKey": "subjects.success",
+    "dutch": "Vakken succesvol geladen",
+    "english": "Subjects loaded successfully"
+  },
+  {
+    "uiKey": "subjects.filters.level",
+    "dutch": "Niveau",
+    "english": "Level"
+  },
+  {
+    "uiKey": "subjects.filters.points",
+    "dutch": "Studiepunten",
+    "english": "Study Points"
+  },
+  {
+    "uiKey": "subjects.filters.tag",
+    "dutch": "Tag",
+    "english": "Tag"
+  },
+  {
+    "uiKey": "subjects.filters.allLevels",
+    "dutch": "Alle Niveaus",
+    "english": "All Levels"
+  },
+  {
+    "uiKey": "subjects.filters.studyPointsPlaceholder",
+    "dutch": "Studiepunten",
+    "english": "Study points"
+  },
+  {
+    "uiKey": "subjects.filters.tagPlaceholder",
+    "dutch": "Tag naam",
+    "english": "Tag name"
+  },
+  {
+    "uiKey": "recommendedSubjects.title",
+    "dutch": "Aanbevolen Vakken",
+    "english": "Recommended Subjects"
+  },
+  {
+    "uiKey": "recommendedSubjects.subtitle",
+    "dutch": "Gepersonaliseerde vak aanbevelingen gebaseerd op je profiel",
+    "english": "Personalized subject recommendations based on your profile"
+  },
+  {
+    "uiKey": "recommendedSubjects.loading",
+    "dutch": "Gepersonaliseerde aanbevelingen laden...",
+    "english": "Loading personalized recommendations..."
+  },
+  {
+    "uiKey": "recommendedSubjects.error",
+    "dutch": "Fout bij laden van aanbevelingen",
+    "english": "Failed to load recommendations"
+  },
+  {
+    "uiKey": "recommendedSubjects.success",
+    "dutch": "Aanbevelingen succesvol geladen",
+    "english": "Recommendations loaded successfully"
+  },
+  {
+    "uiKey": "recommendedSubjects.noRecommendations",
+    "dutch": "Geen aanbevelingen beschikbaar op dit moment",
+    "english": "No recommendations available at this time"
+  },
+  {
+    "uiKey": "recommendedSubjects.browseAll",
+    "dutch": "Bekijk Alle",
+    "english": "Browse All"
+  },
+  {
+    "uiKey": "recommendedSubjects.refresh",
+    "dutch": "Vernieuwen",
+    "english": "Refresh"
+  },
+  {
+    "uiKey": "subjects.viewRecommended",
+    "dutch": "Aanbevolen Bekijken",
+    "english": "View Recommended"
+  },
+  {
+    "uiKey": "dashboard.modules.title",
+    "dutch": "Ontdek Modules",
+    "english": "Discover Modules"
+  },
+  {
+    "uiKey": "dashboard.modules.description",
+    "dutch": "Vind de perfecte keuzemodules voor jouw studieprogramma",
+    "english": "Find the perfect elective modules for your study program"
+  },
+  {
+    "uiKey": "dashboard.modules.browseAll",
+    "dutch": "Bekijk Alle Modules",
+    "english": "Browse All Modules"
+  },
+  {
+    "uiKey": "dashboard.modules.viewRecommended",
+    "dutch": "Aanbevolen Modules",
+    "english": "Recommended Modules"
+  },
+  {
+    "uiKey": "dashboard.modules.viewFavourites",
+    "dutch": "Favoriete Modules",
+    "english": "Favourite Modules"
+  },
+  {
+    "uiKey": "subjects.viewFavourites",
+    "dutch": "Favorieten Bekijken",
+    "english": "View Favourites"
+  },
+  {
+    "uiKey": "recommendedSubjects.viewFavourites",
+    "dutch": "Favorieten",
+    "english": "Favourites"
+  },
+  {
+    "uiKey": "favouriteSubjects.title",
+    "dutch": "Favoriete Vakken",
+    "english": "Favourite Subjects"
+  },
+  {
+    "uiKey": "favouriteSubjects.subtitle",
+    "dutch": "Jouw opgeslagen keuzemodules",
+    "english": "Your saved elective modules"
+  },
+  {
+    "uiKey": "favouriteSubjects.loading",
+    "dutch": "Favoriete vakken laden...",
+    "english": "Loading favourite subjects..."
+  },
+  {
+    "uiKey": "favouriteSubjects.error",
+    "dutch": "Fout bij laden van favoriete vakken",
+    "english": "Failed to load favourite subjects"
+  },
+  {
+    "uiKey": "favouriteSubjects.success",
+    "dutch": "Favorieten succesvol geladen",
+    "english": "Favourites loaded successfully"
+  },
+  {
+    "uiKey": "favouriteSubjects.noFavourites",
+    "dutch": "Nog geen favoriete vakken",
+    "english": "No favourite subjects yet"
+  },
+  {
+    "uiKey": "favouriteSubjects.browseAll",
+    "dutch": "Bekijk Alle",
+    "english": "Browse All"
+  },
+  {
+    "uiKey": "favouriteSubjects.viewRecommended",
+    "dutch": "Aanbevolen Bekijken",
+    "english": "View Recommended"
+  },
+  {
+    "uiKey": "favouriteSubjects.refresh",
+    "dutch": "Vernieuwen",
+    "english": "Refresh"
   }
 ]

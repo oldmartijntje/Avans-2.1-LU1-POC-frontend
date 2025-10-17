@@ -156,7 +156,7 @@ const SubjectView: React.FC = () => {
                             </Card.Header>
                             <Card.Body className="text-center p-4">
                                 <p className="text-light-custom mb-3 fs-5">{error}</p>
-                                <Button variant="outline-primary" onClick={() => navigate('/subject-management')}>
+                                <Button variant="outline-primary" onClick={() => navigate('/subjects')}>
                                     {t('subjectView.backToList') || 'Back to Subject List'}
                                 </Button>
                             </Card.Body>
@@ -177,7 +177,7 @@ const SubjectView: React.FC = () => {
                                 <p className="text-light-custom mb-3 fs-5">
                                     {t('subjectView.notFound') || 'Subject not found'}
                                 </p>
-                                <Button variant="outline-primary" onClick={() => navigate('/subject-management')}>
+                                <Button variant="outline-primary" onClick={() => navigate('/subjects')}>
                                     {t('subjectView.backToList') || 'Back to Subject List'}
                                 </Button>
                             </Card.Body>
@@ -199,7 +199,7 @@ const SubjectView: React.FC = () => {
                                 {getLocalizedContent(subject.title, 'subjectView.unknownSubject')}
                             </h1>
                         </div>
-                        <Button variant="outline-secondary" onClick={() => navigate('/subject-management')}>
+                        <Button variant="outline-secondary" onClick={() => navigate('/subjects')}>
                             {t('subjectView.backToList') || 'Back to List'}
                         </Button>
                     </div>

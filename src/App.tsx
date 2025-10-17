@@ -10,6 +10,9 @@ import Management from './pages/Management';
 import TranslationManagement from './pages/TranslationManagement';
 import SubjectManagement from './pages/SubjectManagement';
 import SubjectView from './pages/SubjectView';
+import SubjectsPage from './pages/SubjectsPage';
+import RecommendedSubjectsPage from './pages/RecommendedSubjectsPage';
+import FavouriteSubjectsPage from './pages/FavouriteSubjectsPage';
 import NotFound from './pages/NotFound';
 import './App.css'
 
@@ -55,6 +58,21 @@ function App() {
                         <TeacherRoute>
                             <SubjectManagement />
                         </TeacherRoute>
+                    } />
+                    <Route path="/subjects" element={
+                        <ProtectedRoute>
+                            <SubjectsPage />
+                        </ProtectedRoute>
+                    } />
+                    <Route path="/subjects/recommended" element={
+                        <ProtectedRoute>
+                            <RecommendedSubjectsPage />
+                        </ProtectedRoute>
+                    } />
+                    <Route path="/subjects/favourites" element={
+                        <ProtectedRoute>
+                            <FavouriteSubjectsPage />
+                        </ProtectedRoute>
                     } />
                     <Route path="/subject/:uuid" element={
                         <ProtectedRoute>

@@ -37,6 +37,10 @@ export interface Subject {
     isFavourite?: boolean;
 }
 
+export interface RecommendedSubject extends Subject {
+    matchPercentage: number;
+}
+
 export interface CreateSubjectRequest {
     titleNL: string;
     titleEN: string;
@@ -170,6 +174,47 @@ class SubjectService {
         });
 
         return this.handleResponse<any>(response);
+    }
+
+    // Public methods for user-facing subject browsing
+    async getAllSubjectsPublic(filters?: SubjectFilters): Promise<Subject[]> {
+        let url = this.baseUrl;
+
+        if (filters) {
+            const params = new URLSearchParams();
+            if (filters.level) params.append('level', filters.level);
+            if (filters.points) params.append('points', filters.points.toString());
+            if (filters.tag) params.append('tag', filters.tag);
+
+            if (params.toString()) {
+                url += '?' + params.toString();
+            }
+        }
+
+        const response = await fetch(url, {
+            method: 'GET',
+            headers: this.getAuthHeaders()
+        });
+
+        return this.handleResponse<Subject[]>(response);
+    }
+
+    async getRecommendedSubjects(): Promise<RecommendedSubject[]> {
+        const response = await fetch(`${this.baseUrl}/reccomended`, {
+            method: 'GET',
+            headers: this.getAuthHeaders()
+        });
+
+        return this.handleResponse<RecommendedSubject[]>(response);
+    }
+
+    async getFavouriteSubjects(): Promise<Subject[]> {
+        const response = await fetch(`${this.baseUrl}/favourites`, {
+            method: 'GET',
+            headers: this.getAuthHeaders()
+        });
+
+        return this.handleResponse<Subject[]>(response);
     }
 }
 
