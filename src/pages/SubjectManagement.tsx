@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
     Container,
     Row,
@@ -23,6 +24,7 @@ import { subjectService } from '../services/subjectService';
 
 const SubjectManagement: React.FC = () => {
     const { user } = useAuth();
+    const navigate = useNavigate();
     const { t } = useTranslations({
         keys: [
             'subjectManagement.title',
@@ -58,6 +60,7 @@ const SubjectManagement: React.FC = () => {
             'subjectManagement.table.languages',
             'subjectManagement.table.tags',
             'subjectManagement.table.actions',
+            'subjectManagement.actions.view',
             'subjectManagement.actions.edit',
             'subjectManagement.actions.delete',
             'subjectManagement.filters.level',
@@ -163,6 +166,10 @@ const SubjectManagement: React.FC = () => {
         });
         setTagsInput(subject.tags.map(tag => tag.tagName).join(', '));
         setShowModal(true);
+    };
+
+    const handleView = (subject: Subject) => {
+        navigate(`/subject/${subject.uuid}`);
     };
 
     const handleSubmit = async (e: React.FormEvent) => {
@@ -425,6 +432,12 @@ const SubjectManagement: React.FC = () => {
                                                 </td>
                                                 <td>
                                                     <ButtonGroup size="sm">
+                                                        <Button
+                                                            variant="outline-info"
+                                                            onClick={() => handleView(subject)}
+                                                        >
+                                                            {t('subjectManagement.actions.view') || 'View'}
+                                                        </Button>
                                                         <Button
                                                             variant="outline-warning"
                                                             onClick={() => handleEdit(subject)}

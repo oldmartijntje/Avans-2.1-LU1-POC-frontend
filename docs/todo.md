@@ -28,12 +28,12 @@
     - [ ] frontend
 
 ### Epic 3: Favorites
-- [ ] As a student, I want to save subjects as favorites so that I can easily access them later.  
+- [x] As a student, I want to save subjects as favorites so that I can easily access them later.  
     - [x] backend
-    - [ ] frontend
-- [ ] As a student, I want to remove subjects from my favorites list so that I can keep it organized.  
+    - [x] frontend
+- [x] As a student, I want to remove subjects from my favorites list so that I can keep it organized.  
     - [x] backend
-    - [ ] frontend
+    - [x] frontend
 
 ### Epic 4: Recommendations
 - [ ] As a student, I want to see recommended subjects based on my study program so that I can discover subjects I might like.  
@@ -88,15 +88,15 @@
     - [ ] frontend
 
 ### Epic 9: Subject Management
-- [ ] As a teacher, I want to add new subjects so that I can manage the curriculum.  
+- [x] As a teacher, I want to add new subjects so that I can manage the curriculum.  
     - [x] backend
-    - [ ] frontend
-- [ ] As a teacher, I want to edit existing subjects so that I can update their details.  
+    - [x] frontend
+- [x] As a teacher, I want to edit existing subjects so that I can update their details.  
     - [x] backend
-    - [ ] frontend
-- [ ] As a teacher, I want to delete and edit subjects so that I can remove outdated or irrelevant ones.  
+    - [x] frontend
+- [x] As a teacher, I want to delete and edit subjects so that I can remove outdated or irrelevant ones.  
     - [x] backend
-    - [ ] frontend
+    - [x] frontend
 
 ### Epic 10: Translation Management
 - [ ] As a teacher, I want a page to edit translations of subjects so that they are available in multiple languages.  

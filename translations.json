@@ -651,7 +651,7 @@
   },
   {
     "uiKey": "subjectManagement.subtitle",
-    "dutch": "Beheer keuzemodules en vakken",
+    "dutch": "Beheer keuzemodules en Keuze Moduleken",
     "english": "Manage elective modules and courses"
   },
   {
@@ -661,27 +661,27 @@
   },
   {
     "uiKey": "subjectManagement.loadSubjects",
-    "dutch": "Vakken Laden",
+    "dutch": "Keuze Moduleken Laden",
     "english": "Load Subjects"
   },
   {
     "uiKey": "subjectManagement.createNew",
-    "dutch": "Nieuw Vak Aanmaken",
+    "dutch": "Nieuw Keuze Module Aanmaken",
     "english": "Create New Subject"
   },
   {
     "uiKey": "subjectManagement.noSubjects",
-    "dutch": "Geen vakken gevonden",
+    "dutch": "Geen Keuze Moduleken gevonden",
     "english": "No subjects found"
   },
   {
     "uiKey": "subjectManagement.loading",
-    "dutch": "Vakken laden...",
+    "dutch": "Keuze Moduleken laden...",
     "english": "Loading subjects..."
   },
   {
     "uiKey": "subjectManagement.error",
-    "dutch": "Fout bij laden van vakken",
+    "dutch": "Fout bij laden van Keuze Moduleken",
     "english": "Failed to load subjects"
   },
   {
@@ -691,22 +691,22 @@
   },
   {
     "uiKey": "subjectManagement.delete.confirm",
-    "dutch": "Weet je zeker dat je dit vak wilt verwijderen?",
+    "dutch": "Weet je zeker dat je dit Keuze Module wilt verwijderen?",
     "english": "Are you sure you want to delete this subject?"
   },
   {
     "uiKey": "subjectManagement.delete.success",
-    "dutch": "Vak succesvol verwijderd",
+    "dutch": "Keuze Module succesvol verwijderd",
     "english": "Subject deleted successfully"
   },
   {
     "uiKey": "subjectManagement.delete.error",
-    "dutch": "Fout bij verwijderen van vak",
+    "dutch": "Fout bij verwijderen van Keuze Module",
     "english": "Failed to delete subject"
   },
   {
     "uiKey": "subjectManagement.form.title",
-    "dutch": "Vak Formulier",
+    "dutch": "Keuze Module Formulier",
     "english": "Subject Form"
   },
   {
@@ -810,6 +810,11 @@
     "english": "Actions"
   },
   {
+    "uiKey": "subjectManagement.actions.view",
+    "dutch": "Bekijken",
+    "english": "View"
+  },
+  {
     "uiKey": "subjectManagement.actions.edit",
     "dutch": "Bewerken",
     "english": "Edit"
@@ -838,5 +843,160 @@
     "uiKey": "subjectManagement.filters.clear",
     "dutch": "Wissen",
     "english": "Clear"
+  },
+  {
+    "uiKey": "subjectView.title",
+    "dutch": "Keuze Module Weergave",
+    "english": "Subject View"
+  },
+  {
+    "uiKey": "subjectView.loading",
+    "dutch": "Keuze Module laden...",
+    "english": "Loading subject..."
+  },
+  {
+    "uiKey": "subjectView.error",
+    "dutch": "Fout",
+    "english": "Error"
+  },
+  {
+    "uiKey": "subjectView.notFound",
+    "dutch": "Keuze Module niet gevonden",
+    "english": "Subject not found"
+  },
+  {
+    "uiKey": "subjectView.backToList",
+    "dutch": "Terug naar Lijst",
+    "english": "Back to List"
+  },
+  {
+    "uiKey": "subjectView.addToFavourites",
+    "dutch": "Toevoegen aan Favorieten",
+    "english": "Add to Favourites"
+  },
+  {
+    "uiKey": "subjectView.removeFromFavourites",
+    "dutch": "Verwijderen uit Favorieten",
+    "english": "Remove from Favourites"
+  },
+  {
+    "uiKey": "subjectView.selectForCompare",
+    "dutch": "Selecteren voor Vergelijken",
+    "english": "Select for Compare"
+  },
+  {
+    "uiKey": "subjectView.compareTemplate",
+    "dutch": "Dit is een sjabloon functie voor het vergelijken van Keuze Moduleken. Deze functie is nog niet geïmplementeerd.",
+    "english": "This is a template function for comparing subjects. This feature is not yet implemented."
+  },
+  {
+    "uiKey": "subjectView.level",
+    "dutch": "Niveau",
+    "english": "Level"
+  },
+  {
+    "uiKey": "subjectView.studyPoints",
+    "dutch": "Studiepunten",
+    "english": "Study Points"
+  },
+  {
+    "uiKey": "subjectView.languages",
+    "dutch": "Beschikbare Talen",
+    "english": "Available Languages"
+  },
+  {
+    "uiKey": "subjectView.tags",
+    "dutch": "Tags",
+    "english": "Tags"
+  },
+  {
+    "uiKey": "subjectView.description",
+    "dutch": "Beschrijving",
+    "english": "Description"
+  },
+  {
+    "uiKey": "subjectView.moreInfo",
+    "dutch": "Aanvullende Informatie",
+    "english": "Additional Information"
+  },
+  {
+    "uiKey": "subjectView.owner",
+    "dutch": "Eigenaar",
+    "english": "Owner"
+  },
+  {
+    "uiKey": "subjectView.success",
+    "dutch": "Actie succesvol uitgevoerd",
+    "english": "Action completed successfully"
+  },
+  {
+    "uiKey": "subjectView.favouriteAdded",
+    "dutch": "Toegevoegd aan favorieten",
+    "english": "Added to favourites"
+  },
+  {
+    "uiKey": "subjectView.favouriteRemoved",
+    "dutch": "Verwijderd uit favorieten",
+    "english": "Removed from favourites"
+  },
+  {
+    "uiKey": "subjectView.favouriteError",
+    "dutch": "Fout bij bijwerken van favorieten",
+    "english": "Failed to update favourites"
+  },
+  {
+    "uiKey": "subjectView.subjectDetails",
+    "dutch": "Keuze Module Details",
+    "english": "Subject Details"
+  },
+  {
+    "uiKey": "subjectView.actions",
+    "dutch": "Acties",
+    "english": "Actions"
+  },
+  {
+    "uiKey": "subjectView.subjectInformation",
+    "dutch": "Keuze Module Informatie",
+    "english": "Subject Information"
+  },
+  {
+    "uiKey": "subjectView.templateOnly",
+    "dutch": "Alleen Sjabloon",
+    "english": "Template Only"
+  },
+  {
+    "uiKey": "subjectView.ownerUuid",
+    "dutch": "Eigenaar UUID",
+    "english": "Owner UUID"
+  },
+  {
+    "uiKey": "subjectView.subjectUuid",
+    "dutch": "Keuze Module UUID",
+    "english": "Subject UUID"
+  },
+  {
+    "uiKey": "subjectView.favourite",
+    "dutch": "Favoriet",
+    "english": "Favourite"
+  },
+  {
+    "uiKey": "subjectView.unknownSubject",
+    "dutch": "Onbekend Keuze Module",
+    "english": "Unknown Subject"
+  },
+  {
+    "uiKey": "subjectView.noDescription",
+    "dutch": "Geen beschrijving beschikbaar",
+    "english": "No description available"
+  },
+  {
+    "uiKey": "subjectView.noMoreInfo",
+    "dutch": "Geen aanvullende informatie",
+    "english": "No additional information"
+  },
+  {
+    "uiKey": "common.notAvailable",
+    "dutch": "Niet beschikbaar",
+    "english": "Not available"
   }
 ]

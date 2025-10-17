@@ -9,6 +9,7 @@ import Dashboard from './pages/Dashboard';
 import Management from './pages/Management';
 import TranslationManagement from './pages/TranslationManagement';
 import SubjectManagement from './pages/SubjectManagement';
+import SubjectView from './pages/SubjectView';
 import NotFound from './pages/NotFound';
 import './App.css'
 
@@ -54,6 +55,11 @@ function App() {
                         <TeacherRoute>
                             <SubjectManagement />
                         </TeacherRoute>
+                    } />
+                    <Route path="/subject/:uuid" element={
+                        <ProtectedRoute>
+                            <SubjectView />
+                        </ProtectedRoute>
                     } />
 
                     {/* Catch-all route for 404 */}

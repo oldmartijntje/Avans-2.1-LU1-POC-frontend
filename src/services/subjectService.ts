@@ -116,6 +116,15 @@ class SubjectService {
         return this.handleResponse<Subject[]>(response);
     }
 
+    async getSubjectById(uuid: string): Promise<Subject> {
+        const response = await fetch(`${this.baseUrl}/${uuid}`, {
+            method: 'GET',
+            headers: this.getAuthHeaders()
+        });
+
+        return this.handleResponse<Subject>(response);
+    }
+
     async createSubject(subjectData: CreateSubjectRequest): Promise<Subject> {
         const response = await fetch(this.baseUrl, {
             method: 'POST',
@@ -143,6 +152,24 @@ class SubjectService {
         });
 
         return this.handleResponse<{ message: string }>(response);
+    }
+
+    async addToFavourites(uuid: string): Promise<any> {
+        const response = await fetch(`${this.baseUrl}/favourite/${uuid}`, {
+            method: 'POST',
+            headers: this.getAuthHeaders()
+        });
+
+        return this.handleResponse<any>(response);
+    }
+
+    async removeFromFavourites(uuid: string): Promise<any> {
+        const response = await fetch(`${this.baseUrl}/favourite/${uuid}`, {
+            method: 'DELETE',
+            headers: this.getAuthHeaders()
+        });
+
+        return this.handleResponse<any>(response);
     }
 }
 
