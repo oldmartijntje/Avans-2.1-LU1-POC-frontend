@@ -60,6 +60,86 @@
     "english": "Helping Avans students discover and enroll in the perfect elective modules"
   },
   {
+    "uiKey": "about.project.description",
+    "dutch": "Dit is een project voor avans Informatica Jaar 2 Periode 1. het is een proof of concept voor de keuze module selectie app van avans. Hieronder kun je mijn gekozen epics en user stories vinden. Het was een uitdaging om het mobile telefoon installeer gedeelte en de vertalingen werkend te krijgen, maar het is gelukt :D",
+    "english": "This is a project for Avans Informatics Year 2 Period 1. It is a proof of concept for the Avans elective module selection app. Below you can find my chosen epics and user stories. It was a challenge to get the mobile phone installation part and the translations working, but I succeeded :D"
+  },
+  {
+    "uiKey": "about.epics.title",
+    "dutch": "Epics & User Stories",
+    "english": "Epics & User Stories"
+  },
+  {
+    "uiKey": "about.epic1.title",
+    "dutch": "Subject Browsing & Filtering",
+    "english": "Subject Browsing & Filtering"
+  },
+  {
+    "uiKey": "about.epic2.title",
+    "dutch": "Subject Detail Page",
+    "english": "Subject Detail Page"
+  },
+  {
+    "uiKey": "about.epic3.title",
+    "dutch": "Favorites",
+    "english": "Favorites"
+  },
+  {
+    "uiKey": "about.epic4.title",
+    "dutch": "Recommendations",
+    "english": "Recommendations"
+  },
+  {
+    "uiKey": "about.epic5.title",
+    "dutch": "Accessibility & Inclusivity",
+    "english": "Accessibility & Inclusivity"
+  },
+  {
+    "uiKey": "about.epic6.title",
+    "dutch": "PWA Feature",
+    "english": "PWA Feature"
+  },
+  {
+    "uiKey": "about.epic7.title",
+    "dutch": "Security & Authentication",
+    "english": "Security & Authentication"
+  },
+  {
+    "uiKey": "about.epic8.title",
+    "dutch": "User Registration and Login",
+    "english": "User Registration and Login"
+  },
+  {
+    "uiKey": "about.epic9.title",
+    "dutch": "Subject Management",
+    "english": "Subject Management"
+  },
+  {
+    "uiKey": "about.epic10.title",
+    "dutch": "Translation Management",
+    "english": "Translation Management"
+  },
+  {
+    "uiKey": "about.epic11.title",
+    "dutch": "Study Selection",
+    "english": "Study Selection"
+  },
+  {
+    "uiKey": "about.status.completed",
+    "dutch": "Voltooid",
+    "english": "Completed"
+  },
+  {
+    "uiKey": "about.status.backend",
+    "dutch": "Backend",
+    "english": "Backend"
+  },
+  {
+    "uiKey": "about.status.frontend",
+    "dutch": "Frontend",
+    "english": "Frontend"
+  },
+  {
     "uiKey": "dashboard.title",
     "dutch": "Mijn Keuzemodules",
     "english": "My Elective Modules"
