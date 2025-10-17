@@ -148,6 +148,72 @@ const TranslationDemo: React.FC = () => {
                                 </Card.Body>
                             </Card>
 
+                            {/* Persistent Cache Information */}
+                            <Card className="mt-4">
+                                <Card.Header>
+                                    <h5 className="mb-0">Persistent Cache Information</h5>
+                                </Card.Header>
+                                <Card.Body>
+                                    {(() => {
+                                        const cacheInfo = translationService.getPersistentCacheInfo();
+                                        return (
+                                            <div>
+                                                <p className="text-muted-custom">
+                                                    <strong>Cache Exists:</strong> {cacheInfo.exists ? <Badge bg="success">Yes</Badge> : <Badge bg="secondary">No</Badge>}
+                                                </p>
+                                                {cacheInfo.exists && (
+                                                    <>
+                                                        <p className="text-muted-custom">
+                                                            <strong>Cached Keys:</strong> <Badge bg="info">{cacheInfo.size}</Badge>
+                                                        </p>
+                                                        <p className="text-muted-custom">
+                                                            <strong>Language:</strong> <Badge bg="primary">{cacheInfo.language}</Badge>
+                                                        </p>
+                                                        <p className="text-muted-custom">
+                                                            <strong>Age:</strong> <Badge bg={cacheInfo.ageInDays! < 7 ? "success" : "warning"}>{cacheInfo.ageInDays} days</Badge>
+                                                        </p>
+                                                        <p className="text-muted-custom">
+                                                            <strong>Created:</strong> <code>{new Date(cacheInfo.timestamp!).toLocaleString()}</code>
+                                                        </p>
+                                                        <p className="text-muted-custom">
+                                                            <strong>Size:</strong> <Badge bg="secondary">{cacheInfo.sizeInKB} KB</Badge>
+                                                        </p>
+                                                        {cacheInfo.keys && cacheInfo.keys.length > 0 && (
+                                                            <div className="mt-3">
+                                                                <p className="text-muted-custom mb-2">
+                                                                    <strong>Sample Keys (first 5):</strong>
+                                                                </p>
+                                                                <div className="d-flex flex-wrap gap-1">
+                                                                    {cacheInfo.keys.slice(0, 5).map(key => (
+                                                                        <Badge key={key} bg="light" text="dark" className="font-monospace">{key}</Badge>
+                                                                    ))}
+                                                                    {cacheInfo.keys.length > 5 && (
+                                                                        <Badge bg="secondary">+{cacheInfo.keys.length - 5} more</Badge>
+                                                                    )}
+                                                                </div>
+                                                            </div>
+                                                        )}
+                                                    </>
+                                                )}
+                                                <div className="mt-3">
+                                                    <Button
+                                                        variant="outline-danger"
+                                                        size="sm"
+                                                        onClick={() => {
+                                                            translationService.clearPersistentTranslationCache();
+                                                            window.location.reload();
+                                                        }}
+                                                        disabled={!cacheInfo.exists}
+                                                    >
+                                                        Clear Persistent Cache & Reload
+                                                    </Button>
+                                                </div>
+                                            </div>
+                                        );
+                                    })()}
+                                </Card.Body>
+                            </Card>
+
                             {/* API Information */}
                             <Card className="mt-4">
                                 <Card.Header>

@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import { ProtectedRoute, AnonymousRoute, TeacherRoute } from './components/RouteProtection';
 import Navigation from './components/Navigation';
 import { PWAStatus } from './components/PWAStatus';
+import { useAuthPageCacheClearer } from './hooks/useAuthPageCacheClearer';
 import Home from "./pages/Home";
 import About from './pages/About';
 import Login from './pages/Login';
@@ -21,6 +22,9 @@ import NotFound from './pages/NotFound';
 import './App.css'
 
 function App() {
+    // Clear translation cache when visiting auth pages
+    useAuthPageCacheClearer();
+    
     return (
         <div className="min-vh-100 bg-dark-custom">
             <Navigation />
