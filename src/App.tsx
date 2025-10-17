@@ -9,6 +9,7 @@ import Dashboard from './pages/Dashboard';
 import Management from './pages/Management';
 import TranslationManagement from './pages/TranslationManagement';
 import SubjectManagement from './pages/SubjectManagement';
+import CourseManagement from './pages/CourseManagement';
 import SubjectView from './pages/SubjectView';
 import SubjectsPage from './pages/SubjectsPage';
 import RecommendedSubjectsPage from './pages/RecommendedSubjectsPage';
@@ -57,6 +58,11 @@ function App() {
                     <Route path="/subject-management" element={
                         <TeacherRoute>
                             <SubjectManagement />
+                        </TeacherRoute>
+                    } />
+                    <Route path="/course-management" element={
+                        <TeacherRoute>
+                            <CourseManagement />
                         </TeacherRoute>
                     } />
                     <Route path="/subjects" element={

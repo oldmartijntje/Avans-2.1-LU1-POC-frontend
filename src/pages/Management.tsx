@@ -18,6 +18,9 @@ const Management: React.FC = () => {
             'management.tools.subjectManagement.title',
             'management.tools.subjectManagement.description',
             'management.tools.subjectManagement.button',
+            'management.tools.courseManagement.title',
+            'management.tools.courseManagement.description',
+            'management.tools.courseManagement.button',
             'management.comingSoon.title',
             'management.comingSoon.description'
         ]
@@ -107,6 +110,27 @@ const Management: React.FC = () => {
                                     <Link to="/subject-management" className="text-decoration-none">
                                         <Button variant="primary" className="w-100">
                                             {t('management.tools.subjectManagement.button')}
+                                        </Button>
+                                    </Link>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+
+                        {/* Course Management Tool */}
+                        <Col lg={6} xl={4}>
+                            <Card className="bg-darker-custom border-dark h-100">
+                                <Card.Header className="bg-dark-custom border-dark">
+                                    <h5 className="mb-0 text-light-custom">
+                                        {t('management.tools.courseManagement.title')}
+                                    </h5>
+                                </Card.Header>
+                                <Card.Body className="d-flex flex-column">
+                                    <p className="text-muted-custom flex-grow-1">
+                                        {t('management.tools.courseManagement.description')}
+                                    </p>
+                                    <Link to="/course-management" className="text-decoration-none">
+                                        <Button variant="primary" className="w-100">
+                                            {t('management.tools.courseManagement.button')}
                                         </Button>
                                     </Link>
                                 </Card.Body>

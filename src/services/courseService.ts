@@ -49,6 +49,24 @@ export interface CourseError {
     statusCode: number;
 }
 
+export interface CreateCourseRequest {
+    titleNL: string;
+    titleEN: string;
+    descriptionNL: string;
+    descriptionEN: string;
+    languages: string[];
+    tags: string[];
+}
+
+export interface UpdateCourseRequest {
+    titleNL?: string;
+    titleEN?: string;
+    descriptionNL?: string;
+    descriptionEN?: string;
+    languages?: string[];
+    tags?: string[];
+}
+
 class CourseService {
     /**
      * Get all available courses
@@ -97,6 +115,47 @@ class CourseService {
             await api.delete('/course/joined');
         } catch (error) {
             console.error('Error leaving course:', error);
+            throw error;
+        }
+    }
+
+    // CRUD Operations for Course Management
+
+    /**
+     * Create a new course
+     */
+    async createCourse(courseData: CreateCourseRequest): Promise<Course> {
+        try {
+            const response = await api.post('/course', courseData);
+            return response.data;
+        } catch (error) {
+            console.error('Error creating course:', error);
+            throw error;
+        }
+    }
+
+    /**
+     * Update an existing course
+     */
+    async updateCourse(uuid: string, courseData: UpdateCourseRequest): Promise<Course> {
+        try {
+            const response = await api.patch(`/course/${uuid}`, courseData);
+            return response.data;
+        } catch (error) {
+            console.error('Error updating course:', error);
+            throw error;
+        }
+    }
+
+    /**
+     * Delete a course
+     */
+    async deleteCourse(uuid: string): Promise<{ message: string }> {
+        try {
+            const response = await api.delete(`/course/${uuid}`);
+            return response.data;
+        } catch (error) {
+            console.error('Error deleting course:', error);
             throw error;
         }
     }

@@ -1238,5 +1238,165 @@
     "uiKey": "favouriteSubjects.refresh",
     "dutch": "Vernieuwen",
     "english": "Refresh"
+  },
+  {
+    "uiKey": "management.tools.courseManagement.title",
+    "dutch": "Cursus Beheer",
+    "english": "Course Management"
+  },
+  {
+    "uiKey": "management.tools.courseManagement.description",
+    "dutch": "Creëer, bewerk en beheer cursussen en studieprogramma's",
+    "english": "Create, edit, and manage courses and study programs"
+  },
+  {
+    "uiKey": "management.tools.courseManagement.button",
+    "dutch": "Open Cursus Beheer",
+    "english": "Open Course Management"
+  },
+  {
+    "uiKey": "courseManagement.title",
+    "dutch": "Cursus Beheer",
+    "english": "Course Management"
+  },
+  {
+    "uiKey": "courseManagement.subtitle",
+    "dutch": "Beheer cursussen en studieprogramma's",
+    "english": "Manage courses and study programs"
+  },
+  {
+    "uiKey": "courseManagement.accessDenied",
+    "dutch": "Toegang Geweigerd",
+    "english": "Access Denied"
+  },
+  {
+    "uiKey": "courseManagement.loadCourses",
+    "dutch": "Cursussen Laden",
+    "english": "Load Courses"
+  },
+  {
+    "uiKey": "courseManagement.createNew",
+    "dutch": "Nieuwe Cursus Aanmaken",
+    "english": "Create New Course"
+  },
+  {
+    "uiKey": "courseManagement.noCourses",
+    "dutch": "Geen cursussen gevonden",
+    "english": "No courses found"
+  },
+  {
+    "uiKey": "courseManagement.loading",
+    "dutch": "Cursussen laden...",
+    "english": "Loading courses..."
+  },
+  {
+    "uiKey": "courseManagement.error",
+    "dutch": "Fout bij laden van cursussen",
+    "english": "Failed to load courses"
+  },
+  {
+    "uiKey": "courseManagement.success",
+    "dutch": "Actie succesvol uitgevoerd",
+    "english": "Action completed successfully"
+  },
+  {
+    "uiKey": "courseManagement.delete.confirm",
+    "dutch": "Weet je zeker dat je deze cursus wilt verwijderen?",
+    "english": "Are you sure you want to delete this course?"
+  },
+  {
+    "uiKey": "courseManagement.delete.success",
+    "dutch": "Cursus succesvol verwijderd",
+    "english": "Course deleted successfully"
+  },
+  {
+    "uiKey": "courseManagement.delete.error",
+    "dutch": "Fout bij verwijderen van cursus",
+    "english": "Failed to delete course"
+  },
+  {
+    "uiKey": "courseManagement.form.title",
+    "dutch": "Cursus Formulier",
+    "english": "Course Form"
+  },
+  {
+    "uiKey": "courseManagement.form.titleNL",
+    "dutch": "Titel (Nederlands)",
+    "english": "Title (Dutch)"
+  },
+  {
+    "uiKey": "courseManagement.form.titleEN",
+    "dutch": "Titel (Engels)",
+    "english": "Title (English)"
+  },
+  {
+    "uiKey": "courseManagement.form.descriptionNL",
+    "dutch": "Beschrijving (Nederlands)",
+    "english": "Description (Dutch)"
+  },
+  {
+    "uiKey": "courseManagement.form.descriptionEN",
+    "dutch": "Beschrijving (Engels)",
+    "english": "Description (English)"
+  },
+  {
+    "uiKey": "courseManagement.form.languages",
+    "dutch": "Talen",
+    "english": "Languages"
+  },
+  {
+    "uiKey": "courseManagement.form.tags",
+    "dutch": "Tags (komma gescheiden)",
+    "english": "Tags (comma-separated)"
+  },
+  {
+    "uiKey": "courseManagement.form.save",
+    "dutch": "Opslaan",
+    "english": "Save"
+  },
+  {
+    "uiKey": "courseManagement.form.cancel",
+    "dutch": "Annuleren",
+    "english": "Cancel"
+  },
+  {
+    "uiKey": "courseManagement.form.creating",
+    "dutch": "Aanmaken...",
+    "english": "Creating..."
+  },
+  {
+    "uiKey": "courseManagement.form.updating",
+    "dutch": "Bijwerken...",
+    "english": "Updating..."
+  },
+  {
+    "uiKey": "courseManagement.table.title",
+    "dutch": "Titel",
+    "english": "Title"
+  },
+  {
+    "uiKey": "courseManagement.table.languages",
+    "dutch": "Talen",
+    "english": "Languages"
+  },
+  {
+    "uiKey": "courseManagement.table.tags",
+    "dutch": "Tags",
+    "english": "Tags"
+  },
+  {
+    "uiKey": "courseManagement.table.actions",
+    "dutch": "Acties",
+    "english": "Actions"
+  },
+  {
+    "uiKey": "courseManagement.actions.edit",
+    "dutch": "Bewerken",
+    "english": "Edit"
+  },
+  {
+    "uiKey": "courseManagement.actions.delete",
+    "dutch": "Verwijderen",
+    "english": "Delete"
   }
 ]

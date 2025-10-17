@@ -116,12 +116,12 @@
 - [x] As a student, I want to select a study so that I can tailor the app to my academic program.
     - [x] backend
     - [x] frontend
-- [ ] As a teacher, I want to add new studies so that I can manage the curriculum.  
+- [x] As a teacher, I want to add new studies so that I can manage the curriculum.  
     - [x] backend
-    - [ ] frontend
-- [ ] As a teacher, I want to delete and edit studies so that I can remove outdated or irrelevant ones.  
+    - [x] frontend
+- [x] As a teacher, I want to delete and edit studies so that I can remove outdated or irrelevant ones.  
     - [x] backend
-    - [ ] frontend
+    - [x] frontend
 - [x] As a student, I want be able to view the study that I am enrolled in so that I can see whether it is correct.
     - [x] backend
     - [x] frontend
