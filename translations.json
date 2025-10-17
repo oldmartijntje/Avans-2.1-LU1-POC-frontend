@@ -1,0 +1,417 @@
+[
+  {
+    "uiKey": "home.hero.title",
+    "dutch": "Ontdek je Perfecte ",
+    "english": "Discover Your Perfect "
+  },
+  {
+    "uiKey": "home.hero.elective",
+    "dutch": "Keuzemodule",
+    "english": "Elective Module"
+  },
+  {
+    "uiKey": "home.hero.subtitle",
+    "dutch": "Vind en schrijf je in voor keuzemodules die passen bij jouw interesses en carrière doelen",
+    "english": "Find and enroll in elective modules that match your interests and career goals"
+  },
+  {
+    "uiKey": "home.hero.browseModules",
+    "dutch": "Bekijk Modules",
+    "english": "Browse Modules"
+  },
+  {
+    "uiKey": "home.hero.signIn",
+    "dutch": "Inloggen",
+    "english": "Sign In"
+  },
+  {
+    "uiKey": "home.hero.myModules",
+    "dutch": "Mijn Modules",
+    "english": "My Modules"
+  },
+  {
+    "uiKey": "home.features.title",
+    "dutch": "Keuzemodule Platform Functies",
+    "english": "Elective Module Platform Features"
+  },
+  {
+    "uiKey": "home.features.smartMatching.title",
+    "dutch": "Slimme Matching",
+    "english": "Smart Matching"
+  },
+  {
+    "uiKey": "home.features.smartMatching.description",
+    "dutch": "Vind modules die aansluiten bij jouw studieprogramma en interesses",
+    "english": "Find modules that align with your study program and interests"
+  },
+  {
+    "uiKey": "home.features.teacherTools.title",
+    "dutch": "Docent Tools",
+    "english": "Teacher Tools"
+  },
+  {
+    "uiKey": "home.features.teacherTools.description",
+    "dutch": "Creëer en beheer je eigen keuzemodules",
+    "english": "Create and manage your own elective modules"
+  },
+  {
+    "uiKey": "home.features.easyEnrollment.title",
+    "dutch": "Eenvoudige Inschrijving",
+    "english": "Easy Enrollment"
+  },
+  {
+    "uiKey": "home.features.easyEnrollment.description",
+    "dutch": "Simpel registratieproces voor jouw gekozen modules",
+    "english": "Simple registration process for your chosen modules"
+  },
+  {
+    "uiKey": "home.features.programIntegration.title",
+    "dutch": "Programma Integratie",
+    "english": "Program Integration"
+  },
+  {
+    "uiKey": "home.features.programIntegration.description",
+    "dutch": "Filter modules gebaseerd op jouw basisopleiding bij Avans",
+    "english": "Filter modules based on your base course at Avans"
+  },
+  {
+    "uiKey": "home.quickActions.title",
+    "dutch": "Snelle Acties",
+    "english": "Quick Actions"
+  },
+  {
+    "uiKey": "home.quickActions.learnMore",
+    "dutch": "Meer Informatie",
+    "english": "Learn More"
+  },
+  {
+    "uiKey": "home.quickActions.myModules",
+    "dutch": "Mijn Modules",
+    "english": "My Modules"
+  },
+  {
+    "uiKey": "about.hero.title",
+    "dutch": "Over ",
+    "english": "About "
+  },
+  {
+    "uiKey": "about.hero.electiveHub",
+    "dutch": "Elective Hub",
+    "english": "Elective Hub"
+  },
+  {
+    "uiKey": "about.hero.subtitle",
+    "dutch": "Avans studenten helpen bij het ontdekken en inschrijven voor de perfecte keuzemodules",
+    "english": "Helping Avans students discover and enroll in the perfect elective modules"
+  },
+  {
+    "uiKey": "about.mission.title",
+    "dutch": "Onze Missie",
+    "english": "Our Mission"
+  },
+  {
+    "uiKey": "about.mission.description",
+    "dutch": "Het keuzemodule selectieproces voor Avans studenten stroomlijnen, door intelligente aanbevelingen te bieden gebaseerd op hun basisstudies en persoonlijke interesses.",
+    "english": "To streamline the elective module selection process for Avans students, providing intelligent recommendations based on their base study programs and personal interests."
+  },
+  {
+    "uiKey": "about.vision.title",
+    "dutch": "Onze Visie",
+    "english": "Our Vision"
+  },
+  {
+    "uiKey": "about.vision.description",
+    "dutch": "Het leidende platform te zijn voor keuzemodule ontdekking en inschrijving bij Avans, waardoor het makkelijker wordt voor studenten om modules te vinden die hun academische reis verbeteren.",
+    "english": "To be the leading platform for elective module discovery and enrollment at Avans, making it easier for students to find modules that enhance their academic journey."
+  },
+  {
+    "uiKey": "about.whyChoose.title",
+    "dutch": "Waarom Kiezen Voor Ons Keuzemodule Platform?",
+    "english": "Why Choose Our Elective Module Platform?"
+  },
+  {
+    "uiKey": "about.features.smartRecommendations.title",
+    "dutch": "Slimme Aanbevelingen",
+    "english": "Smart Recommendations"
+  },
+  {
+    "uiKey": "about.features.smartRecommendations.description",
+    "dutch": "Vind modules die passen bij jouw studieprogramma en interesses",
+    "english": "Find modules that match your study program and interests"
+  },
+  {
+    "uiKey": "about.features.easyEnrollment.title",
+    "dutch": "Eenvoudige Inschrijving",
+    "english": "Easy Enrollment"
+  },
+  {
+    "uiKey": "about.features.easyEnrollment.description",
+    "dutch": "Simpel en veilig module registratieproces",
+    "english": "Simple and secure module registration process"
+  },
+  {
+    "uiKey": "about.features.programIntegration.title",
+    "dutch": "Programma Integratie",
+    "english": "Program Integration"
+  },
+  {
+    "uiKey": "about.features.programIntegration.description",
+    "dutch": "Filter modules gebaseerd op jouw basisopleiding bij Avans",
+    "english": "Filter modules based on your base course at Avans"
+  },
+  {
+    "uiKey": "about.features.teacherSupport.title",
+    "dutch": "Docent Ondersteuning",
+    "english": "Teacher Support"
+  },
+  {
+    "uiKey": "about.features.teacherSupport.description",
+    "dutch": "Tools voor docenten om keuzemodules te creëren en beheren",
+    "english": "Tools for teachers to create and manage elective modules"
+  },
+  {
+    "uiKey": "about.contact.title",
+    "dutch": "Contactinformatie",
+    "english": "Contact Information"
+  },
+  {
+    "uiKey": "about.contact.email",
+    "dutch": "E-mail",
+    "english": "Email"
+  },
+  {
+    "uiKey": "about.contact.phone",
+    "dutch": "Telefoon",
+    "english": "Phone"
+  },
+  {
+    "uiKey": "about.contact.website",
+    "dutch": "Website",
+    "english": "Website"
+  },
+  {
+    "uiKey": "dashboard.title",
+    "dutch": "Mijn Keuzemodules",
+    "english": "My Elective Modules"
+  },
+  {
+    "uiKey": "dashboard.subtitle",
+    "dutch": "Beheer jouw keuzemodule selecties",
+    "english": "Manage your elective module selections"
+  },
+  {
+    "uiKey": "dashboard.logout",
+    "dutch": "Uitloggen",
+    "english": "Logout"
+  },
+  {
+    "uiKey": "dashboard.welcome.title",
+    "dutch": "Welkom, {{username}}!",
+    "english": "Welcome, {{username}}!"
+  },
+  {
+    "uiKey": "dashboard.welcome.description",
+    "dutch": "Vind en schrijf je in voor keuzemodules die jouw studieprogramma aanvullen.",
+    "english": "Find and enroll in elective modules that complement your study program."
+  },
+  {
+    "uiKey": "dashboard.account.title",
+    "dutch": "Account Informatie",
+    "english": "Account Information"
+  },
+  {
+    "uiKey": "dashboard.account.username",
+    "dutch": "Gebruikersnaam",
+    "english": "Username"
+  },
+  {
+    "uiKey": "dashboard.account.email",
+    "dutch": "E-mail",
+    "english": "Email"
+  },
+  {
+    "uiKey": "dashboard.account.role",
+    "dutch": "Rol",
+    "english": "Role"
+  },
+  {
+    "uiKey": "dashboard.account.userId",
+    "dutch": "Gebruiker ID",
+    "english": "User ID"
+  },
+  {
+    "uiKey": "dashboard.access.title",
+    "dutch": "Toegangsniveau",
+    "english": "Access Level"
+  },
+  {
+    "uiKey": "dashboard.access.verified",
+    "dutch": "Toegang Geverifieerd",
+    "english": "Access Verified"
+  },
+  {
+    "uiKey": "dashboard.access.teacherDescription",
+    "dutch": "keuzemodules creëren en beheren",
+    "english": "create and manage elective modules"
+  },
+  {
+    "uiKey": "dashboard.access.studentDescription",
+    "dutch": "beschikbare keuzemodules bekijken en inschrijven",
+    "english": "browse and enroll in available elective modules"
+  },
+  {
+    "uiKey": "dashboard.access.authenticated",
+    "dutch": "Geauthenticeerde Gebruiker",
+    "english": "Authenticated User"
+  },
+  {
+    "uiKey": "dashboard.quickActions.title",
+    "dutch": "Snelle Acties",
+    "english": "Quick Actions"
+  },
+  {
+    "uiKey": "dashboard.quickActions.createModule",
+    "dutch": "Module Aanmaken",
+    "english": "Create Module"
+  },
+  {
+    "uiKey": "dashboard.quickActions.myModules",
+    "dutch": "Mijn Modules",
+    "english": "My Modules"
+  },
+  {
+    "uiKey": "dashboard.quickActions.enrollments",
+    "dutch": "Inschrijvingen",
+    "english": "Enrollments"
+  },
+  {
+    "uiKey": "dashboard.quickActions.analytics",
+    "dutch": "Analytics",
+    "english": "Analytics"
+  },
+  {
+    "uiKey": "dashboard.quickActions.browseModules",
+    "dutch": "Modules Bekijken",
+    "english": "Browse Modules"
+  },
+  {
+    "uiKey": "dashboard.quickActions.myEnrollments",
+    "dutch": "Mijn Inschrijvingen",
+    "english": "My Enrollments"
+  },
+  {
+    "uiKey": "dashboard.quickActions.recommendations",
+    "dutch": "Aanbevelingen",
+    "english": "Recommendations"
+  },
+  {
+    "uiKey": "dashboard.quickActions.schedule",
+    "dutch": "Rooster",
+    "english": "Schedule"
+  },
+  {
+    "uiKey": "dashboard.quickActions.comingSoon",
+    "dutch": "Deze functies komen binnenkort! Dit is een proof-of-concept demonstratie.",
+    "english": "These features are coming soon! This is a proof-of-concept demonstration."
+  },
+  {
+    "uiKey": "nav.home",
+    "dutch": "Home",
+    "english": "Home"
+  },
+  {
+    "uiKey": "nav.about",
+    "dutch": "Over",
+    "english": "About"
+  },
+  {
+    "uiKey": "nav.dashboard",
+    "dutch": "Dashboard",
+    "english": "Dashboard"
+  },
+  {
+    "uiKey": "nav.login",
+    "dutch": "Inloggen",
+    "english": "Login"
+  },
+  {
+    "uiKey": "nav.register",
+    "dutch": "Registreren",
+    "english": "Register"
+  },
+  {
+    "uiKey": "nav.translations",
+    "dutch": "Vertalingen",
+    "english": "Translations"
+  },
+  {
+    "uiKey": "nav.welcome",
+    "dutch": "Welkom",
+    "english": "Welcome"
+  },
+  {
+    "uiKey": "nav.logout",
+    "dutch": "Uitloggen",
+    "english": "Logout"
+  },
+  {
+    "uiKey": "auth.login.title",
+    "dutch": "Inloggen bij je Account",
+    "english": "Login to Your Account"
+  },
+  {
+    "uiKey": "auth.login.subtitle",
+    "dutch": "Toegang tot jouw keuzemodules",
+    "english": "Access your elective modules"
+  },
+  {
+    "uiKey": "auth.register.title",
+    "dutch": "Account Aanmaken",
+    "english": "Create Your Account"
+  },
+  {
+    "uiKey": "auth.register.subtitle",
+    "dutch": "Begin je keuzemodule reis",
+    "english": "Start your elective module journey"
+  },
+  {
+    "uiKey": "form.username",
+    "dutch": "Gebruikersnaam",
+    "english": "Username"
+  },
+  {
+    "uiKey": "form.email",
+    "dutch": "E-mailadres",
+    "english": "Email Address"
+  },
+  {
+    "uiKey": "form.password",
+    "dutch": "Wachtwoord",
+    "english": "Password"
+  },
+  {
+    "uiKey": "form.submit",
+    "dutch": "Versturen",
+    "english": "Submit"
+  },
+  {
+    "uiKey": "form.loading",
+    "dutch": "Laden...",
+    "english": "Loading..."
+  },
+  {
+    "uiKey": "error.general",
+    "dutch": "Er is een fout opgetreden. Probeer het opnieuw.",
+    "english": "An error occurred. Please try again."
+  },
+  {
+    "uiKey": "success.login",
+    "dutch": "Succesvol ingelogd!",
+    "english": "Successfully logged in!"
+  },
+  {
+    "uiKey": "success.register",
+    "dutch": "Account succesvol aangemaakt!",
+    "english": "Account created successfully!"
+  }
+]

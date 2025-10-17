@@ -1,83 +1,96 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import { useAuth } from '../contexts/AuthContext';
+import { useTranslations } from '../hooks/useTranslations';
 
 const Navigation: React.FC = () => {
-  const { isAuthenticated, user, logout } = useAuth();
-  const navigate = useNavigate();
+    const { isAuthenticated, user, logout } = useAuth();
+    const navigate = useNavigate();
+    const [expanded, setExpanded] = useState(false);
+    const { t } = useTranslations({
+        keys: [
+            'nav.home',
+            'nav.about',
+            'nav.dashboard',
+            'nav.login',
+            'nav.register',
+            'nav.translations',
+            'nav.welcome',
+            'nav.logout'
+        ]
+    });
 
-  const handleLogout = () => {
-    logout();
-    navigate('/');
-  };
+    const handleLogout = () => {
+        logout();
+        navigate('/');
+        setExpanded(false);
+    };
 
-  return (
-    <nav className="bg-white shadow-lg border-b">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
-          <div className="flex items-center space-x-8">
-            <Link to="/" className="text-xl font-bold text-indigo-600">
-              MyApp
-            </Link>
-            
-            <div className="flex space-x-4">
-              <Link 
-                to="/" 
-                className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
-              >
-                Home
-              </Link>
-              <Link 
-                to="/about" 
-                className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
-              >
-                About
-              </Link>
-              {isAuthenticated && (
-                <Link 
-                  to="/dashboard" 
-                  className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Dashboard
-                </Link>
-              )}
-            </div>
-          </div>
+    const handleNavClick = () => {
+        setExpanded(false);
+    };
 
-          <div className="flex items-center space-x-4">
-            {isAuthenticated ? (
-              <div className="flex items-center space-x-4">
-                <span className="text-gray-600 text-sm">
-                  Welcome, {user?.username}
-                </span>
-                <button
-                  onClick={handleLogout}
-                  className="bg-red-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500"
-                >
-                  Logout
-                </button>
-              </div>
-            ) : (
-              <div className="flex space-x-2">
-                <Link
-                  to="/login"
-                  className="bg-indigo-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                >
-                  Login
-                </Link>
-                <Link
-                  to="/register"
-                  className="border border-indigo-600 text-indigo-600 px-4 py-2 rounded-md text-sm font-medium hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                >
-                  Register
-                </Link>
-              </div>
-            )}
-          </div>
-        </div>
-      </div>
-    </nav>
-  );
+    return (
+        <Navbar bg="darker-custom" variant="dark" expand="lg" expanded={expanded} onToggle={setExpanded} className="shadow-sm">
+            <Container>
+                <Navbar.Brand as={Link} to="/" onClick={handleNavClick}>
+                    Avans Elective Hub
+                </Navbar.Brand>
+
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="me-auto">
+                        <Nav.Link as={Link} to="/" onClick={handleNavClick}>
+                            {t('nav.home', 'Home')}
+                        </Nav.Link>
+                        <Nav.Link as={Link} to="/about" onClick={handleNavClick}>
+                            {t('nav.about', 'About')}
+                        </Nav.Link>
+                        <Nav.Link as={Link} to="/translation-example" onClick={handleNavClick}>
+                            {t('nav.translations', 'Translation Demo')}
+                        </Nav.Link>
+                        {isAuthenticated && (
+                            <Nav.Link as={Link} to="/dashboard" onClick={handleNavClick}>
+                                {t('nav.dashboard', 'Dashboard')}
+                            </Nav.Link>
+                        )}
+                    </Nav>
+
+                    <Nav className="ms-auto align-items-lg-center">
+                        {isAuthenticated ? (
+                            <div className="d-flex flex-column flex-lg-row align-items-lg-center gap-2">
+                                <span className="text-light-custom small">
+                                    {t('nav.welcome', 'Welcome')}, <strong>{user?.username}</strong>
+                                </span>
+                                <Button
+                                    variant="outline-danger"
+                                    size="sm"
+                                    onClick={handleLogout}
+                                >
+                                    {t('nav.logout', 'Logout')}
+                                </Button>
+                            </div>
+                        ) : (
+                            <div className="d-flex flex-column flex-lg-row gap-2">
+                                <Link to="/login" className="text-decoration-none" onClick={handleNavClick}>
+                                    <Button variant="primary" size="sm" className="w-100">
+                                        {t('nav.login', 'Login')}
+                                    </Button>
+                                </Link>
+                                <Link to="/register" className="text-decoration-none" onClick={handleNavClick}>
+                                    <Button variant="outline-primary" size="sm" className="w-100">
+                                        {t('nav.register', 'Register')}
+                                    </Button>
+                                </Link>
+                            </div>
+                        )}
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+    );
 };
 
 export default Navigation;

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Container, Row, Col, Card, Form, Button, Alert } from 'react-bootstrap';
 import { useAuth } from '../contexts/AuthContext';
 
 const Login: React.FC = () => {
@@ -39,74 +40,81 @@ const Login: React.FC = () => {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-50">
-            <div className="max-w-md w-full space-y-8">
-                <div>
-                    <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-                        Sign in to your account
-                    </h2>
-                </div>
-                <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
-                    {error && (
-                        <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
-                            {error}
-                        </div>
-                    )}
+        <Container className="py-5">
+            <Row className="justify-content-center">
+                <Col xs={12} sm={10} md={8} lg={6} xl={5}>
+                    <Card className="shadow">
+                        <Card.Body className="p-4 p-sm-5">
+                            <div className="text-center mb-4">
+                                <h2 className="h3 fw-bold text-light-custom mb-2">Welcome Back</h2>
+                                <p className="text-muted-custom">Sign in to access elective modules</p>
+                            </div>
 
-                    <div className="rounded-md shadow-sm -space-y-px">
-                        <div>
-                            <label htmlFor="username" className="sr-only">
-                                Username
-                            </label>
-                            <input
-                                id="username"
-                                name="username"
-                                type="text"
-                                required
-                                className="relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-                                placeholder="Username"
-                                value={formData.username}
-                                onChange={handleChange}
-                            />
-                        </div>
-                        <div>
-                            <label htmlFor="password" className="sr-only">
-                                Password
-                            </label>
-                            <input
-                                id="password"
-                                name="password"
-                                type="password"
-                                required
-                                className="relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-                                placeholder="Password"
-                                value={formData.password}
-                                onChange={handleChange}
-                            />
-                        </div>
-                    </div>
+                            {error && (
+                                <Alert variant="danger" className="mb-4">
+                                    {error}
+                                </Alert>
+                            )}
 
-                    <div>
-                        <button
-                            type="submit"
-                            disabled={loading}
-                            className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:opacity-50"
-                        >
-                            {loading ? 'Signing in...' : 'Sign in'}
-                        </button>
-                    </div>
+                            <Form onSubmit={handleSubmit}>
+                                <Form.Group className="mb-3">
+                                    <Form.Label>Username</Form.Label>
+                                    <Form.Control
+                                        type="text"
+                                        name="username"
+                                        value={formData.username}
+                                        onChange={handleChange}
+                                        placeholder="Enter your username"
+                                        required
+                                        disabled={loading}
+                                    />
+                                </Form.Group>
 
-                    <div className="text-center">
-                        <span className="text-sm text-gray-600">
-                            Don't have an account?{' '}
-                            <Link to="/register" className="font-medium text-indigo-600 hover:text-indigo-500">
-                                Register here
-                            </Link>
-                        </span>
-                    </div>
-                </form>
-            </div>
-        </div>
+                                <Form.Group className="mb-4">
+                                    <Form.Label>Password</Form.Label>
+                                    <Form.Control
+                                        type="password"
+                                        name="password"
+                                        value={formData.password}
+                                        onChange={handleChange}
+                                        placeholder="Enter your password"
+                                        required
+                                        disabled={loading}
+                                    />
+                                </Form.Group>
+
+                                <div className="d-grid mb-4">
+                                    <Button
+                                        variant="primary"
+                                        type="submit"
+                                        size="lg"
+                                        disabled={loading}
+                                    >
+                                        {loading ? (
+                                            <>
+                                                <span className="spinner-avans me-2"></span>
+                                                Signing in...
+                                            </>
+                                        ) : (
+                                            'Sign In'
+                                        )}
+                                    </Button>
+                                </div>
+                            </Form>
+
+                            <div className="text-center">
+                                <p className="text-muted-custom small mb-0">
+                                    Don't have an account?{' '}
+                                    <Link to="/register" className="text-primary">
+                                        Register here
+                                    </Link>
+                                </p>
+                            </div>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
+        </Container>
     );
 };
 
