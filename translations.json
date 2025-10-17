@@ -588,5 +588,45 @@
     "uiKey": "dashboard.course.errorLoadingCourses",
     "dutch": "Fout bij laden van keuzemodules",
     "english": "Error loading elective modules"
+  },
+  {
+    "uiKey": "nav.management",
+    "dutch": "Beheer",
+    "english": "Management"
+  },
+  {
+    "uiKey": "management.title",
+    "dutch": "Beheer Dashboard",
+    "english": "Management Dashboard"
+  },
+  {
+    "uiKey": "management.subtitle",
+    "dutch": "Centrale hub voor alle docent tools en beheer functies",
+    "english": "Central hub for all teacher tools and management functions"
+  },
+  {
+    "uiKey": "management.accessDenied",
+    "dutch": "Toegang Geweigerd",
+    "english": "Access Denied"
+  },
+  {
+    "uiKey": "management.tools.title",
+    "dutch": "Beschikbare Tools",
+    "english": "Available Tools"
+  },
+  {
+    "uiKey": "management.tools.translationManagement.title",
+    "dutch": "Vertaling Beheer",
+    "english": "Translation Management"
+  },
+  {
+    "uiKey": "management.tools.translationManagement.description",
+    "dutch": "Beheer en bewerk vertalingen voor de gehele applicatie",
+    "english": "Manage and edit translations for the entire application"
+  },
+  {
+    "uiKey": "management.tools.translationManagement.button",
+    "dutch": "Open Vertaling Beheer",
+    "english": "Open Translation Management"
   }
 ]

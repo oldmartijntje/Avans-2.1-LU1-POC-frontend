@@ -16,7 +16,7 @@ const Navigation: React.FC = () => {
             'nav.dashboard',
             'nav.login',
             'nav.register',
-            'nav.translationManagement',
+            'nav.management',
             'nav.welcome',
             'nav.logout'
         ]
@@ -55,8 +55,8 @@ const Navigation: React.FC = () => {
                             </Nav.Link>
                         )}
                         {isAuthenticated && (user?.role === 'TEACHER' || user?.role === 'ADMIN') && (
-                            <Nav.Link as={Link} to="/translation-management" onClick={handleNavClick}>
-                                {t('nav.translationManagement')}
+                            <Nav.Link as={Link} to="/management" onClick={handleNavClick}>
+                                {t('nav.management')}
                             </Nav.Link>
                         )}
                     </Nav>

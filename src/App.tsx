@@ -1,11 +1,12 @@
 import { Routes, Route } from "react-router-dom";
-import { ProtectedRoute, AnonymousRoute } from './components/RouteProtection';
+import { ProtectedRoute, AnonymousRoute, TeacherRoute } from './components/RouteProtection';
 import Navigation from './components/Navigation';
 import Home from "./pages/Home";
 import About from './pages/About';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
+import Management from './pages/Management';
 import TranslationManagement from './pages/TranslationManagement';
 import NotFound from './pages/NotFound';
 import './App.css'
@@ -38,10 +39,15 @@ function App() {
                             <Dashboard />
                         </ProtectedRoute>
                     } />
+                    <Route path="/management" element={
+                        <TeacherRoute>
+                            <Management />
+                        </TeacherRoute>
+                    } />
                     <Route path="/translation-management" element={
-                        <ProtectedRoute>
+                        <TeacherRoute>
                             <TranslationManagement />
-                        </ProtectedRoute>
+                        </TeacherRoute>
                     } />
 
                     {/* Catch-all route for 404 */}
