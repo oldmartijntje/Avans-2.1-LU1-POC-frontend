@@ -1,22 +1,24 @@
 import React from 'react';
 import { Dropdown, ButtonGroup, Button } from 'react-bootstrap';
 import { useTranslation } from '../contexts/TranslationContext';
-import type { Language } from '../contexts/TranslationContext';
+import { config } from '../config/config';
+
+type Language = typeof config.LANGUAGES[number];
 
 const LanguageSwitcher: React.FC = () => {
-    const { language, setLanguage } = useTranslation();
+    const { currentLanguage, setLanguage } = useTranslation();
 
     const languages: { code: Language; name: string; flag: string }[] = [
         { code: 'english', name: 'English', flag: '🇺🇸' },
         { code: 'dutch', name: 'Nederlands', flag: '🇳🇱' }
     ];
 
-    const currentLanguage = languages.find(lang => lang.code === language) || languages[0];
+    const currentLang = languages.find(lang => lang.code === currentLanguage) || languages[0];
 
     return (
         <Dropdown as={ButtonGroup}>
-            <Button variant="outline-light" size="sm" disabled>
-                {currentLanguage.flag} {currentLanguage.name}
+            <Button variant="outline-light" size="sm" disabled className="text-light-custom">
+                {currentLang.flag} {currentLang.name}
             </Button>
 
             <Dropdown.Toggle
@@ -24,14 +26,16 @@ const LanguageSwitcher: React.FC = () => {
                 variant="outline-light"
                 size="sm"
                 id="language-dropdown"
+                className="border-light"
             />
 
-            <Dropdown.Menu align="end">
+            <Dropdown.Menu align="end" data-bs-theme="dark" className="bg-darker-custom border-dark">
                 {languages.map((lang) => (
                     <Dropdown.Item
                         key={lang.code}
-                        active={language === lang.code}
+                        active={currentLanguage === lang.code}
                         onClick={() => setLanguage(lang.code)}
+                        className={currentLanguage === lang.code ? 'bg-primary text-white' : 'text-light-custom'}
                     >
                         {lang.flag} {lang.name}
                     </Dropdown.Item>

@@ -7,6 +7,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import TranslationExample from './pages/TranslationExample';
+import TranslationManagement from './pages/TranslationManagement';
 import './App.css'
 
 function App() {
@@ -37,6 +38,11 @@ function App() {
                     <Route path="/dashboard" element={
                         <ProtectedRoute>
                             <Dashboard />
+                        </ProtectedRoute>
+                    } />
+                    <Route path="/translation-management" element={
+                        <ProtectedRoute>
+                            <TranslationManagement />
                         </ProtectedRoute>
                     } />
                 </Routes>

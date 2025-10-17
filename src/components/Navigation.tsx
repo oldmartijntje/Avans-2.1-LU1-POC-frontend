@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import { useAuth } from '../contexts/AuthContext';
 import { useTranslations } from '../hooks/useTranslations';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Navigation: React.FC = () => {
     const { isAuthenticated, user, logout } = useAuth();
@@ -16,6 +17,7 @@ const Navigation: React.FC = () => {
             'nav.login',
             'nav.register',
             'nav.translations',
+            'nav.translationManagement',
             'nav.welcome',
             'nav.logout'
         ]
@@ -56,9 +58,17 @@ const Navigation: React.FC = () => {
                                 {t('nav.dashboard', 'Dashboard')}
                             </Nav.Link>
                         )}
+                        {isAuthenticated && (user?.role === 'TEACHER' || user?.role === 'ADMIN') && (
+                            <Nav.Link as={Link} to="/translation-management" onClick={handleNavClick}>
+                                {t('nav.translationManagement', 'Translation Management')}
+                            </Nav.Link>
+                        )}
                     </Nav>
 
                     <Nav className="ms-auto align-items-lg-center">
+                        <div className="me-3">
+                            <LanguageSwitcher />
+                        </div>
                         {isAuthenticated ? (
                             <div className="d-flex flex-column flex-lg-row align-items-lg-center gap-2">
                                 <span className="text-light-custom small">

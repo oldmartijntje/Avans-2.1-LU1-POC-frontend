@@ -355,6 +355,91 @@
     "english": "Logout"
   },
   {
+    "uiKey": "nav.translationManagement",
+    "dutch": "Vertaling Beheer",
+    "english": "Translation Management"
+  },
+  {
+    "uiKey": "translationManagement.title",
+    "dutch": "Vertaling Beheer",
+    "english": "Translation Management"
+  },
+  {
+    "uiKey": "translationManagement.subtitle",
+    "dutch": "Beheer vertalingen voor de applicatie",
+    "english": "Manage translations for the application"
+  },
+  {
+    "uiKey": "translationManagement.loadTranslations",
+    "dutch": "Vertalingen Laden",
+    "english": "Load Translations"
+  },
+  {
+    "uiKey": "translationManagement.uiKey",
+    "dutch": "UI Sleutel",
+    "english": "UI Key"
+  },
+  {
+    "uiKey": "translationManagement.dutch",
+    "dutch": "Nederlands",
+    "english": "Dutch"
+  },
+  {
+    "uiKey": "translationManagement.english",
+    "dutch": "Engels",
+    "english": "English"
+  },
+  {
+    "uiKey": "translationManagement.actions",
+    "dutch": "Acties",
+    "english": "Actions"
+  },
+  {
+    "uiKey": "translationManagement.edit",
+    "dutch": "Bewerken",
+    "english": "Edit"
+  },
+  {
+    "uiKey": "translationManagement.editTitle",
+    "dutch": "Vertaling Bewerken",
+    "english": "Edit Translation"
+  },
+  {
+    "uiKey": "translationManagement.save",
+    "dutch": "Wijzigingen Opslaan",
+    "english": "Save Changes"
+  },
+  {
+    "uiKey": "translationManagement.cancel",
+    "dutch": "Annuleren",
+    "english": "Cancel"
+  },
+  {
+    "uiKey": "translationManagement.loading",
+    "dutch": "Laden...",
+    "english": "Loading..."
+  },
+  {
+    "uiKey": "translationManagement.success",
+    "dutch": "Vertalingen succesvol geladen",
+    "english": "Translations loaded successfully"
+  },
+  {
+    "uiKey": "translationManagement.error",
+    "dutch": "Fout bij laden van vertalingen",
+    "english": "Failed to load translations"
+  },
+  {
+    "uiKey": "translationManagement.accessDenied",
+    "dutch": "Toegang Geweigerd",
+    "english": "Access Denied"
+  },
+  {
+    "uiKey": "translationManagement.noTranslations",
+    "dutch": "Geen vertalingen geladen. Klik op \"Vertalingen Laden\" om alle vertalingen op te halen.",
+    "english": "No translations loaded. Click \"Load Translations\" to fetch all translations."
+  },
+  {
     "uiKey": "auth.login.title",
     "dutch": "Inloggen bij je Account",
     "english": "Login to Your Account"
