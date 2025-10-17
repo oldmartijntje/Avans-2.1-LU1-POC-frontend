@@ -1,10 +1,11 @@
 const CACHE_NAME = 'avans-elective-hub-v1';
+const BASE_PATH = '/Avans-2.1-LU1-POC-frontend';
 const urlsToCache = [
-    '/',
-    '/static/js/bundle.js',
-    '/static/css/main.css',
-    '/manifest.json',
-    '/offline.html'
+    BASE_PATH + '/',
+    BASE_PATH + '/static/js/bundle.js',
+    BASE_PATH + '/static/css/main.css',
+    BASE_PATH + '/manifest.json',
+    BASE_PATH + '/offline.html'
 ];
 
 // Install event - cache resources
@@ -52,7 +53,7 @@ self.addEventListener('fetch', (event) => {
                 }).catch(() => {
                     // If both cache and network fail, show offline page for navigation requests
                     if (event.request.destination === 'document') {
-                        return caches.match('/offline.html');
+                        return caches.match(BASE_PATH + '/offline.html');
                     }
                 });
             })
@@ -89,8 +90,8 @@ self.addEventListener('push', (event) => {
         const data = event.data.json();
         const options = {
             body: data.body,
-            icon: '/icons/icon-192x192.png',
-            badge: '/icons/icon-72x72.png',
+            icon: BASE_PATH + '/icons/icon-192x192.png',
+            badge: BASE_PATH + '/icons/icon-72x72.png',
             vibrate: [100, 50, 100],
             data: {
                 dateOfArrival: Date.now(),
@@ -100,12 +101,12 @@ self.addEventListener('push', (event) => {
                 {
                     action: 'explore',
                     title: 'View Details',
-                    icon: '/icons/icon-96x96.png'
+                    icon: BASE_PATH + '/icons/icon-96x96.png'
                 },
                 {
                     action: 'close',
                     title: 'Close',
-                    icon: '/icons/icon-96x96.png'
+                    icon: BASE_PATH + '/icons/icon-96x96.png'
                 }
             ]
         };
@@ -123,12 +124,12 @@ self.addEventListener('notificationclick', (event) => {
     if (event.action === 'explore') {
         // Open the app to a specific page
         event.waitUntil(
-            clients.openWindow('/subjects')
+            clients.openWindow(BASE_PATH + '/subjects')
         );
     } else {
         // Open the app to the main page
         event.waitUntil(
-            clients.openWindow('/')
+            clients.openWindow(BASE_PATH + '/')
         );
     }
 });
