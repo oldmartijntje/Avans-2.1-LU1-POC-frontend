@@ -16,7 +16,6 @@ const Navigation: React.FC = () => {
             'nav.dashboard',
             'nav.login',
             'nav.register',
-            'nav.translations',
             'nav.translationManagement',
             'nav.welcome',
             'nav.logout'
@@ -49,9 +48,6 @@ const Navigation: React.FC = () => {
                         </Nav.Link>
                         <Nav.Link as={Link} to="/about" onClick={handleNavClick}>
                             {t('nav.about')}
-                        </Nav.Link>
-                        <Nav.Link as={Link} to="/translation-example" onClick={handleNavClick}>
-                            {t('nav.translations')}
                         </Nav.Link>
                         {isAuthenticated && (
                             <Nav.Link as={Link} to="/dashboard" onClick={handleNavClick}>

@@ -6,7 +6,6 @@ import About from './pages/About';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
-import TranslationExample from './pages/TranslationExample';
 import TranslationManagement from './pages/TranslationManagement';
 import './App.css'
 
@@ -20,8 +19,6 @@ function App() {
                     {/* Anonymous routes - accessible to everyone */}
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
-                    <Route path="/translation-example" element={<TranslationExample />} />
-
                     {/* Auth routes - only accessible when not authenticated */}
                     <Route path="/login" element={
                         <AnonymousRoute>
