@@ -1,23 +1,44 @@
-import { useState } from 'react'
-import { Routes, Route, Link } from "react-router-dom";
-import Home from "./pages/Home.tsx";
-import './App.css'
+import { Routes, Route } from "react-router-dom";
+import { ProtectedRoute, AnonymousRoute } from './components/RouteProtection';
+import Navigation from './components/Navigation';
+import Home from "./pages/Home";
 import About from './pages/About';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Dashboard from './pages/Dashboard';
+import './App.css'
 
 function App() {
-    const [count, setCount] = useState(0)
-
     return (
-        <div>
-            <nav className="p-4 border-b mb-6">
-                <Link to="/" className="mr-4">Home</Link>
-                <Link to="/about">About</Link>
-            </nav>
+        <div className="min-h-screen bg-gray-50">
+            <Navigation />
 
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-            </Routes>
+            <main className="py-6">
+                <Routes>
+                    {/* Anonymous routes - accessible to everyone */}
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+
+                    {/* Auth routes - only accessible when not authenticated */}
+                    <Route path="/login" element={
+                        <AnonymousRoute>
+                            <Login />
+                        </AnonymousRoute>
+                    } />
+                    <Route path="/register" element={
+                        <AnonymousRoute>
+                            <Register />
+                        </AnonymousRoute>
+                    } />
+
+                    {/* Protected routes - only accessible when authenticated */}
+                    <Route path="/dashboard" element={
+                        <ProtectedRoute>
+                            <Dashboard />
+                        </ProtectedRoute>
+                    } />
+                </Routes>
+            </main>
         </div>
     );
 }
