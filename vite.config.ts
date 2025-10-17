@@ -24,5 +24,18 @@ export default defineConfig({
                 },
             }
         }
+    },
+    build: {
+        rollupOptions: {
+            output: {
+                // Ensure service worker and manifest are copied to build
+                assetFileNames: (assetInfo) => {
+                    if (assetInfo.name === 'manifest.json' || assetInfo.name === 'sw.js') {
+                        return '[name][extname]';
+                    }
+                    return 'assets/[name]-[hash][extname]';
+                }
+            }
+        }
     }
 })

@@ -1413,5 +1413,35 @@
     "uiKey": "logout.redirecting",
     "dutch": "Doorverwijzen naar inlogpagina...",
     "english": "Redirecting to login page..."
+  },
+  {
+    "uiKey": "pwa.install.title",
+    "dutch": "Installeer Elective Hub",
+    "english": "Install Elective Hub"
+  },
+  {
+    "uiKey": "pwa.install.description",
+    "dutch": "Installeer deze app op je apparaat voor een betere ervaring en offline toegang.",
+    "english": "Install this app on your device for a better experience and offline access."
+  },
+  {
+    "uiKey": "pwa.install.button",
+    "dutch": "Installeren",
+    "english": "Install"
+  },
+  {
+    "uiKey": "pwa.install.dismiss",
+    "dutch": "Niet nu",
+    "english": "Not now"
+  },
+  {
+    "uiKey": "pwa.offline.title",
+    "dutch": "Je bent offline",
+    "english": "You're Offline"
+  },
+  {
+    "uiKey": "pwa.offline.description",
+    "dutch": "Sommige functies zijn mogelijk niet beschikbaar. Je kunt alle functies gebruiken wanneer je weer online bent.",
+    "english": "Some features may not be available. You'll be able to use all features when you're back online."
   }
 ]

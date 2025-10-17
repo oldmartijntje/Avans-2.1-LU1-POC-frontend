@@ -1,6 +1,8 @@
 import { Routes, Route } from "react-router-dom";
+import { Container } from 'react-bootstrap';
 import { ProtectedRoute, AnonymousRoute, TeacherRoute } from './components/RouteProtection';
 import Navigation from './components/Navigation';
+import { PWAStatus } from './components/PWAStatus';
 import Home from "./pages/Home";
 import About from './pages/About';
 import Login from './pages/Login';
@@ -22,6 +24,11 @@ function App() {
     return (
         <div className="min-vh-100 bg-dark-custom">
             <Navigation />
+
+            {/* PWA Status - Install prompt and offline indicator */}
+            <Container className="pt-3">
+                <PWAStatus />
+            </Container>
 
             <main className="py-4">
                 <Routes>
