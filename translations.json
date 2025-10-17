@@ -348,5 +348,165 @@
     "uiKey": "home.alinea.title",
     "dutch": "Welkom bij de Keuzemodule Selector",
     "english": "Welcome to the Elective Module Selector"
+  },
+  {
+    "uiKey": "register.title",
+    "dutch": "Word lid van Avans",
+    "english": "Join Avans"
+  },
+  {
+    "uiKey": "register.subtitle",
+    "dutch": "Maak je account aan om toegang te krijgen tot keuzemodules",
+    "english": "Create your account to access elective modules"
+  },
+  {
+    "uiKey": "register.form.username",
+    "dutch": "Gebruikersnaam",
+    "english": "Username"
+  },
+  {
+    "uiKey": "register.form.email",
+    "dutch": "E-mail",
+    "english": "Email"
+  },
+  {
+    "uiKey": "register.form.role",
+    "dutch": "Rol",
+    "english": "Role"
+  },
+  {
+    "uiKey": "register.form.password",
+    "dutch": "Wachtwoord",
+    "english": "Password"
+  },
+  {
+    "uiKey": "register.form.confirmPassword",
+    "dutch": "Bevestig wachtwoord",
+    "english": "Confirm Password"
+  },
+  {
+    "uiKey": "register.form.role.student",
+    "dutch": "Student",
+    "english": "Student"
+  },
+  {
+    "uiKey": "register.form.role.teacher",
+    "dutch": "Docent",
+    "english": "Teacher"
+  },
+  {
+    "uiKey": "register.form.role.admin",
+    "dutch": "Beheerder",
+    "english": "Admin"
+  },
+  {
+    "uiKey": "register.form.placeholder.username",
+    "dutch": "Voer gebruikersnaam in",
+    "english": "Enter username"
+  },
+  {
+    "uiKey": "register.form.placeholder.email",
+    "dutch": "Voer e-mailadres in",
+    "english": "Enter email"
+  },
+  {
+    "uiKey": "register.form.placeholder.password",
+    "dutch": "Voer wachtwoord in",
+    "english": "Enter password"
+  },
+  {
+    "uiKey": "register.form.placeholder.confirmPassword",
+    "dutch": "Bevestig wachtwoord",
+    "english": "Confirm password"
+  },
+  {
+    "uiKey": "register.button.creating",
+    "dutch": "Account aanmaken...",
+    "english": "Creating account..."
+  },
+  {
+    "uiKey": "register.button.create",
+    "dutch": "Account aanmaken",
+    "english": "Create Account"
+  },
+  {
+    "uiKey": "register.footer.hasAccount",
+    "dutch": "Heb je al een account?",
+    "english": "Already have an account?"
+  },
+  {
+    "uiKey": "register.footer.signInHere",
+    "dutch": "Meld je hier aan",
+    "english": "Sign in here"
+  },
+  {
+    "uiKey": "register.error.passwordMatch",
+    "dutch": "Wachtwoorden komen niet overeen",
+    "english": "Passwords do not match"
+  },
+  {
+    "uiKey": "register.error.passwordLength",
+    "dutch": "Wachtwoord moet minimaal 3 tekens lang zijn",
+    "english": "Password must be at least 3 characters long"
+  },
+  {
+    "uiKey": "register.error.failed",
+    "dutch": "Registratie mislukt. Probeer het opnieuw.",
+    "english": "Registration failed. Please try again."
+  },
+  {
+    "uiKey": "login.title",
+    "dutch": "Welkom terug",
+    "english": "Welcome Back"
+  },
+  {
+    "uiKey": "login.subtitle",
+    "dutch": "Meld je aan om toegang te krijgen tot keuzemodules",
+    "english": "Sign in to access elective modules"
+  },
+  {
+    "uiKey": "login.form.username",
+    "dutch": "Gebruikersnaam",
+    "english": "Username"
+  },
+  {
+    "uiKey": "login.form.password",
+    "dutch": "Wachtwoord",
+    "english": "Password"
+  },
+  {
+    "uiKey": "login.form.placeholder.username",
+    "dutch": "Voer je gebruikersnaam in",
+    "english": "Enter your username"
+  },
+  {
+    "uiKey": "login.form.placeholder.password",
+    "dutch": "Voer je wachtwoord in",
+    "english": "Enter your password"
+  },
+  {
+    "uiKey": "login.button.signingIn",
+    "dutch": "Aan het inloggen...",
+    "english": "Signing in..."
+  },
+  {
+    "uiKey": "login.button.signIn",
+    "dutch": "Aanmelden",
+    "english": "Sign In"
+  },
+  {
+    "uiKey": "login.footer.noAccount",
+    "dutch": "Heb je nog geen account?",
+    "english": "Don't have an account?"
+  },
+  {
+    "uiKey": "login.footer.registerHere",
+    "dutch": "Registreer hier",
+    "english": "Register here"
+  },
+  {
+    "uiKey": "login.error.invalid",
+    "dutch": "Ongeldige gebruikersnaam of wachtwoord",
+    "english": "Invalid username or password"
   }
 ]

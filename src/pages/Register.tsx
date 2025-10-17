@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Container, Row, Col, Card, Form, Button, Alert } from 'react-bootstrap';
 import { useAuth } from '../contexts/AuthContext';
+import { useTranslations } from '../hooks/useTranslations';
 
 const Register: React.FC = () => {
     const [formData, setFormData] = useState({
@@ -16,6 +17,31 @@ const Register: React.FC = () => {
 
     const { register } = useAuth();
     const navigate = useNavigate();
+    const { t } = useTranslations({
+        keys: [
+            'register.title',
+            'register.subtitle',
+            'register.form.username',
+            'register.form.email',
+            'register.form.role',
+            'register.form.password',
+            'register.form.confirmPassword',
+            'register.form.role.student',
+            'register.form.role.teacher',
+            'register.form.role.admin',
+            'register.form.placeholder.username',
+            'register.form.placeholder.email',
+            'register.form.placeholder.password',
+            'register.form.placeholder.confirmPassword',
+            'register.button.creating',
+            'register.button.create',
+            'register.footer.hasAccount',
+            'register.footer.signInHere',
+            'register.error.passwordMatch',
+            'register.error.passwordLength',
+            'register.error.failed'
+        ]
+    });
 
     const handleChange = (e: React.ChangeEvent<any>) => {
         setFormData({
@@ -29,12 +55,12 @@ const Register: React.FC = () => {
         setError('');
 
         if (formData.password !== formData.confirmPassword) {
-            setError('Passwords do not match');
+            setError(t('register.error.passwordMatch'));
             return;
         }
 
         if (formData.password.length < 3) {
-            setError('Password must be at least 3 characters long');
+            setError(t('register.error.passwordLength'));
             return;
         }
 
@@ -44,7 +70,7 @@ const Register: React.FC = () => {
             await register(formData.username, formData.password, formData.email, formData.role);
             navigate('/', { replace: true });
         } catch (err) {
-            setError('Registration failed. Please try again.');
+            setError(t('register.error.failed'));
         } finally {
             setLoading(false);
         }
@@ -57,8 +83,8 @@ const Register: React.FC = () => {
                     <Card className="shadow">
                         <Card.Body className="p-4 p-sm-5">
                             <div className="text-center mb-4">
-                                <h2 className="h3 fw-bold text-light-custom mb-2">Join Avans</h2>
-                                <p className="text-muted-custom">Create your account to access elective modules</p>
+                                <h2 className="h3 fw-bold text-light-custom mb-2">{t('register.title')}</h2>
+                                <p className="text-muted-custom">{t('register.subtitle')}</p>
                             </div>                            {error && (
                                 <Alert variant="danger" className="mb-4">
                                     {error}
@@ -69,13 +95,13 @@ const Register: React.FC = () => {
                                 <Row>
                                     <Col md={6}>
                                         <Form.Group className="mb-3">
-                                            <Form.Label>Username</Form.Label>
+                                            <Form.Label>{t('register.form.username')}</Form.Label>
                                             <Form.Control
                                                 type="text"
                                                 name="username"
                                                 value={formData.username}
                                                 onChange={handleChange}
-                                                placeholder="Enter username"
+                                                placeholder={t('register.form.placeholder.username')}
                                                 required
                                                 disabled={loading}
                                             />
@@ -83,13 +109,13 @@ const Register: React.FC = () => {
                                     </Col>
                                     <Col md={6}>
                                         <Form.Group className="mb-3">
-                                            <Form.Label>Email</Form.Label>
+                                            <Form.Label>{t('register.form.email')}</Form.Label>
                                             <Form.Control
                                                 type="email"
                                                 name="email"
                                                 value={formData.email}
                                                 onChange={handleChange}
-                                                placeholder="Enter email"
+                                                placeholder={t('register.form.placeholder.email')}
                                                 required
                                                 disabled={loading}
                                             />
@@ -98,7 +124,7 @@ const Register: React.FC = () => {
                                 </Row>
 
                                 <Form.Group className="mb-3">
-                                    <Form.Label>Role</Form.Label>
+                                    <Form.Label>{t('register.form.role')}</Form.Label>
                                     <Form.Select
                                         name="role"
                                         value={formData.role}
@@ -106,22 +132,22 @@ const Register: React.FC = () => {
                                         required
                                         disabled={loading}
                                     >
-                                        <option value="STUDENT">Student</option>
-                                        <option value="TEACHER">Teacher</option>
-                                        <option value="ADMIN">Admin</option>
+                                        <option value="STUDENT">{t('register.form.role.student')}</option>
+                                        <option value="TEACHER">{t('register.form.role.teacher')}</option>
+                                        <option value="ADMIN">{t('register.form.role.admin')}</option>
                                     </Form.Select>
                                 </Form.Group>
 
                                 <Row>
                                     <Col md={6}>
                                         <Form.Group className="mb-3">
-                                            <Form.Label>Password</Form.Label>
+                                            <Form.Label>{t('register.form.password')}</Form.Label>
                                             <Form.Control
                                                 type="password"
                                                 name="password"
                                                 value={formData.password}
                                                 onChange={handleChange}
-                                                placeholder="Enter password"
+                                                placeholder={t('register.form.placeholder.password')}
                                                 required
                                                 disabled={loading}
                                             />
@@ -129,13 +155,13 @@ const Register: React.FC = () => {
                                     </Col>
                                     <Col md={6}>
                                         <Form.Group className="mb-4">
-                                            <Form.Label>Confirm Password</Form.Label>
+                                            <Form.Label>{t('register.form.confirmPassword')}</Form.Label>
                                             <Form.Control
                                                 type="password"
                                                 name="confirmPassword"
                                                 value={formData.confirmPassword}
                                                 onChange={handleChange}
-                                                placeholder="Confirm password"
+                                                placeholder={t('register.form.placeholder.confirmPassword')}
                                                 required
                                                 disabled={loading}
                                             />
@@ -153,10 +179,10 @@ const Register: React.FC = () => {
                                         {loading ? (
                                             <>
                                                 <span className="spinner-avans me-2"></span>
-                                                Creating account...
+                                                {t('register.button.creating')}
                                             </>
                                         ) : (
-                                            'Create Account'
+                                            t('register.button.create')
                                         )}
                                     </Button>
                                 </div>
@@ -164,9 +190,9 @@ const Register: React.FC = () => {
 
                             <div className="text-center">
                                 <p className="text-muted-custom small mb-0">
-                                    Already have an account?{' '}
+                                    {t('register.footer.hasAccount')}{' '}
                                     <Link to="/login" className="text-primary">
-                                        Sign in here
+                                        {t('register.footer.signInHere')}
                                     </Link>
                                 </p>
                             </div>

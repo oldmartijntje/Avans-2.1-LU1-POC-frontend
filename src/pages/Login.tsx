@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Container, Row, Col, Card, Form, Button, Alert } from 'react-bootstrap';
 import { useAuth } from '../contexts/AuthContext';
+import { useTranslations } from '../hooks/useTranslations';
 
 const Login: React.FC = () => {
     const [formData, setFormData] = useState({
@@ -14,6 +15,21 @@ const Login: React.FC = () => {
     const { login } = useAuth();
     const navigate = useNavigate();
     const location = useLocation();
+    const { t } = useTranslations({
+        keys: [
+            'login.title',
+            'login.subtitle',
+            'login.form.username',
+            'login.form.password',
+            'login.form.placeholder.username',
+            'login.form.placeholder.password',
+            'login.button.signingIn',
+            'login.button.signIn',
+            'login.footer.noAccount',
+            'login.footer.registerHere',
+            'login.error.invalid'
+        ]
+    });
 
     const from = location.state?.from?.pathname || '/';
 
@@ -33,7 +49,7 @@ const Login: React.FC = () => {
             await login(formData.username, formData.password);
             navigate(from, { replace: true });
         } catch (err) {
-            setError('Invalid username or password');
+            setError(t('login.error.invalid'));
         } finally {
             setLoading(false);
         }
@@ -46,8 +62,8 @@ const Login: React.FC = () => {
                     <Card className="shadow">
                         <Card.Body className="p-4 p-sm-5">
                             <div className="text-center mb-4">
-                                <h2 className="h3 fw-bold text-light-custom mb-2">Welcome Back</h2>
-                                <p className="text-muted-custom">Sign in to access elective modules</p>
+                                <h2 className="h3 fw-bold text-light-custom mb-2">{t('login.title')}</h2>
+                                <p className="text-muted-custom">{t('login.subtitle')}</p>
                             </div>
 
                             {error && (
@@ -58,26 +74,26 @@ const Login: React.FC = () => {
 
                             <Form onSubmit={handleSubmit}>
                                 <Form.Group className="mb-3">
-                                    <Form.Label>Username</Form.Label>
+                                    <Form.Label>{t('login.form.username')}</Form.Label>
                                     <Form.Control
                                         type="text"
                                         name="username"
                                         value={formData.username}
                                         onChange={handleChange}
-                                        placeholder="Enter your username"
+                                        placeholder={t('login.form.placeholder.username')}
                                         required
                                         disabled={loading}
                                     />
                                 </Form.Group>
 
                                 <Form.Group className="mb-4">
-                                    <Form.Label>Password</Form.Label>
+                                    <Form.Label>{t('login.form.password')}</Form.Label>
                                     <Form.Control
                                         type="password"
                                         name="password"
                                         value={formData.password}
                                         onChange={handleChange}
-                                        placeholder="Enter your password"
+                                        placeholder={t('login.form.placeholder.password')}
                                         required
                                         disabled={loading}
                                     />
@@ -93,10 +109,10 @@ const Login: React.FC = () => {
                                         {loading ? (
                                             <>
                                                 <span className="spinner-avans me-2"></span>
-                                                Signing in...
+                                                {t('login.button.signingIn')}
                                             </>
                                         ) : (
-                                            'Sign In'
+                                            t('login.button.signIn')
                                         )}
                                     </Button>
                                 </div>
@@ -104,9 +120,9 @@ const Login: React.FC = () => {
 
                             <div className="text-center">
                                 <p className="text-muted-custom small mb-0">
-                                    Don't have an account?{' '}
+                                    {t('login.footer.noAccount')}{' '}
                                     <Link to="/register" className="text-primary">
-                                        Register here
+                                        {t('login.footer.registerHere')}
                                     </Link>
                                 </p>
                             </div>
