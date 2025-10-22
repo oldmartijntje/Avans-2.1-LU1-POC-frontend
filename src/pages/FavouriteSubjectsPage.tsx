@@ -84,7 +84,7 @@ const FavouriteSubjectsPage: React.FC = () => {
             <Row>
                 <Col>
                     {/* Header */}
-                    <div className="mb-4 d-flex justify-content-between align-items-start">
+                    <div className="mb-4 d-flex justify-content-between align-items-start flex-wrap">
                         <div>
                             <h1 className="h2 fw-bold text-light-custom mb-1">
                                 {t('favouriteSubjects.title') || 'Favourite Subjects'}
