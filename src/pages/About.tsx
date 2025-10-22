@@ -268,21 +268,6 @@ const About: React.FC = () => {
                             </Accordion>
                         </Card.Body>
                     </Card>
-
-                    {/* Footer Message */}
-                    <div className="text-center mt-5">
-                        <Card className="bg-success border-0">
-                            <Card.Body className="p-3">
-                                <h5 className="text-white mb-2">
-                                    <i className="me-2">🎉</i>
-                                    Project Successfully Completed!
-                                </h5>
-                                <p className="text-white mb-0">
-                                    All epics and user stories have been implemented with both backend and frontend functionality.
-                                </p>
-                            </Card.Body>
-                        </Card>
-                    </div>
                 </Col>
             </Row>
         </Container>
