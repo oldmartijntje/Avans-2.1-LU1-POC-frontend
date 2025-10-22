@@ -1,4 +1,4 @@
-import { config } from '../config/config';
+import { api } from '../contexts/AuthContext';
 import { handleApiError } from '../utils/errorHandler';
 
 export interface Subject {
@@ -81,40 +81,13 @@ export interface ApiError {
 }
 
 class SubjectService {
-    private baseUrl = `${config.API_BASE_URL}/subjects`;
-
-    private async handleResponse<T>(response: Response): Promise<T> {
-        if (!response.ok) {
-            let errorData: ApiError;
-            try {
-                errorData = await response.json();
-            } catch {
-                // If response doesn't have JSON, create a generic error
-                errorData = {
-                    message: response.statusText || 'Request failed',
-                    statusCode: response.status
-                };
-            }
-
-            // Create a proper error object that will be handled by handleApiError
-            const error = new Error(`${errorData.message} (${errorData.statusCode})`);
-            const errorInfo = handleApiError(error, 'Request failed');
-            throw new Error(errorInfo.message);
-        }
-        return response.json();
-    }
-
-    private getAuthHeaders(): Record<string, string> {
-        const token = localStorage.getItem('token');
-        return {
-            'Content-Type': 'application/json',
-            ...(token && { 'Authorization': `Bearer ${token}` })
-        };
+    private async handleResponse<T>(axiosResponse: any): Promise<T> {
+        return axiosResponse.data;
     }
 
     async getAllSubjects(filters?: SubjectFilters): Promise<Subject[]> {
         try {
-            let url = this.baseUrl;
+            let url = '/subjects';
 
             if (filters) {
                 const params = new URLSearchParams();
@@ -127,11 +100,7 @@ class SubjectService {
                 }
             }
 
-            const response = await fetch(url, {
-                method: 'GET',
-                headers: this.getAuthHeaders()
-            });
-
+            const response = await api.get(url);
             return this.handleResponse<Subject[]>(response);
         } catch (error) {
             const errorInfo = handleApiError(error, 'Failed to load subjects');
@@ -141,11 +110,7 @@ class SubjectService {
 
     async getSubjectById(uuid: string): Promise<Subject> {
         try {
-            const response = await fetch(`${this.baseUrl}/${uuid}`, {
-                method: 'GET',
-                headers: this.getAuthHeaders()
-            });
-
+            const response = await api.get(`/subjects/${uuid}`);
             return this.handleResponse<Subject>(response);
         } catch (error) {
             const errorInfo = handleApiError(error, 'Failed to load subject');
@@ -155,12 +120,7 @@ class SubjectService {
 
     async createSubject(subjectData: CreateSubjectRequest): Promise<Subject> {
         try {
-            const response = await fetch(this.baseUrl, {
-                method: 'POST',
-                headers: this.getAuthHeaders(),
-                body: JSON.stringify(subjectData)
-            });
-
+            const response = await api.post('/subjects', subjectData);
             return this.handleResponse<Subject>(response);
         } catch (error) {
             const errorInfo = handleApiError(error, 'Failed to create subject');
@@ -170,12 +130,7 @@ class SubjectService {
 
     async updateSubject(uuid: string, subjectData: UpdateSubjectRequest): Promise<Subject> {
         try {
-            const response = await fetch(`${this.baseUrl}/${uuid}`, {
-                method: 'PATCH',
-                headers: this.getAuthHeaders(),
-                body: JSON.stringify(subjectData)
-            });
-
+            const response = await api.patch(`/subjects/${uuid}`, subjectData);
             return this.handleResponse<Subject>(response);
         } catch (error) {
             const errorInfo = handleApiError(error, 'Failed to update subject');
@@ -185,11 +140,7 @@ class SubjectService {
 
     async deleteSubject(uuid: string): Promise<{ message: string }> {
         try {
-            const response = await fetch(`${this.baseUrl}/${uuid}`, {
-                method: 'DELETE',
-                headers: this.getAuthHeaders()
-            });
-
+            const response = await api.delete(`/subjects/${uuid}`);
             return this.handleResponse<{ message: string }>(response);
         } catch (error) {
             const errorInfo = handleApiError(error, 'Failed to delete subject');
@@ -199,11 +150,7 @@ class SubjectService {
 
     async addToFavourites(uuid: string): Promise<any> {
         try {
-            const response = await fetch(`${this.baseUrl}/favourite/${uuid}`, {
-                method: 'POST',
-                headers: this.getAuthHeaders()
-            });
-
+            const response = await api.post(`/subjects/favourite/${uuid}`);
             return this.handleResponse<any>(response);
         } catch (error) {
             const errorInfo = handleApiError(error, 'Failed to add subject to favourites');
@@ -213,11 +160,7 @@ class SubjectService {
 
     async removeFromFavourites(uuid: string): Promise<any> {
         try {
-            const response = await fetch(`${this.baseUrl}/favourite/${uuid}`, {
-                method: 'DELETE',
-                headers: this.getAuthHeaders()
-            });
-
+            const response = await api.delete(`/subjects/favourite/${uuid}`);
             return this.handleResponse<any>(response);
         } catch (error) {
             const errorInfo = handleApiError(error, 'Failed to remove subject from favourites');
@@ -228,7 +171,7 @@ class SubjectService {
     // Public methods for user-facing subject browsing
     async getAllSubjectsPublic(filters?: SubjectFilters): Promise<Subject[]> {
         try {
-            let url = this.baseUrl;
+            let url = '/subjects';
 
             if (filters) {
                 const params = new URLSearchParams();
@@ -241,11 +184,7 @@ class SubjectService {
                 }
             }
 
-            const response = await fetch(url, {
-                method: 'GET',
-                headers: this.getAuthHeaders()
-            });
-
+            const response = await api.get(url);
             return this.handleResponse<Subject[]>(response);
         } catch (error) {
             const errorInfo = handleApiError(error, 'Failed to load subjects');
@@ -255,11 +194,7 @@ class SubjectService {
 
     async getRecommendedSubjects(): Promise<RecommendedSubject[]> {
         try {
-            const response = await fetch(`${this.baseUrl}/reccomended`, {
-                method: 'GET',
-                headers: this.getAuthHeaders()
-            });
-
+            const response = await api.get('/subjects/reccomended');
             return this.handleResponse<RecommendedSubject[]>(response);
         } catch (error) {
             const errorInfo = handleApiError(error, 'Failed to load recommended subjects');
@@ -269,11 +204,7 @@ class SubjectService {
 
     async getFavouriteSubjects(): Promise<Subject[]> {
         try {
-            const response = await fetch(`${this.baseUrl}/favourites`, {
-                method: 'GET',
-                headers: this.getAuthHeaders()
-            });
-
+            const response = await api.get('/subjects/favourites');
             return this.handleResponse<Subject[]>(response);
         } catch (error) {
             const errorInfo = handleApiError(error, 'Failed to load favourite subjects');
