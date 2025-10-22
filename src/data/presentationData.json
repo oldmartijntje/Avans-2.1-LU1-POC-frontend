@@ -1,0 +1,70 @@
+[
+  {
+    "title": "Avans Elective Hub",
+    "subtext": ["keuzen module", "proof of concept"]
+  },
+  {
+    "title": "Inleiding",
+    "subtext": ["Research", "Technologie", "Structuur", "Demo"]
+  },
+  {
+    "title": "Research",
+    "subtext": ["Leren", "Telefoon Ervaring", "Schaal", "Typescript", "MVC", "Google"]
+  },
+  {
+    "title": "Research - NextJs",
+    "subtext": ["Full stack", "Code Splitting", "Populair", "React"],
+    "images": [
+        {
+            "height": 200,
+            "src": "https://i.imgur.com/tHJ0dE5.png"
+        }
+    ]
+  },
+  {
+    "title": "Research - React",
+    "subtext": ["Angular = Overkill", "Overdraagbaar", "Bekender"],
+    "images": [
+        {
+            "height": 200,
+            "src": "https://i.imgur.com/TVAbi4F.png"
+        }
+    ]
+  },
+  {
+    "title": "Research - NestJs",
+    "subtext": ["Nieuw", "Typescript", "MVC"],
+    "images": [
+        {
+            "height": 200,
+            "src": "https://i.imgur.com/rzdVaL4.png"
+        }
+    ]
+  },
+  {
+    "title": "Structuur",
+    "subtext": [
+        {
+            "text": "mongodb atlas"
+        },
+        {
+            "text": "docker",
+            "link": "https://github.com/oldmartijntje/Avans-2.1-LU1-POC-backend/actions"
+        },
+        {
+            "text": "github pages",
+            "link": "https://github.com/oldmartijntje/Avans-2.1-LU1-POC-frontend/actions"
+        }
+    ],
+    "images": [
+        {
+            "height": 400,
+            "src": "https://i.imgur.com/0avSbNU.png"
+        },
+        {
+            "height": 400,
+            "src": "https://i.imgur.com/EZYI94D.png"
+        }
+    ]
+  }
+]
