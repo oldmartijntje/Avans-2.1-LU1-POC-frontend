@@ -20,11 +20,12 @@ import RecommendedSubjectsPage from './pages/RecommendedSubjectsPage';
 import FavouriteSubjectsPage from './pages/FavouriteSubjectsPage';
 import NotFound from './pages/NotFound';
 import './App.css'
+import Presentation from "./presentation/Main";
 
 function App() {
     // Clear translation cache when visiting auth pages
     useAuthPageCacheClearer();
-    
+
     return (
         <div className="min-vh-100 bg-dark-custom">
             <Navigation />
@@ -39,6 +40,7 @@ function App() {
                     {/* Anonymous routes - accessible to everyone */}
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
+                    <Route path="/presentation" element={<Presentation />} />
 
                     {/* Logout route - accessible to everyone, handles logout and redirect */}
                     <Route path="/logout" element={<Logout />} />

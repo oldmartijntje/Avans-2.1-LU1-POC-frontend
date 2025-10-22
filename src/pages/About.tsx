@@ -1,12 +1,14 @@
 import React, { useMemo } from 'react';
-import { Container, Row, Col, Card, Badge, Accordion } from 'react-bootstrap';
+import { Container, Row, Col, Card, Badge, Accordion, Button } from 'react-bootstrap';
 import { useTranslations } from '../hooks/useTranslations';
+import { Link } from 'react-router-dom';
 
 const About: React.FC = () => {
     const translationKeys = useMemo(() => [
         'about.hero.title',
         'about.hero.electiveHub',
         'about.hero.subtitle',
+        'about.hero.presentation',
         'about.project.description',
         'about.epics.title',
         'about.epic1.title',
@@ -156,6 +158,12 @@ const About: React.FC = () => {
                         <p className="lead text-muted-custom">
                             {t('about.hero.subtitle')}
                         </p>
+                    </div>
+
+                    <div className="d-flex flex-column flex-sm-row gap-2 m-5 justify-content-center">
+                        <Link to="/presentation" className="text-decoration-none">
+                            <Button variant="primary" size="lg">{t('about.hero.presentation')}</Button>
+                        </Link>
                     </div>
 
                     {/* Project Description */}
