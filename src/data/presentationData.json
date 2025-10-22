@@ -51,11 +51,11 @@
     ],
     "images": [
         {
-            "height": 400,
+            "height": 600,
             "src": "https://i.imgur.com/fpslGYy.png"
         },
         {
-            "height": 400,
+            "height": 600,
             "src": "https://i.imgur.com/glI4Z4j.png"
         }
     ]
@@ -77,11 +77,11 @@
     ],
     "images": [
         {
-            "height": 400,
+            "height": 500,
             "src": "https://i.imgur.com/0avSbNU.png"
         },
         {
-            "height": 400,
+            "height": 500,
             "src": "https://i.imgur.com/EZYI94D.png"
         }
     ]
@@ -113,7 +113,7 @@
     ],
     "images": [
         {
-            "height": 600,
+            "height": 500,
             "src": "https://i.imgur.com/1Icy5dc.png"
         }
     ]
@@ -127,7 +127,7 @@
     ],
     "images": [
         {
-            "height": 400,
+            "height": 500,
             "src": "https://i.imgur.com/UlI7Ayg.png"
         }
     ]
