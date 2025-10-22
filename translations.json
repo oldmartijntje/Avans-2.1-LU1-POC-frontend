@@ -1,1567 +1,2578 @@
 [
-  {
-    "uiKey": "home.hero.title",
-    "dutch": "Ontdek je Perfecte ",
-    "english": "Discover Your Perfect "
-  },
-  {
-    "uiKey": "home.hero.elective",
-    "dutch": "Keuzemodule",
-    "english": "Elective Module"
-  },
-  {
-    "uiKey": "home.hero.subtitle",
-    "dutch": "Vind en schrijf je in voor keuzemodules die passen bij jouw interesses en carrière doelen",
-    "english": "Find and enroll in elective modules that match your interests and career goals"
-  },
-  {
-    "uiKey": "home.hero.browseModules",
-    "dutch": "Bekijk Modules",
-    "english": "Browse Modules"
-  },
-  {
-    "uiKey": "home.hero.signIn",
-    "dutch": "Inloggen",
-    "english": "Sign In"
-  },
-  {
-    "uiKey": "home.hero.myModules",
-    "dutch": "Mijn Modules",
-    "english": "My Modules"
-  },
-  {
-    "uiKey": "home.quickActions.title",
-    "dutch": "Snelle Acties",
-    "english": "Quick Actions"
-  },
-  {
-    "uiKey": "home.quickActions.learnMore",
-    "dutch": "Meer Informatie",
-    "english": "Learn More"
-  },
-  {
-    "uiKey": "home.quickActions.myModules",
-    "dutch": "Mijn Modules",
-    "english": "My Modules"
-  },
-  {
-    "uiKey": "about.hero.title",
-    "dutch": "Over ",
-    "english": "About "
-  },
-  {
-    "uiKey": "about.hero.electiveHub",
-    "dutch": "Elective Hub",
-    "english": "Elective Hub"
-  },
-  {
-    "uiKey": "about.hero.subtitle",
-    "dutch": "Avans studenten helpen bij het ontdekken en inschrijven voor de perfecte keuzemodules",
-    "english": "Helping Avans students discover and enroll in the perfect elective modules"
-  },
-  {
-    "uiKey": "about.project.description",
-    "dutch": "Dit is een project voor avans Informatica Jaar 2 Periode 1. het is een proof of concept voor de keuze module selectie app van avans. Hieronder kun je mijn gekozen epics en user stories vinden. Het was een uitdaging om het mobile telefoon installeer gedeelte en de vertalingen werkend te krijgen, maar het is gelukt :D",
-    "english": "This is a project for Avans Informatics Year 2 Period 1. It is a proof of concept for the Avans elective module selection app. Below you can find my chosen epics and user stories. It was a challenge to get the mobile phone installation part and the translations working, but I succeeded :D"
-  },
-  {
-    "uiKey": "about.epics.title",
-    "dutch": "Epics & User Stories",
-    "english": "Epics & User Stories"
-  },
-  {
-    "uiKey": "about.epic1.title",
-    "dutch": "Subject Browsing & Filtering",
-    "english": "Subject Browsing & Filtering"
-  },
-  {
-    "uiKey": "about.epic2.title",
-    "dutch": "Subject Detail Page",
-    "english": "Subject Detail Page"
-  },
-  {
-    "uiKey": "about.epic3.title",
-    "dutch": "Favorites",
-    "english": "Favorites"
-  },
-  {
-    "uiKey": "about.epic4.title",
-    "dutch": "Recommendations",
-    "english": "Recommendations"
-  },
-  {
-    "uiKey": "about.epic5.title",
-    "dutch": "Accessibility & Inclusivity",
-    "english": "Accessibility & Inclusivity"
-  },
-  {
-    "uiKey": "about.epic6.title",
-    "dutch": "PWA Feature",
-    "english": "PWA Feature"
-  },
-  {
-    "uiKey": "about.epic7.title",
-    "dutch": "Security & Authentication",
-    "english": "Security & Authentication"
-  },
-  {
-    "uiKey": "about.epic8.title",
-    "dutch": "User Registration and Login",
-    "english": "User Registration and Login"
-  },
-  {
-    "uiKey": "about.epic9.title",
-    "dutch": "Subject Management",
-    "english": "Subject Management"
-  },
-  {
-    "uiKey": "about.epic10.title",
-    "dutch": "Translation Management",
-    "english": "Translation Management"
-  },
-  {
-    "uiKey": "about.epic11.title",
-    "dutch": "Study Selection",
-    "english": "Study Selection"
-  },
-  {
-    "uiKey": "about.status.completed",
-    "dutch": "Voltooid",
-    "english": "Completed"
-  },
-  {
-    "uiKey": "about.status.backend",
-    "dutch": "Backend",
-    "english": "Backend"
-  },
-  {
-    "uiKey": "about.status.frontend",
-    "dutch": "Frontend",
-    "english": "Frontend"
-  },
-  {
-    "uiKey": "dashboard.title",
-    "dutch": "Mijn Keuzemodules",
-    "english": "My Elective Modules"
-  },
-  {
-    "uiKey": "dashboard.subtitle",
-    "dutch": "Beheer jouw keuzemodule selecties",
-    "english": "Manage your elective module selections"
-  },
-  {
-    "uiKey": "dashboard.logout",
-    "dutch": "Uitloggen",
-    "english": "Logout"
-  },
-  {
-    "uiKey": "dashboard.welcome.title",
-    "dutch": "Welkom, {{username}}!",
-    "english": "Welcome, {{username}}!"
-  },
-  {
-    "uiKey": "dashboard.welcome.description",
-    "dutch": "Vind en schrijf je in voor keuzemodules die jouw studieprogramma aanvullen.",
-    "english": "Find and enroll in elective modules that complement your study program."
-  },
-  {
-    "uiKey": "dashboard.account.title",
-    "dutch": "Account Informatie",
-    "english": "Account Information"
-  },
-  {
-    "uiKey": "dashboard.account.username",
-    "dutch": "Gebruikersnaam",
-    "english": "Username"
-  },
-  {
-    "uiKey": "dashboard.account.email",
-    "dutch": "E-mail",
-    "english": "Email"
-  },
-  {
-    "uiKey": "dashboard.account.role",
-    "dutch": "Rol",
-    "english": "Role"
-  },
-  {
-    "uiKey": "dashboard.account.userId",
-    "dutch": "Gebruiker ID",
-    "english": "User ID"
-  },
-  {
-    "uiKey": "dashboard.access.title",
-    "dutch": "Toegangsniveau",
-    "english": "Access Level"
-  },
-  {
-    "uiKey": "dashboard.access.verified",
-    "dutch": "Toegang Geverifieerd",
-    "english": "Access Verified"
-  },
-  {
-    "uiKey": "dashboard.access.teacherDescription",
-    "dutch": "keuzemodules creëren en beheren",
-    "english": "create and manage elective modules"
-  },
-  {
-    "uiKey": "dashboard.access.studentDescription",
-    "dutch": "beschikbare keuzemodules bekijken en inschrijven",
-    "english": "browse and enroll in available elective modules"
-  },
-  {
-    "uiKey": "dashboard.access.authenticated",
-    "dutch": "Geauthenticeerde Gebruiker",
-    "english": "Authenticated User"
-  },
-  {
-    "uiKey": "nav.home",
-    "dutch": "Home",
-    "english": "Home"
-  },
-  {
-    "uiKey": "nav.about",
-    "dutch": "Over",
-    "english": "About"
-  },
-  {
-    "uiKey": "nav.dashboard",
-    "dutch": "Dashboard",
-    "english": "Dashboard"
-  },
-  {
-    "uiKey": "nav.login",
-    "dutch": "Inloggen",
-    "english": "Login"
-  },
-  {
-    "uiKey": "nav.register",
-    "dutch": "Registreren",
-    "english": "Register"
-  },
-  {
-    "uiKey": "nav.translations",
-    "dutch": "Vertalingen",
-    "english": "Translations"
-  },
-  {
-    "uiKey": "nav.welcome",
-    "dutch": "Welkom",
-    "english": "Welcome"
-  },
-  {
-    "uiKey": "nav.logout",
-    "dutch": "Uitloggen",
-    "english": "Logout"
-  },
-  {
-    "uiKey": "nav.translationManagement",
-    "dutch": "Vertaling Beheer",
-    "english": "Translation Management"
-  },
-  {
-    "uiKey": "translationManagement.title",
-    "dutch": "Vertaling Beheer",
-    "english": "Translation Management"
-  },
-  {
-    "uiKey": "translationManagement.subtitle",
-    "dutch": "Beheer vertalingen voor de applicatie",
-    "english": "Manage translations for the application"
-  },
-  {
-    "uiKey": "translationManagement.loadTranslations",
-    "dutch": "UI Vertalingen Laden",
-    "english": "Load UI Translations"
-  },
-  {
-    "uiKey": "translationManagement.uiKey",
-    "dutch": "UI Sleutel",
-    "english": "UI Key"
-  },
-  {
-    "uiKey": "translationManagement.dutch",
-    "dutch": "Nederlands",
-    "english": "Dutch"
-  },
-  {
-    "uiKey": "translationManagement.english",
-    "dutch": "Engels",
-    "english": "English"
-  },
-  {
-    "uiKey": "translationManagement.actions",
-    "dutch": "Acties",
-    "english": "Actions"
-  },
-  {
-    "uiKey": "translationManagement.edit",
-    "dutch": "Bewerken",
-    "english": "Edit"
-  },
-  {
-    "uiKey": "translationManagement.editTitle",
-    "dutch": "Vertaling Bewerken",
-    "english": "Edit Translation"
-  },
-  {
-    "uiKey": "translationManagement.save",
-    "dutch": "Wijzigingen Opslaan",
-    "english": "Save Changes"
-  },
-  {
-    "uiKey": "translationManagement.cancel",
-    "dutch": "Annuleren",
-    "english": "Cancel"
-  },
-  {
-    "uiKey": "translationManagement.loading",
-    "dutch": "Laden...",
-    "english": "Loading..."
-  },
-  {
-    "uiKey": "translationManagement.success",
-    "dutch": "Vertalingen succesvol geladen",
-    "english": "Translations loaded successfully"
-  },
-  {
-    "uiKey": "translationManagement.error",
-    "dutch": "Fout bij laden van vertalingen",
-    "english": "Failed to load translations"
-  },
-  {
-    "uiKey": "translationManagement.accessDenied",
-    "dutch": "Toegang Geweigerd",
-    "english": "Access Denied"
-  },
-  {
-    "uiKey": "translationManagement.noTranslations",
-    "dutch": "Geen vertalingen geladen. Klik op \"UI Vertalingen Laden\" om alle vertalingen op te halen.",
-    "english": "No translations loaded. Click \"Load UI Translations\" to fetch all translations."
-  },
-  {
-    "uiKey": "translationManagement.loadOrphans",
-    "dutch": "Orphans Laden",
-    "english": "Load Orphaned"
-  },
-  {
-    "uiKey": "translationManagement.deleteOrphans",
-    "dutch": "Orphans Verwijderen",
-    "english": "Delete Orphaned"
-  },
-  {
-    "uiKey": "translationManagement.orphansTitle",
-    "dutch": "Orphan Vertalingen",
-    "english": "Orphaned Translations"
-  },
-  {
-    "uiKey": "translationManagement.orphansSubtitle",
-    "dutch": "Ongebruikte vertalingen die database ruimte verspillen",
-    "english": "Unused translations that waste database space"
-  },
-  {
-    "uiKey": "translationManagement.noOrphans",
-    "dutch": "Geen Orphan vertalingen gevonden. Klik op \"Orphans Laden\" om te controleren op ongebruikte vertalingen.",
-    "english": "No orphaned translations found. Click \"Load Orphaned\" to check for unused translations."
-  },
-  {
-    "uiKey": "translationManagement.confirmDeleteOrphans",
-    "dutch": "Weet je zeker dat je alle Orphan vertalingen wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.",
-    "english": "Are you sure you want to delete all orphaned translations? This action cannot be undone."
-  },
-  {
-    "uiKey": "form.password.label",
-    "dutch": "Wachtwoord",
-    "english": "Password"
-  },
-  {
-    "uiKey": "navigation.home",
-    "dutch": "Home",
-    "english": "Home"
-  },
-  {
-    "uiKey": "footer.copyright",
-    "dutch": "© 2025 Avans Hogeschool. Alle rechten voorbehouden.",
-    "english": "© 2025 Avans University of Applied Sciences. All rights reserved."
-  },
-  {
-    "uiKey": "message.welcome",
-    "dutch": "Welkom bij Avans Elective Hub",
-    "english": "Welcome to Avans Elective Hub"
-  },
-  {
-    "uiKey": "navigation.dashboard",
-    "dutch": "Dashboard",
-    "english": "Dashboard"
-  },
-  {
-    "uiKey": "button.cancel",
-    "dutch": "Annuleren",
-    "english": "Cancel"
-  },
-  {
-    "uiKey": "header.subtitle",
-    "dutch": "Deze pagina toont het vertaalsysteem met behulp van je API endpoint",
-    "english": "This page demonstrates the translation system using your API endpoint"
-  },
-  {
-    "uiKey": "button.submit",
-    "dutch": "Versturen",
-    "english": "Submit"
-  },
-  {
-    "uiKey": "button.save",
-    "dutch": "Opslaan",
-    "english": "Save"
-  },
-  {
-    "uiKey": "form.username.label",
-    "dutch": "Gebruikersnaam",
-    "english": "Username"
-  },
-  {
-    "uiKey": "navigation.about",
-    "dutch": "Over",
-    "english": "About"
-  },
-  {
-    "uiKey": "header.title",
-    "dutch": "Vertaalsysteem Demo",
-    "english": "Translation System Demo"
-  },
-  {
-    "uiKey": "message.error.generic",
-    "dutch": "Er is een fout opgetreden. Probeer het opnieuw.",
-    "english": "An error occurred. Please try again."
-  },
-  {
-    "uiKey": "translationManagement.bulkUpdateSuccess",
-    "dutch": "Alle vertalingen zijn succesvol bijgewerkt",
-    "english": "All translations updated successfully"
-  },
-  {
-    "uiKey": "translationManagement.bulkUpdate",
-    "dutch": "Bulk Update",
-    "english": "Bulk Update"
-  },
-  {
-    "uiKey": "translationManagement.bulkUpdateConfirm",
-    "dutch": "Weet je zeker dat je alle vertalingen wilt bijwerken?",
-    "english": "Are you sure you want to update all translations?"
-  },
-  {
-    "uiKey": "home.alinea.text",
-    "dutch": "Dit is de Avans Keuzemodule Selector, hier kun je kiezen welke module je wilt gebruiken",
-    "english": "This is the Avans Elective Module selector, here you can choose which module you want to use"
-  },
-  {
-    "uiKey": "home.alinea.title",
-    "dutch": "Welkom bij de Keuzemodule Selector",
-    "english": "Welcome to the Elective Module Selector"
-  },
-  {
-    "uiKey": "register.title",
-    "dutch": "Word lid van Avans",
-    "english": "Join Avans"
-  },
-  {
-    "uiKey": "register.subtitle",
-    "dutch": "Maak je account aan om toegang te krijgen tot keuzemodules",
-    "english": "Create your account to access elective modules"
-  },
-  {
-    "uiKey": "register.form.username",
-    "dutch": "Gebruikersnaam",
-    "english": "Username"
-  },
-  {
-    "uiKey": "register.form.email",
-    "dutch": "E-mail",
-    "english": "Email"
-  },
-  {
-    "uiKey": "register.form.role",
-    "dutch": "Rol",
-    "english": "Role"
-  },
-  {
-    "uiKey": "register.form.password",
-    "dutch": "Wachtwoord",
-    "english": "Password"
-  },
-  {
-    "uiKey": "register.form.confirmPassword",
-    "dutch": "Bevestig wachtwoord",
-    "english": "Confirm Password"
-  },
-  {
-    "uiKey": "register.form.role.student",
-    "dutch": "Student",
-    "english": "Student"
-  },
-  {
-    "uiKey": "register.form.role.teacher",
-    "dutch": "Docent",
-    "english": "Teacher"
-  },
-  {
-    "uiKey": "register.form.role.admin",
-    "dutch": "Beheerder",
-    "english": "Admin"
-  },
-  {
-    "uiKey": "register.form.placeholder.username",
-    "dutch": "Voer gebruikersnaam in",
-    "english": "Enter username"
-  },
-  {
-    "uiKey": "register.form.placeholder.email",
-    "dutch": "Voer e-mailadres in",
-    "english": "Enter email"
-  },
-  {
-    "uiKey": "register.form.placeholder.password",
-    "dutch": "Voer wachtwoord in",
-    "english": "Enter password"
-  },
-  {
-    "uiKey": "register.form.placeholder.confirmPassword",
-    "dutch": "Bevestig wachtwoord",
-    "english": "Confirm password"
-  },
-  {
-    "uiKey": "register.button.creating",
-    "dutch": "Account aanmaken...",
-    "english": "Creating account..."
-  },
-  {
-    "uiKey": "register.button.create",
-    "dutch": "Account aanmaken",
-    "english": "Create Account"
-  },
-  {
-    "uiKey": "register.footer.hasAccount",
-    "dutch": "Heb je al een account?",
-    "english": "Already have an account?"
-  },
-  {
-    "uiKey": "register.footer.signInHere",
-    "dutch": "Meld je hier aan",
-    "english": "Sign in here"
-  },
-  {
-    "uiKey": "register.error.passwordMatch",
-    "dutch": "Wachtwoorden komen niet overeen",
-    "english": "Passwords do not match"
-  },
-  {
-    "uiKey": "register.error.passwordLength",
-    "dutch": "Wachtwoord moet minimaal 3 tekens lang zijn",
-    "english": "Password must be at least 3 characters long"
-  },
-  {
-    "uiKey": "register.error.failed",
-    "dutch": "Registratie mislukt. Probeer het opnieuw.",
-    "english": "Registration failed. Please try again."
-  },
-  {
-    "uiKey": "login.title",
-    "dutch": "Welkom terug",
-    "english": "Welcome Back"
-  },
-  {
-    "uiKey": "login.subtitle",
-    "dutch": "Meld je aan om toegang te krijgen tot keuzemodules",
-    "english": "Sign in to access elective modules"
-  },
-  {
-    "uiKey": "login.form.username",
-    "dutch": "Gebruikersnaam",
-    "english": "Username"
-  },
-  {
-    "uiKey": "login.form.password",
-    "dutch": "Wachtwoord",
-    "english": "Password"
-  },
-  {
-    "uiKey": "login.form.placeholder.username",
-    "dutch": "Voer je gebruikersnaam in",
-    "english": "Enter your username"
-  },
-  {
-    "uiKey": "login.form.placeholder.password",
-    "dutch": "Voer je wachtwoord in",
-    "english": "Enter your password"
-  },
-  {
-    "uiKey": "login.button.signingIn",
-    "dutch": "Aan het inloggen...",
-    "english": "Signing in..."
-  },
-  {
-    "uiKey": "login.button.signIn",
-    "dutch": "Aanmelden",
-    "english": "Sign In"
-  },
-  {
-    "uiKey": "login.footer.noAccount",
-    "dutch": "Heb je nog geen account?",
-    "english": "Don't have an account?"
-  },
-  {
-    "uiKey": "login.footer.registerHere",
-    "dutch": "Registreer hier",
-    "english": "Register here"
-  },
-  {
-    "uiKey": "login.error.invalid",
-    "dutch": "Ongeldige gebruikersnaam of wachtwoord",
-    "english": "Invalid username or password"
-  },
-  {
-    "uiKey": "pageNotFound",
-    "dutch": "Pagina niet gevonden",
-    "english": "Page Not Found"
-  },
-  {
-    "uiKey": "pageNotFoundMessage",
-    "dutch": "De pagina die u zoekt is mogelijk verwijderd, hernoemd of tijdelijk niet beschikbaar.",
-    "english": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable."
-  },
-  {
-    "uiKey": "goHome",
-    "dutch": "Naar Home",
-    "english": "Go Home"
-  },
-  {
-    "uiKey": "goBack",
-    "dutch": "Terug",
-    "english": "Go Back"
-  },
-  {
-    "uiKey": "dashboard.access.sentencePart1",
-    "dutch": "Je hebt toegang als ",
-    "english": "You have access as "
-  },
-  {
-    "uiKey": "dashboard.access.sentencePart2",
-    "dutch": " om ",
-    "english": " to "
-  },
-  {
-    "uiKey": "dashboard.course.title",
-    "dutch": "Huidige Keuzemodule",
-    "english": "Current Elective Module"
-  },
-  {
-    "uiKey": "dashboard.course.selectCourse",
-    "dutch": "Selecteer Keuzemodule",
-    "english": "Select Elective Module"
-  },
-  {
-    "uiKey": "dashboard.course.noCourseSelected",
-    "dutch": "Geen keuzemodule geselecteerd",
-    "english": "No elective module selected"
-  },
-  {
-    "uiKey": "dashboard.course.selectPlaceholder",
-    "dutch": "Kies een keuzemodule...",
-    "english": "Choose an elective module..."
-  },
-  {
-    "uiKey": "dashboard.course.save",
-    "dutch": "Opslaan",
-    "english": "Save"
-  },
-  {
-    "uiKey": "dashboard.course.saving",
-    "dutch": "Bezig met opslaan...",
-    "english": "Saving..."
-  },
-  {
-    "uiKey": "dashboard.course.success",
-    "dutch": "Keuzemodule succesvol geselecteerd!",
-    "english": "Elective module selected successfully!"
-  },
-  {
-    "uiKey": "dashboard.course.error",
-    "dutch": "Fout bij selecteren van keuzemodule",
-    "english": "Error selecting elective module"
-  },
-  {
-    "uiKey": "dashboard.course.loadingCourses",
-    "dutch": "Keuzemodules laden...",
-    "english": "Loading elective modules..."
-  },
-  {
-    "uiKey": "dashboard.course.errorLoadingCourses",
-    "dutch": "Fout bij laden van keuzemodules",
-    "english": "Error loading elective modules"
-  },
-  {
-    "uiKey": "dashboard.course.noTitle",
-    "dutch": "Onbekende keuzemodule",
-    "english": "Unknown course"
-  },
-  {
-    "uiKey": "dashboard.course.noDescription",
-    "dutch": "Geen beschrijving beschikbaar",
-    "english": "No description available"
-  },
-  {
-    "uiKey": "nav.management",
-    "dutch": "Beheer",
-    "english": "Management"
-  },
-  {
-    "uiKey": "management.title",
-    "dutch": "Beheer Dashboard",
-    "english": "Management Dashboard"
-  },
-  {
-    "uiKey": "management.subtitle",
-    "dutch": "Centrale hub voor alle docent tools en beheer functies",
-    "english": "Central hub for all teacher tools and management functions"
-  },
-  {
-    "uiKey": "management.accessDenied",
-    "dutch": "Toegang Geweigerd",
-    "english": "Access Denied"
-  },
-  {
-    "uiKey": "management.tools.title",
-    "dutch": "Beschikbare Tools",
-    "english": "Available Tools"
-  },
-  {
-    "uiKey": "management.tools.translationManagement.title",
-    "dutch": "Vertaling Beheer",
-    "english": "Translation Management"
-  },
-  {
-    "uiKey": "management.tools.translationManagement.description",
-    "dutch": "Beheer en bewerk vertalingen voor de gehele applicatie",
-    "english": "Manage and edit translations for the entire application"
-  },
-  {
-    "uiKey": "management.tools.translationManagement.button",
-    "dutch": "Open Vertaling Beheer",
-    "english": "Open Translation Management"
-  },
-  {
-    "uiKey": "management.tools.subjectManagement.title",
-    "dutch": "Keuzemodule Beheer",
-    "english": "Subject Management"
-  },
-  {
-    "uiKey": "management.tools.subjectManagement.description",
-    "dutch": "Creëer, bewerk en beheer keuzemodules",
-    "english": "Create, edit, and manage elective modules"
-  },
-  {
-    "uiKey": "management.tools.subjectManagement.button",
-    "dutch": "Open Keuzemodule Beheer",
-    "english": "Open Subject Management"
-  },
-  {
-    "uiKey": "subjectManagement.title",
-    "dutch": "Keuzemodule Beheer",
-    "english": "Subject Management"
-  },
-  {
-    "uiKey": "subjectManagement.subtitle",
-    "dutch": "Beheer keuzemodules en Keuze Moduleken",
-    "english": "Manage elective modules and courses"
-  },
-  {
-    "uiKey": "subjectManagement.accessDenied",
-    "dutch": "Toegang Geweigerd",
-    "english": "Access Denied"
-  },
-  {
-    "uiKey": "subjectManagement.loadSubjects",
-    "dutch": "Keuze Moduleken Laden",
-    "english": "Load Subjects"
-  },
-  {
-    "uiKey": "subjectManagement.createNew",
-    "dutch": "Nieuw Keuze Module Aanmaken",
-    "english": "Create New Subject"
-  },
-  {
-    "uiKey": "subjectManagement.noSubjects",
-    "dutch": "Geen Keuze Moduleken gevonden",
-    "english": "No subjects found"
-  },
-  {
-    "uiKey": "subjectManagement.loading",
-    "dutch": "Keuze Moduleken laden...",
-    "english": "Loading subjects..."
-  },
-  {
-    "uiKey": "subjectManagement.error",
-    "dutch": "Fout bij laden van Keuze Moduleken",
-    "english": "Failed to load subjects"
-  },
-  {
-    "uiKey": "subjectManagement.success",
-    "dutch": "Actie succesvol uitgevoerd",
-    "english": "Action completed successfully"
-  },
-  {
-    "uiKey": "subjectManagement.delete.confirm",
-    "dutch": "Weet je zeker dat je dit Keuze Module wilt verwijderen?",
-    "english": "Are you sure you want to delete this subject?"
-  },
-  {
-    "uiKey": "subjectManagement.delete.success",
-    "dutch": "Keuze Module succesvol verwijderd",
-    "english": "Subject deleted successfully"
-  },
-  {
-    "uiKey": "subjectManagement.delete.error",
-    "dutch": "Fout bij verwijderen van Keuze Module",
-    "english": "Failed to delete subject"
-  },
-  {
-    "uiKey": "subjectManagement.form.title",
-    "dutch": "Keuze Module Formulier",
-    "english": "Subject Form"
-  },
-  {
-    "uiKey": "subjectManagement.form.titleNL",
-    "dutch": "Titel (Nederlands)",
-    "english": "Title (Dutch)"
-  },
-  {
-    "uiKey": "subjectManagement.form.titleEN",
-    "dutch": "Titel (Engels)",
-    "english": "Title (English)"
-  },
-  {
-    "uiKey": "subjectManagement.form.descriptionNL",
-    "dutch": "Beschrijving (Nederlands)",
-    "english": "Description (Dutch)"
-  },
-  {
-    "uiKey": "subjectManagement.form.descriptionEN",
-    "dutch": "Beschrijving (Engels)",
-    "english": "Description (English)"
-  },
-  {
-    "uiKey": "subjectManagement.form.moreInfoNL",
-    "dutch": "Meer Info (Nederlands)",
-    "english": "More Info (Dutch)"
-  },
-  {
-    "uiKey": "subjectManagement.form.moreInfoEN",
-    "dutch": "Meer Info (Engels)",
-    "english": "More Info (English)"
-  },
-  {
-    "uiKey": "subjectManagement.form.level",
-    "dutch": "Niveau",
-    "english": "Level"
-  },
-  {
-    "uiKey": "subjectManagement.form.studyPoints",
-    "dutch": "Studiepunten",
-    "english": "Study Points"
-  },
-  {
-    "uiKey": "subjectManagement.form.languages",
-    "dutch": "Talen",
-    "english": "Languages"
-  },
-  {
-    "uiKey": "subjectManagement.form.tags",
-    "dutch": "Tags (komma gescheiden)",
-    "english": "Tags (comma-separated)"
-  },
-  {
-    "uiKey": "subjectManagement.form.save",
-    "dutch": "Opslaan",
-    "english": "Save"
-  },
-  {
-    "uiKey": "subjectManagement.form.cancel",
-    "dutch": "Annuleren",
-    "english": "Cancel"
-  },
-  {
-    "uiKey": "subjectManagement.form.creating",
-    "dutch": "Aanmaken...",
-    "english": "Creating..."
-  },
-  {
-    "uiKey": "subjectManagement.form.updating",
-    "dutch": "Bijwerken...",
-    "english": "Updating..."
-  },
-  {
-    "uiKey": "subjectManagement.table.title",
-    "dutch": "Titel",
-    "english": "Title"
-  },
-  {
-    "uiKey": "subjectManagement.table.level",
-    "dutch": "Niveau",
-    "english": "Level"
-  },
-  {
-    "uiKey": "subjectManagement.table.points",
-    "dutch": "Punten",
-    "english": "Points"
-  },
-  {
-    "uiKey": "subjectManagement.table.languages",
-    "dutch": "Talen",
-    "english": "Languages"
-  },
-  {
-    "uiKey": "subjectManagement.table.tags",
-    "dutch": "Tags",
-    "english": "Tags"
-  },
-  {
-    "uiKey": "subjectManagement.table.actions",
-    "dutch": "Acties",
-    "english": "Actions"
-  },
-  {
-    "uiKey": "subjectManagement.actions.view",
-    "dutch": "Bekijken",
-    "english": "View"
-  },
-  {
-    "uiKey": "subjectManagement.actions.edit",
-    "dutch": "Bewerken",
-    "english": "Edit"
-  },
-  {
-    "uiKey": "subjectManagement.actions.delete",
-    "dutch": "Verwijderen",
-    "english": "Delete"
-  },
-  {
-    "uiKey": "subjectManagement.filters.level",
-    "dutch": "Niveau",
-    "english": "Level"
-  },
-  {
-    "uiKey": "subjectManagement.filters.points",
-    "dutch": "Studiepunten",
-    "english": "Study Points"
-  },
-  {
-    "uiKey": "subjectManagement.filters.tag",
-    "dutch": "Tag",
-    "english": "Tag"
-  },
-  {
-    "uiKey": "subjectManagement.filters.clear",
-    "dutch": "Wissen",
-    "english": "Clear"
-  },
-  {
-    "uiKey": "subjectView.title",
-    "dutch": "Keuze Module Weergave",
-    "english": "Subject View"
-  },
-  {
-    "uiKey": "subjectView.loading",
-    "dutch": "Keuze Module laden...",
-    "english": "Loading subject..."
-  },
-  {
-    "uiKey": "subjectView.error",
-    "dutch": "Fout",
-    "english": "Error"
-  },
-  {
-    "uiKey": "subjectView.notFound",
-    "dutch": "Keuze Module niet gevonden",
-    "english": "Subject not found"
-  },
-  {
-    "uiKey": "subjectView.backToList",
-    "dutch": "Terug naar Lijst",
-    "english": "Back to List"
-  },
-  {
-    "uiKey": "subjectView.addToFavourites",
-    "dutch": "Toevoegen aan Favorieten",
-    "english": "Add to Favourites"
-  },
-  {
-    "uiKey": "subjectView.removeFromFavourites",
-    "dutch": "Verwijderen uit Favorieten",
-    "english": "Remove from Favourites"
-  },
-  {
-    "uiKey": "subjectView.selectForCompare",
-    "dutch": "Selecteren voor Vergelijken",
-    "english": "Select for Compare"
-  },
-  {
-    "uiKey": "subjectView.compareTemplate",
-    "dutch": "Dit is een sjabloon functie voor het vergelijken van Keuze Moduleken. Deze functie is nog niet geïmplementeerd.",
-    "english": "This is a template function for comparing subjects. This feature is not yet implemented."
-  },
-  {
-    "uiKey": "subjectView.level",
-    "dutch": "Niveau",
-    "english": "Level"
-  },
-  {
-    "uiKey": "subjectView.studyPoints",
-    "dutch": "Studiepunten",
-    "english": "Study Points"
-  },
-  {
-    "uiKey": "subjectView.languages",
-    "dutch": "Beschikbare Talen",
-    "english": "Available Languages"
-  },
-  {
-    "uiKey": "subjectView.tags",
-    "dutch": "Tags",
-    "english": "Tags"
-  },
-  {
-    "uiKey": "subjectView.description",
-    "dutch": "Beschrijving",
-    "english": "Description"
-  },
-  {
-    "uiKey": "subjectView.moreInfo",
-    "dutch": "Aanvullende Informatie",
-    "english": "Additional Information"
-  },
-  {
-    "uiKey": "subjectView.owner",
-    "dutch": "Eigenaar",
-    "english": "Owner"
-  },
-  {
-    "uiKey": "subjectView.success",
-    "dutch": "Actie succesvol uitgevoerd",
-    "english": "Action completed successfully"
-  },
-  {
-    "uiKey": "subjectView.favouriteAdded",
-    "dutch": "Toegevoegd aan favorieten",
-    "english": "Added to favourites"
-  },
-  {
-    "uiKey": "subjectView.favouriteRemoved",
-    "dutch": "Verwijderd uit favorieten",
-    "english": "Removed from favourites"
-  },
-  {
-    "uiKey": "subjectView.favouriteError",
-    "dutch": "Fout bij bijwerken van favorieten",
-    "english": "Failed to update favourites"
-  },
-  {
-    "uiKey": "subjectView.subjectDetails",
-    "dutch": "Keuze Module Details",
-    "english": "Subject Details"
-  },
-  {
-    "uiKey": "subjectView.actions",
-    "dutch": "Acties",
-    "english": "Actions"
-  },
-  {
-    "uiKey": "subjectView.subjectInformation",
-    "dutch": "Keuze Module Informatie",
-    "english": "Subject Information"
-  },
-  {
-    "uiKey": "subjectView.templateOnly",
-    "dutch": "Alleen Sjabloon",
-    "english": "Template Only"
-  },
-  {
-    "uiKey": "subjectView.ownerUuid",
-    "dutch": "Eigenaar UUID",
-    "english": "Owner UUID"
-  },
-  {
-    "uiKey": "subjectView.subjectUuid",
-    "dutch": "Keuze Module UUID",
-    "english": "Subject UUID"
-  },
-  {
-    "uiKey": "subjectView.favourite",
-    "dutch": "Favoriet",
-    "english": "Favourite"
-  },
-  {
-    "uiKey": "subjectView.unknownSubject",
-    "dutch": "Onbekend Keuze Module",
-    "english": "Unknown Subject"
-  },
-  {
-    "uiKey": "subjectView.noDescription",
-    "dutch": "Geen beschrijving beschikbaar",
-    "english": "No description available"
-  },
-  {
-    "uiKey": "subjectView.noMoreInfo",
-    "dutch": "Geen aanvullende informatie",
-    "english": "No additional information"
-  },
-  {
-    "uiKey": "common.notAvailable",
-    "dutch": "Niet beschikbaar",
-    "english": "Not available"
-  },
-  {
-    "uiKey": "subjectList.viewDetails",
-    "dutch": "Details Bekijken",
-    "english": "View Details"
-  },
-  {
-    "uiKey": "subjectList.level",
-    "dutch": "Niveau",
-    "english": "Level"
-  },
-  {
-    "uiKey": "subjectList.studyPoints",
-    "dutch": "Studiepunten",
-    "english": "Study Points"
-  },
-  {
-    "uiKey": "subjectList.languages",
-    "dutch": "Talen",
-    "english": "Languages"
-  },
-  {
-    "uiKey": "subjectList.tags",
-    "dutch": "Tags",
-    "english": "Tags"
-  },
-  {
-    "uiKey": "subjectList.favourite",
-    "dutch": "Fav",
-    "english": "Fav"
-  },
-  {
-    "uiKey": "subjectList.matchPercentage",
-    "dutch": "match",
-    "english": "match"
-  },
-  {
-    "uiKey": "subjectList.points",
-    "dutch": "pts",
-    "english": "pts"
-  },
-  {
-    "uiKey": "subjectList.noSubjects",
-    "dutch": "Geen vakken gevonden",
-    "english": "No subjects found"
-  },
-  {
-    "uiKey": "subjectList.loading",
-    "dutch": "Vakken laden...",
-    "english": "Loading subjects..."
-  },
-  {
-    "uiKey": "subjects.title",
-    "dutch": "Beschikbare Vakken",
-    "english": "Available Subjects"
-  },
-  {
-    "uiKey": "subjects.subtitle",
-    "dutch": "Ontdek en bekijk keuzemodules",
-    "english": "Browse and discover elective modules"
-  },
-  {
-    "uiKey": "subjects.loadSubjects",
-    "dutch": "Zoeken",
-    "english": "Search"
-  },
-  {
-    "uiKey": "subjects.clearFilters",
-    "dutch": "Wissen",
-    "english": "Clear"
-  },
-  {
-    "uiKey": "subjects.loading",
-    "dutch": "Vakken laden...",
-    "english": "Loading subjects..."
-  },
-  {
-    "uiKey": "subjects.error",
-    "dutch": "Fout bij laden van vakken",
-    "english": "Failed to load subjects"
-  },
-  {
-    "uiKey": "subjects.success",
-    "dutch": "Vakken succesvol geladen",
-    "english": "Subjects loaded successfully"
-  },
-  {
-    "uiKey": "subjects.filters.level",
-    "dutch": "Niveau",
-    "english": "Level"
-  },
-  {
-    "uiKey": "subjects.filters.points",
-    "dutch": "Studiepunten",
-    "english": "Study Points"
-  },
-  {
-    "uiKey": "subjects.filters.tag",
-    "dutch": "Tag",
-    "english": "Tag"
-  },
-  {
-    "uiKey": "subjects.filters.allLevels",
-    "dutch": "Alle Niveaus",
-    "english": "All Levels"
-  },
-  {
-    "uiKey": "subjects.filters.studyPointsPlaceholder",
-    "dutch": "Studiepunten",
-    "english": "Study points"
-  },
-  {
-    "uiKey": "subjects.filters.tagPlaceholder",
-    "dutch": "Tag naam",
-    "english": "Tag name"
-  },
-  {
-    "uiKey": "recommendedSubjects.title",
-    "dutch": "Aanbevolen Vakken",
-    "english": "Recommended Subjects"
-  },
-  {
-    "uiKey": "recommendedSubjects.subtitle",
-    "dutch": "Gepersonaliseerde vak aanbevelingen gebaseerd op je profiel",
-    "english": "Personalized subject recommendations based on your profile"
-  },
-  {
-    "uiKey": "recommendedSubjects.loading",
-    "dutch": "Gepersonaliseerde aanbevelingen laden...",
-    "english": "Loading personalized recommendations..."
-  },
-  {
-    "uiKey": "recommendedSubjects.error",
-    "dutch": "Fout bij laden van aanbevelingen",
-    "english": "Failed to load recommendations"
-  },
-  {
-    "uiKey": "recommendedSubjects.success",
-    "dutch": "Aanbevelingen succesvol geladen",
-    "english": "Recommendations loaded successfully"
-  },
-  {
-    "uiKey": "recommendedSubjects.noRecommendations",
-    "dutch": "Geen aanbevelingen beschikbaar op dit moment",
-    "english": "No recommendations available at this time"
-  },
-  {
-    "uiKey": "recommendedSubjects.browseAll",
-    "dutch": "Bekijk Alle",
-    "english": "Browse All"
-  },
-  {
-    "uiKey": "recommendedSubjects.refresh",
-    "dutch": "Vernieuwen",
-    "english": "Refresh"
-  },
-  {
-    "uiKey": "subjects.viewRecommended",
-    "dutch": "Aanbevolen Bekijken",
-    "english": "View Recommended"
-  },
-  {
-    "uiKey": "dashboard.modules.title",
-    "dutch": "Ontdek Modules",
-    "english": "Discover Modules"
-  },
-  {
-    "uiKey": "dashboard.modules.description",
-    "dutch": "Vind de perfecte keuzemodules voor jouw studieprogramma",
-    "english": "Find the perfect elective modules for your study program"
-  },
-  {
-    "uiKey": "dashboard.modules.browseAll",
-    "dutch": "Bekijk Alle Modules",
-    "english": "Browse All Modules"
-  },
-  {
-    "uiKey": "dashboard.modules.viewRecommended",
-    "dutch": "Aanbevolen Modules",
-    "english": "Recommended Modules"
-  },
-  {
-    "uiKey": "dashboard.modules.viewFavourites",
-    "dutch": "Favoriete Modules",
-    "english": "Favourite Modules"
-  },
-  {
-    "uiKey": "subjects.viewFavourites",
-    "dutch": "Favorieten Bekijken",
-    "english": "View Favourites"
-  },
-  {
-    "uiKey": "recommendedSubjects.viewFavourites",
-    "dutch": "Favorieten",
-    "english": "Favourites"
-  },
-  {
-    "uiKey": "favouriteSubjects.title",
-    "dutch": "Favoriete Vakken",
-    "english": "Favourite Subjects"
-  },
-  {
-    "uiKey": "favouriteSubjects.subtitle",
-    "dutch": "Jouw opgeslagen keuzemodules",
-    "english": "Your saved elective modules"
-  },
-  {
-    "uiKey": "favouriteSubjects.loading",
-    "dutch": "Favoriete vakken laden...",
-    "english": "Loading favourite subjects..."
-  },
-  {
-    "uiKey": "favouriteSubjects.error",
-    "dutch": "Fout bij laden van favoriete vakken",
-    "english": "Failed to load favourite subjects"
-  },
-  {
-    "uiKey": "favouriteSubjects.success",
-    "dutch": "Favorieten succesvol geladen",
-    "english": "Favourites loaded successfully"
-  },
-  {
-    "uiKey": "favouriteSubjects.noFavourites",
-    "dutch": "Nog geen favoriete vakken",
-    "english": "No favourite subjects yet"
-  },
-  {
-    "uiKey": "favouriteSubjects.browseAll",
-    "dutch": "Bekijk Alle",
-    "english": "Browse All"
-  },
-  {
-    "uiKey": "favouriteSubjects.viewRecommended",
-    "dutch": "Aanbevolen Bekijken",
-    "english": "View Recommended"
-  },
-  {
-    "uiKey": "favouriteSubjects.refresh",
-    "dutch": "Vernieuwen",
-    "english": "Refresh"
-  },
-  {
-    "uiKey": "management.tools.courseManagement.title",
-    "dutch": "Cursus Beheer",
-    "english": "Course Management"
-  },
-  {
-    "uiKey": "management.tools.courseManagement.description",
-    "dutch": "Creëer, bewerk en beheer cursussen en studieprogramma's",
-    "english": "Create, edit, and manage courses and study programs"
-  },
-  {
-    "uiKey": "management.tools.courseManagement.button",
-    "dutch": "Open Cursus Beheer",
-    "english": "Open Course Management"
-  },
-  {
-    "uiKey": "courseManagement.title",
-    "dutch": "Cursus Beheer",
-    "english": "Course Management"
-  },
-  {
-    "uiKey": "courseManagement.subtitle",
-    "dutch": "Beheer cursussen en studieprogramma's",
-    "english": "Manage courses and study programs"
-  },
-  {
-    "uiKey": "courseManagement.accessDenied",
-    "dutch": "Toegang Geweigerd",
-    "english": "Access Denied"
-  },
-  {
-    "uiKey": "courseManagement.loadCourses",
-    "dutch": "Cursussen Laden",
-    "english": "Load Courses"
-  },
-  {
-    "uiKey": "courseManagement.createNew",
-    "dutch": "Nieuwe Cursus Aanmaken",
-    "english": "Create New Course"
-  },
-  {
-    "uiKey": "courseManagement.noCourses",
-    "dutch": "Geen cursussen gevonden",
-    "english": "No courses found"
-  },
-  {
-    "uiKey": "courseManagement.loading",
-    "dutch": "Cursussen laden...",
-    "english": "Loading courses..."
-  },
-  {
-    "uiKey": "courseManagement.error",
-    "dutch": "Fout bij laden van cursussen",
-    "english": "Failed to load courses"
-  },
-  {
-    "uiKey": "courseManagement.success",
-    "dutch": "Actie succesvol uitgevoerd",
-    "english": "Action completed successfully"
-  },
-  {
-    "uiKey": "courseManagement.delete.confirm",
-    "dutch": "Weet je zeker dat je deze cursus wilt verwijderen?",
-    "english": "Are you sure you want to delete this course?"
-  },
-  {
-    "uiKey": "courseManagement.delete.success",
-    "dutch": "Cursus succesvol verwijderd",
-    "english": "Course deleted successfully"
-  },
-  {
-    "uiKey": "courseManagement.delete.error",
-    "dutch": "Fout bij verwijderen van cursus",
-    "english": "Failed to delete course"
-  },
-  {
-    "uiKey": "courseManagement.form.title",
-    "dutch": "Cursus Formulier",
-    "english": "Course Form"
-  },
-  {
-    "uiKey": "courseManagement.form.titleNL",
-    "dutch": "Titel (Nederlands)",
-    "english": "Title (Dutch)"
-  },
-  {
-    "uiKey": "courseManagement.form.titleEN",
-    "dutch": "Titel (Engels)",
-    "english": "Title (English)"
-  },
-  {
-    "uiKey": "courseManagement.form.descriptionNL",
-    "dutch": "Beschrijving (Nederlands)",
-    "english": "Description (Dutch)"
-  },
-  {
-    "uiKey": "courseManagement.form.descriptionEN",
-    "dutch": "Beschrijving (Engels)",
-    "english": "Description (English)"
-  },
-  {
-    "uiKey": "courseManagement.form.languages",
-    "dutch": "Talen",
-    "english": "Languages"
-  },
-  {
-    "uiKey": "courseManagement.form.tags",
-    "dutch": "Tags (komma gescheiden)",
-    "english": "Tags (comma-separated)"
-  },
-  {
-    "uiKey": "courseManagement.form.save",
-    "dutch": "Opslaan",
-    "english": "Save"
-  },
-  {
-    "uiKey": "courseManagement.form.cancel",
-    "dutch": "Annuleren",
-    "english": "Cancel"
-  },
-  {
-    "uiKey": "courseManagement.form.creating",
-    "dutch": "Aanmaken...",
-    "english": "Creating..."
-  },
-  {
-    "uiKey": "courseManagement.form.updating",
-    "dutch": "Bijwerken...",
-    "english": "Updating..."
-  },
-  {
-    "uiKey": "courseManagement.table.title",
-    "dutch": "Titel",
-    "english": "Title"
-  },
-  {
-    "uiKey": "courseManagement.table.languages",
-    "dutch": "Talen",
-    "english": "Languages"
-  },
-  {
-    "uiKey": "courseManagement.table.tags",
-    "dutch": "Tags",
-    "english": "Tags"
-  },
-  {
-    "uiKey": "courseManagement.table.actions",
-    "dutch": "Acties",
-    "english": "Actions"
-  },
-  {
-    "uiKey": "courseManagement.actions.edit",
-    "dutch": "Bewerken",
-    "english": "Edit"
-  },
-  {
-    "uiKey": "courseManagement.actions.delete",
-    "dutch": "Verwijderen",
-    "english": "Delete"
-  },
-  {
-    "uiKey": "logout.title",
-    "dutch": "Uitloggen",
-    "english": "Logging Out"
-  },
-  {
-    "uiKey": "logout.message",
-    "dutch": "Je bent succesvol uitgelogd.",
-    "english": "You have been logged out successfully."
-  },
-  {
-    "uiKey": "logout.redirecting",
-    "dutch": "Doorverwijzen naar inlogpagina...",
-    "english": "Redirecting to login page..."
-  },
-  {
-    "uiKey": "pwa.install.title",
-    "dutch": "Installeer Elective Hub",
-    "english": "Install Elective Hub"
-  },
-  {
-    "uiKey": "pwa.install.description",
-    "dutch": "Installeer deze app op je apparaat voor een betere ervaring en offline toegang.",
-    "english": "Install this app on your device for a better experience and offline access."
-  },
-  {
-    "uiKey": "pwa.install.button",
-    "dutch": "Installeren",
-    "english": "Install"
-  },
-  {
-    "uiKey": "pwa.install.dismiss",
-    "dutch": "Niet nu",
-    "english": "Not now"
-  },
-  {
-    "uiKey": "pwa.offline.title",
-    "dutch": "Je bent offline",
-    "english": "You're Offline"
-  },
-  {
-    "uiKey": "pwa.offline.description",
-    "dutch": "Sommige functies zijn mogelijk niet beschikbaar. Je kunt alle functies gebruiken wanneer je weer online bent.",
-    "english": "Some features may not be available. You'll be able to use all features when you're back online."
-  }
+    {
+        "_id": "68f213776c7bd615dce182ab",
+        "dutch": "Avans studenten helpen bij het ontdekken en inschrijven voor de perfecte keuzemodules",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Helping Avans students discover and enroll in the perfect elective modules",
+        "uiKey": "about.hero.subtitle",
+        "__v": 0
+    },
+    {
+        "_id": "68f213776c7bd615dce182ad",
+        "dutch": "Over ",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "About ",
+        "uiKey": "about.hero.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f213776c7bd615dce182af",
+        "dutch": "Elective Hub",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Elective Hub",
+        "uiKey": "about.hero.electiveHub",
+        "__v": 0
+    },
+    {
+        "_id": "68f213776c7bd615dce182b1",
+        "dutch": "Uitloggen",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Logout",
+        "uiKey": "nav.logout",
+        "__v": 0
+    },
+    {
+        "_id": "68f213776c7bd615dce182b3",
+        "dutch": "Inloggen",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Login",
+        "uiKey": "nav.login",
+        "__v": 0
+    },
+    {
+        "_id": "68f213776c7bd615dce182b5",
+        "dutch": "Vertalingen",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Translations",
+        "uiKey": "nav.translations",
+        "__v": 0
+    },
+    {
+        "_id": "68f213776c7bd615dce182b7",
+        "dutch": "Dashboard",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Dashboard",
+        "uiKey": "nav.dashboard",
+        "__v": 0
+    },
+    {
+        "_id": "68f213776c7bd615dce182b9",
+        "dutch": "Welkom",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Welcome",
+        "uiKey": "nav.welcome",
+        "__v": 0
+    },
+    {
+        "_id": "68f213776c7bd615dce182bb",
+        "dutch": "Registreren",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Register",
+        "uiKey": "nav.register",
+        "__v": 0
+    },
+    {
+        "_id": "68f213776c7bd615dce182bd",
+        "dutch": "Over",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "About",
+        "uiKey": "nav.about",
+        "__v": 0
+    },
+    {
+        "_id": "68f213776c7bd615dce182bf",
+        "dutch": "Home",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Home",
+        "uiKey": "nav.home",
+        "__v": 0
+    },
+    {
+        "_id": "68f213fc6c7bd615dce182e3",
+        "dutch": "Vertaling Beheer",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Translation Management",
+        "uiKey": "nav.translationManagement",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f66c7bd615dce18392",
+        "dutch": "Wachtwoord",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Password",
+        "uiKey": "form.password.label",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f66c7bd615dce183a4",
+        "dutch": "Home",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Home",
+        "uiKey": "navigation.home",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f66c7bd615dce183a6",
+        "dutch": "© 2025 Avans Hogeschool. Alle rechten voorbehouden.",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "© 2025 Avans University of Applied Sciences. All rights reserved.",
+        "uiKey": "footer.copyright",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f66c7bd615dce183a8",
+        "dutch": "Welkom bij Avans Elective Hub",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Welcome to Avans Elective Hub",
+        "uiKey": "message.welcome",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f66c7bd615dce183aa",
+        "dutch": "Dashboard",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Dashboard",
+        "uiKey": "navigation.dashboard",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f66c7bd615dce18398",
+        "dutch": "Annuleren",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Cancel",
+        "uiKey": "button.cancel",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f66c7bd615dce1839a",
+        "dutch": "Vertaalsysteem Demo",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Translation System Demo",
+        "uiKey": "header.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f66c7bd615dce1839e",
+        "dutch": "Versturen",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Submit",
+        "uiKey": "button.submit",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f66c7bd615dce183a0",
+        "dutch": "Over",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "About",
+        "uiKey": "navigation.about",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f66c7bd615dce18396",
+        "dutch": "Deze pagina toont het vertaalsysteem met behulp van je API endpoint",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "This page demonstrates the translation system using your API endpoint",
+        "uiKey": "header.subtitle",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f66c7bd615dce18394",
+        "dutch": "Opslaan",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Save",
+        "uiKey": "button.save",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f66c7bd615dce183a2",
+        "dutch": "Er is een fout opgetreden. Probeer het opnieuw.",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "An error occurred. Please try again.",
+        "uiKey": "message.error.generic",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f66c7bd615dce1839c",
+        "dutch": "Gebruikersnaam",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Username",
+        "uiKey": "form.username.label",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f76c7bd615dce18414",
+        "dutch": "Toegangsniveau",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Access Level",
+        "uiKey": "dashboard.access.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f76c7bd615dce18416",
+        "dutch": "Toegang Geverifieerd",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Access Verified",
+        "uiKey": "dashboard.access.verified",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f76c7bd615dce18418",
+        "dutch": "E-mail",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Email",
+        "uiKey": "dashboard.account.email",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f76c7bd615dce1841a",
+        "dutch": "Rol",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Role",
+        "uiKey": "dashboard.account.role",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f76c7bd615dce1841c",
+        "dutch": "Vind de keuzemodules die jouw studieprogramma aanvullen.",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Find the elective modules that complement your study program.",
+        "uiKey": "dashboard.welcome.description",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f76c7bd615dce1841e",
+        "dutch": "Welkom, {{username}}!",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Welcome, {{username}}!",
+        "uiKey": "dashboard.welcome.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f76c7bd615dce18420",
+        "dutch": "Gebruiker ID",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "User ID",
+        "uiKey": "dashboard.account.userId",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f76c7bd615dce18422",
+        "dutch": "keuzemodules creëren en beheren",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "create and manage elective modules",
+        "uiKey": "dashboard.access.teacherDescription",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f76c7bd615dce18424",
+        "dutch": "beschikbare keuzemodules bekijken en inschrijven",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "browse and enroll in available elective modules",
+        "uiKey": "dashboard.access.studentDescription",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f76c7bd615dce18426",
+        "dutch": "Geauthenticeerde Gebruiker",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Authenticated User",
+        "uiKey": "dashboard.access.authenticated",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f76c7bd615dce18428",
+        "dutch": "Uitloggen",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Logout",
+        "uiKey": "dashboard.logout",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f76c7bd615dce1842a",
+        "dutch": "Gebruikersnaam",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Username",
+        "uiKey": "dashboard.account.username",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f76c7bd615dce1842c",
+        "dutch": "Beheer jouw keuzemodules en studie",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Manage your elective modules and your study",
+        "uiKey": "dashboard.subtitle",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f76c7bd615dce1842e",
+        "dutch": "Mijn Profiel",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "My Profile",
+        "uiKey": "dashboard.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f76c7bd615dce18430",
+        "dutch": "Account Informatie",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Account Information",
+        "uiKey": "dashboard.account.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f86c7bd615dce184ad",
+        "dutch": "Nederlands",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Dutch",
+        "uiKey": "translationManagement.dutch",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f86c7bd615dce184af",
+        "dutch": "Annuleren",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Cancel",
+        "uiKey": "translationManagement.cancel",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f86c7bd615dce184b1",
+        "dutch": "Vertalingen succesvol geladen",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Translations loaded successfully",
+        "uiKey": "translationManagement.success",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f86c7bd615dce184b3",
+        "dutch": "Bewerken",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Edit",
+        "uiKey": "translationManagement.edit",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f86c7bd615dce184b5",
+        "dutch": "Acties",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Actions",
+        "uiKey": "translationManagement.actions",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f86c7bd615dce184b7",
+        "dutch": "Engels",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "English",
+        "uiKey": "translationManagement.english",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f86c7bd615dce184b9",
+        "dutch": "Vertaling Bewerken",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Edit Translation",
+        "uiKey": "translationManagement.editTitle",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f86c7bd615dce184bb",
+        "dutch": "Toegang Geweigerd",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Access Denied",
+        "uiKey": "translationManagement.accessDenied",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f86c7bd615dce184bd",
+        "dutch": "Vertaling Beheer",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Translation Management",
+        "uiKey": "translationManagement.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f86c7bd615dce184bf",
+        "dutch": "Fout bij laden van vertalingen",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Failed to load translations",
+        "uiKey": "translationManagement.error",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f86c7bd615dce184c1",
+        "dutch": "UI Vertalingen Laden",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Load UI Translations",
+        "uiKey": "translationManagement.loadTranslations",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f86c7bd615dce184c3",
+        "dutch": "Geen vertalingen geladen. Klik op \"UI Vertalingen Laden\" om alle vertalingen op te halen.",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "No translations loaded. Click \"Load UI Translations\" to fetch all translations.",
+        "uiKey": "translationManagement.noTranslations",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f86c7bd615dce184c5",
+        "dutch": "Laden...",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Loading...",
+        "uiKey": "translationManagement.loading",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f86c7bd615dce184c7",
+        "dutch": "Wijzigingen Opslaan",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Save Changes",
+        "uiKey": "translationManagement.save",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f86c7bd615dce184c9",
+        "dutch": "Beheer vertalingen voor de applicatie",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Manage translations for the application",
+        "uiKey": "translationManagement.subtitle",
+        "__v": 0
+    },
+    {
+        "_id": "68f214f86c7bd615dce184cb",
+        "dutch": "UI Sleutel",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "UI Key",
+        "uiKey": "translationManagement.uiKey",
+        "__v": 0
+    },
+    {
+        "_id": "68f216736c7bd615dce18620",
+        "dutch": "Alle vertalingen zijn succesvol bijgewerkt",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "All translations updated successfully",
+        "uiKey": "translationManagement.bulkUpdateSuccess",
+        "__v": 0
+    },
+    {
+        "_id": "68f216736c7bd615dce1861e",
+        "dutch": "Bulk Update",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Bulk Update",
+        "uiKey": "translationManagement.bulkUpdate",
+        "__v": 0
+    },
+    {
+        "_id": "68f216736c7bd615dce18622",
+        "dutch": "Weet je zeker dat je alle vertalingen wilt bijwerken?",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Are you sure you want to update all translations?",
+        "uiKey": "translationManagement.bulkUpdateConfirm",
+        "__v": 0
+    },
+    {
+        "_id": "68f216bb6c7bd615dce1870b",
+        "dutch": "Dit is de Avans Keuzemodule Selector, hier kun je kiezen welke module je wilt gebruiken",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "This is the Avans Elective Module selector, here you can choose which module you want to use",
+        "uiKey": "home.alinea.text",
+        "__v": 0
+    },
+    {
+        "_id": "68f216bb6c7bd615dce1870d",
+        "dutch": "Bekijk Modules",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Browse Modules",
+        "uiKey": "home.hero.browseModules",
+        "__v": 0
+    },
+    {
+        "_id": "68f216bb6c7bd615dce1870f",
+        "dutch": "Vind en schrijf je in voor keuzemodules die passen bij jouw interesses en carrière doelen",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Find and enroll in elective modules that match your interests and career goals",
+        "uiKey": "home.hero.subtitle",
+        "__v": 0
+    },
+    {
+        "_id": "68f216bb6c7bd615dce18711",
+        "dutch": "Inloggen",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Sign In",
+        "uiKey": "home.hero.signIn",
+        "__v": 0
+    },
+    {
+        "_id": "68f216bb6c7bd615dce18713",
+        "dutch": "Welkom bij de Keuzemodule Selector",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Welcome to the Elective Module Selector",
+        "uiKey": "home.alinea.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f216bb6c7bd615dce1871f",
+        "dutch": "Meer Informatie",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Learn More",
+        "uiKey": "home.quickActions.learnMore",
+        "__v": 0
+    },
+    {
+        "_id": "68f216bb6c7bd615dce1871b",
+        "dutch": "Keuzemodule",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Elective Module",
+        "uiKey": "home.hero.elective",
+        "__v": 0
+    },
+    {
+        "_id": "68f216bb6c7bd615dce18715",
+        "dutch": "Snelle Acties",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Quick Actions",
+        "uiKey": "home.quickActions.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f216bb6c7bd615dce1871d",
+        "dutch": "Mijn Profiel",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "My Profile",
+        "uiKey": "home.hero.myModules",
+        "__v": 0
+    },
+    {
+        "_id": "68f216bb6c7bd615dce18717",
+        "dutch": "Ontdek je Perfecte ",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Discover Your Perfect ",
+        "uiKey": "home.hero.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f216bb6c7bd615dce18719",
+        "dutch": "Mijn Profiel",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "My Profile",
+        "uiKey": "home.quickActions.myModules",
+        "__v": 0
+    },
+    {
+        "_id": "68f22602bf9820420cc3fa57",
+        "dutch": "Word lid van Avans",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Join Avans",
+        "uiKey": "register.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f22602bf9820420cc3fa5a",
+        "dutch": "Maak je account aan om toegang te krijgen tot keuzemodules",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Create your account to access elective modules",
+        "uiKey": "register.subtitle",
+        "__v": 0
+    },
+    {
+        "_id": "68f22602bf9820420cc3fa5d",
+        "dutch": "Gebruikersnaam",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Username",
+        "uiKey": "register.form.username",
+        "__v": 0
+    },
+    {
+        "_id": "68f22602bf9820420cc3fa60",
+        "dutch": "E-mail",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Email",
+        "uiKey": "register.form.email",
+        "__v": 0
+    },
+    {
+        "_id": "68f22602bf9820420cc3fa63",
+        "dutch": "Rol",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Role",
+        "uiKey": "register.form.role",
+        "__v": 0
+    },
+    {
+        "_id": "68f22602bf9820420cc3fa66",
+        "dutch": "Wachtwoord",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Password",
+        "uiKey": "register.form.password",
+        "__v": 0
+    },
+    {
+        "_id": "68f22602bf9820420cc3fa69",
+        "dutch": "Bevestig wachtwoord",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Confirm Password",
+        "uiKey": "register.form.confirmPassword",
+        "__v": 0
+    },
+    {
+        "_id": "68f22602bf9820420cc3fa6c",
+        "dutch": "Student",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Student",
+        "uiKey": "register.form.role.student",
+        "__v": 0
+    },
+    {
+        "_id": "68f22602bf9820420cc3fa6f",
+        "dutch": "Docent",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Teacher",
+        "uiKey": "register.form.role.teacher",
+        "__v": 0
+    },
+    {
+        "_id": "68f22602bf9820420cc3fa72",
+        "dutch": "Beheerder",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Admin",
+        "uiKey": "register.form.role.admin",
+        "__v": 0
+    },
+    {
+        "_id": "68f22602bf9820420cc3fa75",
+        "dutch": "Voer gebruikersnaam in",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Enter username",
+        "uiKey": "register.form.placeholder.username",
+        "__v": 0
+    },
+    {
+        "_id": "68f22602bf9820420cc3fa78",
+        "dutch": "Voer e-mailadres in",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Enter email",
+        "uiKey": "register.form.placeholder.email",
+        "__v": 0
+    },
+    {
+        "_id": "68f22602bf9820420cc3fa7b",
+        "dutch": "Voer wachtwoord in",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Enter password",
+        "uiKey": "register.form.placeholder.password",
+        "__v": 0
+    },
+    {
+        "_id": "68f22602bf9820420cc3fa7e",
+        "dutch": "Bevestig wachtwoord",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Confirm password",
+        "uiKey": "register.form.placeholder.confirmPassword",
+        "__v": 0
+    },
+    {
+        "_id": "68f22602bf9820420cc3fa81",
+        "dutch": "Account aanmaken...",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Creating account...",
+        "uiKey": "register.button.creating",
+        "__v": 0
+    },
+    {
+        "_id": "68f22602bf9820420cc3fa84",
+        "dutch": "Account aanmaken",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Create Account",
+        "uiKey": "register.button.create",
+        "__v": 0
+    },
+    {
+        "_id": "68f22602bf9820420cc3fa87",
+        "dutch": "Heb je al een account?",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Already have an account?",
+        "uiKey": "register.footer.hasAccount",
+        "__v": 0
+    },
+    {
+        "_id": "68f22602bf9820420cc3fa8a",
+        "dutch": "Meld je hier aan",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Sign in here",
+        "uiKey": "register.footer.signInHere",
+        "__v": 0
+    },
+    {
+        "_id": "68f22602bf9820420cc3fa8d",
+        "dutch": "Wachtwoorden komen niet overeen",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Passwords do not match",
+        "uiKey": "register.error.passwordMatch",
+        "__v": 0
+    },
+    {
+        "_id": "68f22602bf9820420cc3fa90",
+        "dutch": "Wachtwoord moet minimaal 3 tekens lang zijn",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Password must be at least 3 characters long",
+        "uiKey": "register.error.passwordLength",
+        "__v": 0
+    },
+    {
+        "_id": "68f22602bf9820420cc3fa93",
+        "dutch": "Registratie mislukt. Probeer het opnieuw.",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Registration failed. Please try again.",
+        "uiKey": "register.error.failed",
+        "__v": 0
+    },
+    {
+        "_id": "68f22602bf9820420cc3fa96",
+        "dutch": "Welkom terug",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Welcome Back",
+        "uiKey": "login.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f22602bf9820420cc3fa99",
+        "dutch": "Meld je aan om toegang te krijgen tot keuzemodules",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Sign in to access elective modules",
+        "uiKey": "login.subtitle",
+        "__v": 0
+    },
+    {
+        "_id": "68f22602bf9820420cc3fa9c",
+        "dutch": "Gebruikersnaam",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Username",
+        "uiKey": "login.form.username",
+        "__v": 0
+    },
+    {
+        "_id": "68f22602bf9820420cc3fa9f",
+        "dutch": "Wachtwoord",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Password",
+        "uiKey": "login.form.password",
+        "__v": 0
+    },
+    {
+        "_id": "68f22602bf9820420cc3faa2",
+        "dutch": "Voer je gebruikersnaam in",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Enter your username",
+        "uiKey": "login.form.placeholder.username",
+        "__v": 0
+    },
+    {
+        "_id": "68f22603bf9820420cc3faa5",
+        "dutch": "Voer je wachtwoord in",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Enter your password",
+        "uiKey": "login.form.placeholder.password",
+        "__v": 0
+    },
+    {
+        "_id": "68f22603bf9820420cc3faa8",
+        "dutch": "Aan het inloggen...",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Signing in...",
+        "uiKey": "login.button.signingIn",
+        "__v": 0
+    },
+    {
+        "_id": "68f22603bf9820420cc3faab",
+        "dutch": "Aanmelden",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Sign In",
+        "uiKey": "login.button.signIn",
+        "__v": 0
+    },
+    {
+        "_id": "68f22603bf9820420cc3faae",
+        "dutch": "Heb je nog geen account?",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Don't have an account?",
+        "uiKey": "login.footer.noAccount",
+        "__v": 0
+    },
+    {
+        "_id": "68f22603bf9820420cc3fab1",
+        "dutch": "Registreer hier",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Register here",
+        "uiKey": "login.footer.registerHere",
+        "__v": 0
+    },
+    {
+        "_id": "68f22603bf9820420cc3fab4",
+        "dutch": "Ongeldige gebruikersnaam of wachtwoord",
+        "creatorUuid": "1028eef1-1e05-4d7d-903d-6042c8e9747d",
+        "english": "Invalid username or password",
+        "uiKey": "login.error.invalid",
+        "__v": 0
+    },
+    {
+        "_id": "68f23f152d9667281ff38098",
+        "dutch": "Pagina niet gevonden",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Page Not Found",
+        "uiKey": "pageNotFound",
+        "__v": 0
+    },
+    {
+        "_id": "68f23f152d9667281ff3809b",
+        "dutch": "De pagina die u zoekt is mogelijk verwijderd, hernoemd of tijdelijk niet beschikbaar.",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+        "uiKey": "pageNotFoundMessage",
+        "__v": 0
+    },
+    {
+        "_id": "68f23f152d9667281ff3809e",
+        "dutch": "Naar Home",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Go Home",
+        "uiKey": "goHome",
+        "__v": 0
+    },
+    {
+        "_id": "68f23f152d9667281ff380a1",
+        "dutch": "Terug",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Go Back",
+        "uiKey": "goBack",
+        "__v": 0
+    },
+    {
+        "_id": "68f247242d9667281ff3868d",
+        "dutch": " om ",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": " to ",
+        "uiKey": "dashboard.access.sentencePart2",
+        "__v": 0
+    },
+    {
+        "_id": "68f247242d9667281ff3868f",
+        "dutch": "Je hebt toegang als ",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "You have access as ",
+        "uiKey": "dashboard.access.sentencePart1",
+        "__v": 0
+    },
+    {
+        "_id": "68f24e81f3ec25142bc15198",
+        "dutch": "Fout bij selecteren van keuzemodule",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Error selecting elective module",
+        "uiKey": "dashboard.course.error",
+        "__v": 0
+    },
+    {
+        "_id": "68f24e81f3ec25142bc1519e",
+        "dutch": "Geen keuzemodule geselecteerd",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "No elective module selected",
+        "uiKey": "dashboard.course.noCourseSelected",
+        "__v": 0
+    },
+    {
+        "_id": "68f24e81f3ec25142bc151a0",
+        "dutch": "Opslaan",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Save",
+        "uiKey": "dashboard.course.save",
+        "__v": 0
+    },
+    {
+        "_id": "68f24e81f3ec25142bc1519c",
+        "dutch": "Keuzemodules laden...",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Loading elective modules...",
+        "uiKey": "dashboard.course.loadingCourses",
+        "__v": 0
+    },
+    {
+        "_id": "68f24e81f3ec25142bc151a6",
+        "dutch": "Kies een keuzemodule...",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Choose an elective module...",
+        "uiKey": "dashboard.course.selectPlaceholder",
+        "__v": 0
+    },
+    {
+        "_id": "68f24e81f3ec25142bc151a4",
+        "dutch": "Selecteer jouw Studie",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Select your study",
+        "uiKey": "dashboard.course.selectCourse",
+        "__v": 0
+    },
+    {
+        "_id": "68f24e81f3ec25142bc151a8",
+        "dutch": "Studie succesvol geselecteerd!",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Study selected successfully!",
+        "uiKey": "dashboard.course.success",
+        "__v": 0
+    },
+    {
+        "_id": "68f24e81f3ec25142bc151aa",
+        "dutch": "Huidige Studie",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Current Study",
+        "uiKey": "dashboard.course.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f24e81f3ec25142bc1519a",
+        "dutch": "Fout bij laden van keuzemodules",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Error loading elective modules",
+        "uiKey": "dashboard.course.errorLoadingCourses",
+        "__v": 0
+    },
+    {
+        "_id": "68f24e81f3ec25142bc151a2",
+        "dutch": "Bezig met opslaan...",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Saving...",
+        "uiKey": "dashboard.course.saving",
+        "__v": 0
+    },
+    {
+        "_id": "68f2554f58df22f527e915a7",
+        "dutch": "Beheer",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Management",
+        "uiKey": "nav.management",
+        "__v": 0
+    },
+    {
+        "_id": "68f2554f58df22f527e915aa",
+        "dutch": "Beheer Dashboard",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Management Dashboard",
+        "uiKey": "management.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f2554f58df22f527e915ad",
+        "dutch": "Centrale hub voor alle docent tools en beheer functies",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Central hub for all teacher tools and management functions",
+        "uiKey": "management.subtitle",
+        "__v": 0
+    },
+    {
+        "_id": "68f2554f58df22f527e915b0",
+        "dutch": "Toegang Geweigerd",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Access Denied",
+        "uiKey": "management.accessDenied",
+        "__v": 0
+    },
+    {
+        "_id": "68f2554f58df22f527e915b3",
+        "dutch": "Beschikbare Tools",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Available Tools",
+        "uiKey": "management.tools.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f2554f58df22f527e915b6",
+        "dutch": "Vertaling Beheer",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Translation Management",
+        "uiKey": "management.tools.translationManagement.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f2554f58df22f527e915b9",
+        "dutch": "Beheer en bewerk vertalingen voor de gehele applicatie",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Manage and edit translations for the entire application",
+        "uiKey": "management.tools.translationManagement.description",
+        "__v": 0
+    },
+    {
+        "_id": "68f2554f58df22f527e915bc",
+        "dutch": "Open Vertaling Beheer",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Open Translation Management",
+        "uiKey": "management.tools.translationManagement.button",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d058df22f527e91971",
+        "dutch": "Keuzemodule Beheer",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Subject Management",
+        "uiKey": "management.tools.subjectManagement.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d058df22f527e91974",
+        "dutch": "Creëer, bewerk en beheer keuzemodules",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Create, edit, and manage elective modules",
+        "uiKey": "management.tools.subjectManagement.description",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d058df22f527e91977",
+        "dutch": "Open Keuzemodule Beheer",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Open Subject Management",
+        "uiKey": "management.tools.subjectManagement.button",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d058df22f527e9197a",
+        "dutch": "Keuzemodule Beheer",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Subject Management",
+        "uiKey": "subjectManagement.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d058df22f527e9197d",
+        "dutch": "Beheer keuzemodules",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Manage elective modules",
+        "uiKey": "subjectManagement.subtitle",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d058df22f527e91980",
+        "dutch": "Toegang Geweigerd",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Access Denied",
+        "uiKey": "subjectManagement.accessDenied",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d058df22f527e91983",
+        "dutch": "Keuze Modulen Laden",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Load Modules",
+        "uiKey": "subjectManagement.loadSubjects",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d058df22f527e91986",
+        "dutch": "Nieuw Keuze Module Aanmaken",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Create New Subject",
+        "uiKey": "subjectManagement.createNew",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d058df22f527e91989",
+        "dutch": "Geen Keuze Modules gevonden",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "No Modules found",
+        "uiKey": "subjectManagement.noSubjects",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d058df22f527e9198c",
+        "dutch": "Keuze Modules laden...",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Loading modules...",
+        "uiKey": "subjectManagement.loading",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d058df22f527e9198f",
+        "dutch": "Fout bij laden van Keuze Modules",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Failed to load modules",
+        "uiKey": "subjectManagement.error",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d058df22f527e91992",
+        "dutch": "Actie succesvol uitgevoerd",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Action completed successfully",
+        "uiKey": "subjectManagement.success",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d058df22f527e91995",
+        "dutch": "Weet je zeker dat je dit Keuze Module wilt verwijderen?",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Are you sure you want to delete this subject?",
+        "uiKey": "subjectManagement.delete.confirm",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d058df22f527e91998",
+        "dutch": "Keuze Module succesvol verwijderd",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Subject deleted successfully",
+        "uiKey": "subjectManagement.delete.success",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d058df22f527e9199b",
+        "dutch": "Fout bij verwijderen van Keuze Module",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Failed to delete subject",
+        "uiKey": "subjectManagement.delete.error",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e9199e",
+        "dutch": "Keuze Module Formulier",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Subject Form",
+        "uiKey": "subjectManagement.form.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e919a1",
+        "dutch": "Titel (Nederlands)",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Title (Dutch)",
+        "uiKey": "subjectManagement.form.titleNL",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e919a4",
+        "dutch": "Titel (Engels)",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Title (English)",
+        "uiKey": "subjectManagement.form.titleEN",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e919a7",
+        "dutch": "Beschrijving (Nederlands)",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Description (Dutch)",
+        "uiKey": "subjectManagement.form.descriptionNL",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e919aa",
+        "dutch": "Beschrijving (Engels)",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Description (English)",
+        "uiKey": "subjectManagement.form.descriptionEN",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e919ad",
+        "dutch": "Meer Info (Nederlands)",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "More Info (Dutch)",
+        "uiKey": "subjectManagement.form.moreInfoNL",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e919b0",
+        "dutch": "Meer Info (Engels)",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "More Info (English)",
+        "uiKey": "subjectManagement.form.moreInfoEN",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e919b3",
+        "dutch": "Niveau",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Level",
+        "uiKey": "subjectManagement.form.level",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e919b6",
+        "dutch": "Studiepunten",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Study Points",
+        "uiKey": "subjectManagement.form.studyPoints",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e919b9",
+        "dutch": "Talen",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Languages",
+        "uiKey": "subjectManagement.form.languages",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e919bc",
+        "dutch": "Tags (komma gescheiden)",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Tags (comma-separated)",
+        "uiKey": "subjectManagement.form.tags",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e919bf",
+        "dutch": "Opslaan",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Save",
+        "uiKey": "subjectManagement.form.save",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e919c2",
+        "dutch": "Annuleren",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Cancel",
+        "uiKey": "subjectManagement.form.cancel",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e919c5",
+        "dutch": "Aanmaken...",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Creating...",
+        "uiKey": "subjectManagement.form.creating",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e919c8",
+        "dutch": "Bijwerken...",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Updating...",
+        "uiKey": "subjectManagement.form.updating",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e919cb",
+        "dutch": "Titel",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Title",
+        "uiKey": "subjectManagement.table.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e919ce",
+        "dutch": "Niveau",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Level",
+        "uiKey": "subjectManagement.table.level",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e919d1",
+        "dutch": "Punten",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Points",
+        "uiKey": "subjectManagement.table.points",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e919d4",
+        "dutch": "Talen",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Languages",
+        "uiKey": "subjectManagement.table.languages",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e919d7",
+        "dutch": "Tags",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Tags",
+        "uiKey": "subjectManagement.table.tags",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e919da",
+        "dutch": "Acties",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Actions",
+        "uiKey": "subjectManagement.table.actions",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e919dd",
+        "dutch": "Bewerken",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Edit",
+        "uiKey": "subjectManagement.actions.edit",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e919e0",
+        "dutch": "Verwijderen",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Delete",
+        "uiKey": "subjectManagement.actions.delete",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e919e3",
+        "dutch": "Niveau",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Level",
+        "uiKey": "subjectManagement.filters.level",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e919e6",
+        "dutch": "Studiepunten",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Study Points",
+        "uiKey": "subjectManagement.filters.points",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e919e9",
+        "dutch": "Tag",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Tag",
+        "uiKey": "subjectManagement.filters.tag",
+        "__v": 0
+    },
+    {
+        "_id": "68f259d158df22f527e919ec",
+        "dutch": "Wissen",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Clear",
+        "uiKey": "subjectManagement.filters.clear",
+        "__v": 0
+    },
+    {
+        "_id": "68f25f5cb0f8c3984d8f7900",
+        "dutch": "Bekijken",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "View",
+        "uiKey": "subjectManagement.actions.view",
+        "__v": 0
+    },
+    {
+        "_id": "68f26030b0f8c3984d8f7b9d",
+        "dutch": "Beschrijving",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Description",
+        "uiKey": "subjectView.description",
+        "__v": 0
+    },
+    {
+        "_id": "68f26030b0f8c3984d8f7bab",
+        "dutch": "Toegevoegd aan favorieten",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Added to favourites",
+        "uiKey": "subjectView.favouriteAdded",
+        "__v": 0
+    },
+    {
+        "_id": "68f26030b0f8c3984d8f7bad",
+        "dutch": "Verwijderd uit favorieten",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Removed from favourites",
+        "uiKey": "subjectView.favouriteRemoved",
+        "__v": 0
+    },
+    {
+        "_id": "68f26030b0f8c3984d8f7baf",
+        "dutch": "Selecteren voor Vergelijken",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Select for Compare",
+        "uiKey": "subjectView.selectForCompare",
+        "__v": 0
+    },
+    {
+        "_id": "68f26030b0f8c3984d8f7bb1",
+        "dutch": "Eigenaar",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Owner",
+        "uiKey": "subjectView.owner",
+        "__v": 0
+    },
+    {
+        "_id": "68f26030b0f8c3984d8f7bb3",
+        "dutch": "Fout bij bijwerken van favorieten",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Failed to update favourites",
+        "uiKey": "subjectView.favouriteError",
+        "__v": 0
+    },
+    {
+        "_id": "68f26030b0f8c3984d8f7bb5",
+        "dutch": "Verwijderen uit Favorieten",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Remove from Favourites",
+        "uiKey": "subjectView.removeFromFavourites",
+        "__v": 0
+    },
+    {
+        "_id": "68f26030b0f8c3984d8f7bb7",
+        "dutch": "Studiepunten",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Study Points",
+        "uiKey": "subjectView.studyPoints",
+        "__v": 0
+    },
+    {
+        "_id": "68f26030b0f8c3984d8f7bb9",
+        "dutch": "Keuze Module niet gevonden",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Subject not found",
+        "uiKey": "subjectView.notFound",
+        "__v": 0
+    },
+    {
+        "_id": "68f26030b0f8c3984d8f7bbb",
+        "dutch": "Beschikbare Talen",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Available Languages",
+        "uiKey": "subjectView.languages",
+        "__v": 0
+    },
+    {
+        "_id": "68f26030b0f8c3984d8f7bbd",
+        "dutch": "Keuze Module Weergave",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Subject View",
+        "uiKey": "subjectView.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f26030b0f8c3984d8f7ba5",
+        "dutch": "Terug naar Lijst",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Back to List",
+        "uiKey": "subjectView.backToList",
+        "__v": 0
+    },
+    {
+        "_id": "68f26030b0f8c3984d8f7b9f",
+        "dutch": "Dit is een template functie voor het vergelijken van Keuze Modules. Deze functie zal niet worden gemaakt in de POC.",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "This is a template function for comparing modules. This feature won't be implemented in the POC.",
+        "uiKey": "subjectView.compareTemplate",
+        "__v": 0
+    },
+    {
+        "_id": "68f26030b0f8c3984d8f7ba1",
+        "dutch": "Fout",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Error",
+        "uiKey": "subjectView.error",
+        "__v": 0
+    },
+    {
+        "_id": "68f26030b0f8c3984d8f7ba7",
+        "dutch": "Niveau",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Level",
+        "uiKey": "subjectView.level",
+        "__v": 0
+    },
+    {
+        "_id": "68f26030b0f8c3984d8f7ba3",
+        "dutch": "Toevoegen aan Favorieten",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Add to Favourites",
+        "uiKey": "subjectView.addToFavourites",
+        "__v": 0
+    },
+    {
+        "_id": "68f26030b0f8c3984d8f7ba9",
+        "dutch": "Keuze Module laden...",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Loading subject...",
+        "uiKey": "subjectView.loading",
+        "__v": 0
+    },
+    {
+        "_id": "68f26030b0f8c3984d8f7bbf",
+        "dutch": "Actie succesvol uitgevoerd",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Action completed successfully",
+        "uiKey": "subjectView.success",
+        "__v": 0
+    },
+    {
+        "_id": "68f26030b0f8c3984d8f7bc1",
+        "dutch": "Aanvullende Informatie",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Additional Information",
+        "uiKey": "subjectView.moreInfo",
+        "__v": 0
+    },
+    {
+        "_id": "68f26030b0f8c3984d8f7bc3",
+        "dutch": "Tags",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Tags",
+        "uiKey": "subjectView.tags",
+        "__v": 0
+    },
+    {
+        "_id": "68f2627ab0f8c3984d8f81fd",
+        "dutch": "Keuze Module UUID",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Subject UUID",
+        "uiKey": "subjectView.subjectUuid",
+        "__v": 0
+    },
+    {
+        "_id": "68f2627ab0f8c3984d8f81ff",
+        "dutch": "Eigenaar UUID",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Owner UUID",
+        "uiKey": "subjectView.ownerUuid",
+        "__v": 0
+    },
+    {
+        "_id": "68f2627ab0f8c3984d8f8201",
+        "dutch": "Keuze Module Informatie",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Subject Information",
+        "uiKey": "subjectView.subjectInformation",
+        "__v": 0
+    },
+    {
+        "_id": "68f2627ab0f8c3984d8f8205",
+        "dutch": "template button",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "template button",
+        "uiKey": "subjectView.templateOnly",
+        "__v": 0
+    },
+    {
+        "_id": "68f2627ab0f8c3984d8f8203",
+        "dutch": "Acties",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Actions",
+        "uiKey": "subjectView.actions",
+        "__v": 0
+    },
+    {
+        "_id": "68f2627ab0f8c3984d8f8207",
+        "dutch": "Keuze Module Details",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Subject Details",
+        "uiKey": "subjectView.subjectDetails",
+        "__v": 0
+    },
+    {
+        "_id": "68f2627ab0f8c3984d8f8209",
+        "dutch": "Favoriet",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Favourite",
+        "uiKey": "subjectView.favourite",
+        "__v": 0
+    },
+    {
+        "_id": "68f2630db0f8c3984d8f83a7",
+        "dutch": "Onbekend Keuze Module",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Unknown Subject",
+        "uiKey": "subjectView.unknownSubject",
+        "__v": 0
+    },
+    {
+        "_id": "68f2630db0f8c3984d8f83aa",
+        "dutch": "Geen beschrijving beschikbaar",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "No description available",
+        "uiKey": "subjectView.noDescription",
+        "__v": 0
+    },
+    {
+        "_id": "68f2630db0f8c3984d8f83ad",
+        "dutch": "Geen aanvullende informatie",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "No additional information",
+        "uiKey": "subjectView.noMoreInfo",
+        "__v": 0
+    },
+    {
+        "_id": "68f2630db0f8c3984d8f83b0",
+        "dutch": "Niet beschikbaar",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Not available",
+        "uiKey": "common.notAvailable",
+        "__v": 0
+    },
+    {
+        "_id": "68f266e55a27ec2388f2c97e",
+        "dutch": "Studiepunten",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Study Points",
+        "uiKey": "subjects.filters.points",
+        "__v": 0
+    },
+    {
+        "_id": "68f266e55a27ec2388f2c98a",
+        "dutch": "Alle Niveaus",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "All Levels",
+        "uiKey": "subjects.filters.allLevels",
+        "__v": 0
+    },
+    {
+        "_id": "68f266e55a27ec2388f2c9af",
+        "dutch": "match",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "match",
+        "uiKey": "subjectList.matchPercentage",
+        "__v": 0
+    },
+    {
+        "_id": "68f266e55a27ec2388f2c9a3",
+        "dutch": "Talen",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Languages",
+        "uiKey": "subjectList.languages",
+        "__v": 0
+    },
+    {
+        "_id": "68f266e55a27ec2388f2c988",
+        "dutch": "Fout bij laden van modules",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Failed to load modules",
+        "uiKey": "subjects.error",
+        "__v": 0
+    },
+    {
+        "_id": "68f266e55a27ec2388f2c98e",
+        "dutch": "Zoeken",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Search",
+        "uiKey": "subjects.loadSubjects",
+        "__v": 0
+    },
+    {
+        "_id": "68f266e55a27ec2388f2c999",
+        "dutch": "Geen Modules gevonden",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "No modules found",
+        "uiKey": "subjectList.noSubjects",
+        "__v": 0
+    },
+    {
+        "_id": "68f266e55a27ec2388f2c986",
+        "dutch": "Tag",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Tag",
+        "uiKey": "subjects.filters.tag",
+        "__v": 0
+    },
+    {
+        "_id": "68f266e55a27ec2388f2c984",
+        "dutch": "Niveau",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Level",
+        "uiKey": "subjects.filters.level",
+        "__v": 0
+    },
+    {
+        "_id": "68f266e55a27ec2388f2c980",
+        "dutch": "Wissen",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Clear",
+        "uiKey": "subjects.clearFilters",
+        "__v": 0
+    },
+    {
+        "_id": "68f266e55a27ec2388f2c98c",
+        "dutch": "Modules laden...",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Loading modules...",
+        "uiKey": "subjects.loading",
+        "__v": 0
+    },
+    {
+        "_id": "68f266e55a27ec2388f2c99b",
+        "dutch": "pts",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "pts",
+        "uiKey": "subjectList.points",
+        "__v": 0
+    },
+    {
+        "_id": "68f266e55a27ec2388f2c9b5",
+        "dutch": "Modules laden...",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Loading modules...",
+        "uiKey": "subjectList.loading",
+        "__v": 0
+    },
+    {
+        "_id": "68f266e55a27ec2388f2c982",
+        "dutch": "Studiepunten",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Study points",
+        "uiKey": "subjects.filters.studyPointsPlaceholder",
+        "__v": 0
+    },
+    {
+        "_id": "68f266e55a27ec2388f2c994",
+        "dutch": "Ontdek en bekijk keuzemodules",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Browse and discover elective modules",
+        "uiKey": "subjects.subtitle",
+        "__v": 0
+    },
+    {
+        "_id": "68f266e55a27ec2388f2c99d",
+        "dutch": "Studiepunten",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Study Points",
+        "uiKey": "subjectList.studyPoints",
+        "__v": 0
+    },
+    {
+        "_id": "68f266e55a27ec2388f2c9a1",
+        "dutch": "Details Bekijken",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "View Details",
+        "uiKey": "subjectList.viewDetails",
+        "__v": 0
+    },
+    {
+        "_id": "68f266e55a27ec2388f2c9a9",
+        "dutch": "Fav",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Fav",
+        "uiKey": "subjectList.favourite",
+        "__v": 0
+    },
+    {
+        "_id": "68f266e55a27ec2388f2c990",
+        "dutch": "Tag naam",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Tag name",
+        "uiKey": "subjects.filters.tagPlaceholder",
+        "__v": 0
+    },
+    {
+        "_id": "68f266e55a27ec2388f2c992",
+        "dutch": "Beschikbare Keuze Modules",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Available Elective Modules",
+        "uiKey": "subjects.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f266e55a27ec2388f2c9a7",
+        "dutch": "Niveau",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Level",
+        "uiKey": "subjectList.level",
+        "__v": 0
+    },
+    {
+        "_id": "68f266e55a27ec2388f2c996",
+        "dutch": "Modules succesvol geladen",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Modules loaded successfully",
+        "uiKey": "subjects.success",
+        "__v": 0
+    },
+    {
+        "_id": "68f266e55a27ec2388f2c99f",
+        "dutch": "Tags",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Tags",
+        "uiKey": "subjectList.tags",
+        "__v": 0
+    },
+    {
+        "_id": "68f2672e5a27ec2388f2cc0b",
+        "dutch": "Aanbevolen Modules",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Recommended Modules",
+        "uiKey": "recommendedSubjects.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f2672e5a27ec2388f2cc0e",
+        "dutch": "Gepersonaliseerde vak aanbevelingen gebaseerd op je profiel",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Personalized subject recommendations based on your profile",
+        "uiKey": "recommendedSubjects.subtitle",
+        "__v": 0
+    },
+    {
+        "_id": "68f2672e5a27ec2388f2cc11",
+        "dutch": "Gepersonaliseerde aanbevelingen laden...",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Loading personalized recommendations...",
+        "uiKey": "recommendedSubjects.loading",
+        "__v": 0
+    },
+    {
+        "_id": "68f2672e5a27ec2388f2cc14",
+        "dutch": "Fout bij laden van aanbevelingen",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Failed to load recommendations",
+        "uiKey": "recommendedSubjects.error",
+        "__v": 0
+    },
+    {
+        "_id": "68f2672e5a27ec2388f2cc17",
+        "dutch": "Aanbevelingen succesvol geladen",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Recommendations loaded successfully",
+        "uiKey": "recommendedSubjects.success",
+        "__v": 0
+    },
+    {
+        "_id": "68f2672e5a27ec2388f2cc1a",
+        "dutch": "Geen aanbevelingen beschikbaar op dit moment",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "No recommendations available at this time",
+        "uiKey": "recommendedSubjects.noRecommendations",
+        "__v": 0
+    },
+    {
+        "_id": "68f2672e5a27ec2388f2cc1d",
+        "dutch": "Bekijk Alle",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Browse All",
+        "uiKey": "recommendedSubjects.browseAll",
+        "__v": 0
+    },
+    {
+        "_id": "68f2672e5a27ec2388f2cc20",
+        "dutch": "Vernieuwen",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Refresh",
+        "uiKey": "recommendedSubjects.refresh",
+        "__v": 0
+    },
+    {
+        "_id": "68f26a372d3c1e004e6eb0e4",
+        "dutch": "Ontdek Modules",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Discover Modules",
+        "uiKey": "dashboard.modules.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f26a372d3c1e004e6eb0e6",
+        "dutch": "Aanbevolen Modules",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Recommended Modules",
+        "uiKey": "dashboard.modules.viewRecommended",
+        "__v": 0
+    },
+    {
+        "_id": "68f26a372d3c1e004e6eb0fd",
+        "dutch": "Bekijk Alle Modules",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Browse All Modules",
+        "uiKey": "dashboard.modules.browseAll",
+        "__v": 0
+    },
+    {
+        "_id": "68f26a372d3c1e004e6eb0ff",
+        "dutch": "Vind de perfecte keuzemodules voor jouw studieprogramma",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Find the perfect elective modules for your study program",
+        "uiKey": "dashboard.modules.description",
+        "__v": 0
+    },
+    {
+        "_id": "68f26a4e2d3c1e004e6eb3fc",
+        "dutch": "Aanbevolen Bekijken",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "View Recommended",
+        "uiKey": "subjects.viewRecommended",
+        "__v": 0
+    },
+    {
+        "_id": "68f26ddb074d145b14690adb",
+        "dutch": "Favorieten",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Favourites",
+        "uiKey": "recommendedSubjects.viewFavourites",
+        "__v": 0
+    },
+    {
+        "_id": "68f26e83074d145b14690d9e",
+        "dutch": "Favoriete Modules",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Favourite Modules",
+        "uiKey": "dashboard.modules.viewFavourites",
+        "__v": 0
+    },
+    {
+        "_id": "68f26e84074d145b14690da1",
+        "dutch": "Favorieten Bekijken",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "View Favourites",
+        "uiKey": "subjects.viewFavourites",
+        "__v": 0
+    },
+    {
+        "_id": "68f26e84074d145b14690da6",
+        "dutch": "Favoriete Modules",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Favourite Modules",
+        "uiKey": "favouriteSubjects.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f26e84074d145b14690da9",
+        "dutch": "Jouw opgeslagen keuzemodules",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Your saved elective modules",
+        "uiKey": "favouriteSubjects.subtitle",
+        "__v": 0
+    },
+    {
+        "_id": "68f26e84074d145b14690dac",
+        "dutch": "Favoriete modulen laden...",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Loading favourite modules...",
+        "uiKey": "favouriteSubjects.loading",
+        "__v": 0
+    },
+    {
+        "_id": "68f26e84074d145b14690daf",
+        "dutch": "Fout bij laden van favoriete modules",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Failed to load favourite modules",
+        "uiKey": "favouriteSubjects.error",
+        "__v": 0
+    },
+    {
+        "_id": "68f26e84074d145b14690db2",
+        "dutch": "Favorieten succesvol geladen",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Favourites loaded successfully",
+        "uiKey": "favouriteSubjects.success",
+        "__v": 0
+    },
+    {
+        "_id": "68f26e84074d145b14690db5",
+        "dutch": "Nog geen favoriete modules",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "No favourite modules yet",
+        "uiKey": "favouriteSubjects.noFavourites",
+        "__v": 0
+    },
+    {
+        "_id": "68f26e84074d145b14690db8",
+        "dutch": "Bekijk Alle",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Browse All",
+        "uiKey": "favouriteSubjects.browseAll",
+        "__v": 0
+    },
+    {
+        "_id": "68f26e84074d145b14690dbb",
+        "dutch": "Aanbevolen Bekijken",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "View Recommended",
+        "uiKey": "favouriteSubjects.viewRecommended",
+        "__v": 0
+    },
+    {
+        "_id": "68f26e84074d145b14690dbe",
+        "dutch": "Vernieuwen",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Refresh",
+        "uiKey": "favouriteSubjects.refresh",
+        "__v": 0
+    },
+    {
+        "_id": "68f2706f074d145b14691b79",
+        "dutch": "management.comingSoon.title (nieuw)",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "management.comingSoon.title (new)",
+        "uiKey": "management.comingSoon.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f2706f074d145b14691b7b",
+        "dutch": "management.comingSoon.description (nieuw)",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "management.comingSoon.description (new)",
+        "uiKey": "management.comingSoon.description",
+        "__v": 0
+    },
+    {
+        "_id": "68f271bd074d145b14691ccc",
+        "dutch": "Creëer, bewerk en beheer studieprogramma's",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Create, edit, and manage study programs",
+        "uiKey": "management.tools.courseManagement.description",
+        "__v": 0
+    },
+    {
+        "_id": "68f271bd074d145b14691cce",
+        "dutch": "Open Studie Beheer",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Open Study Management",
+        "uiKey": "management.tools.courseManagement.button",
+        "__v": 0
+    },
+    {
+        "_id": "68f271bd074d145b14691cd0",
+        "dutch": "Studie Beheer",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Study Management",
+        "uiKey": "management.tools.courseManagement.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788c074d145b14691f8d",
+        "dutch": "Studie Beheer",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Study Management",
+        "uiKey": "courseManagement.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788c074d145b14691f90",
+        "dutch": "Beheer studieprogramma's",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Manage study programs",
+        "uiKey": "courseManagement.subtitle",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788c074d145b14691f93",
+        "dutch": "Toegang Geweigerd",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Access Denied",
+        "uiKey": "courseManagement.accessDenied",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788c074d145b14691f96",
+        "dutch": "Studies Laden",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Load Studies",
+        "uiKey": "courseManagement.loadCourses",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788c074d145b14691f99",
+        "dutch": "Nieuwe Studie Aanmaken",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Create New Study",
+        "uiKey": "courseManagement.createNew",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788c074d145b14691f9c",
+        "dutch": "Geen studies gevonden",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "No study found",
+        "uiKey": "courseManagement.noCourses",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788d074d145b14691f9f",
+        "dutch": "Studies laden...",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Loading studies...",
+        "uiKey": "courseManagement.loading",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788d074d145b14691fa2",
+        "dutch": "Fout bij laden van studies",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Failed to load studies",
+        "uiKey": "courseManagement.error",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788d074d145b14691fa5",
+        "dutch": "Actie succesvol uitgevoerd",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Action completed successfully",
+        "uiKey": "courseManagement.success",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788d074d145b14691fa8",
+        "dutch": "Weet je zeker dat je deze studie wilt verwijderen?",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Are you sure you want to delete this study?",
+        "uiKey": "courseManagement.delete.confirm",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788d074d145b14691fab",
+        "dutch": "Studie succesvol verwijderd",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Study deleted successfully",
+        "uiKey": "courseManagement.delete.success",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788d074d145b14691fae",
+        "dutch": "Fout bij verwijderen van studie",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Failed to delete study",
+        "uiKey": "courseManagement.delete.error",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788d074d145b14691fb1",
+        "dutch": "Studie Form",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Study Form",
+        "uiKey": "courseManagement.form.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788d074d145b14691fb4",
+        "dutch": "Titel (Nederlands)",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Title (Dutch)",
+        "uiKey": "courseManagement.form.titleNL",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788d074d145b14691fb7",
+        "dutch": "Titel (Engels)",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Title (English)",
+        "uiKey": "courseManagement.form.titleEN",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788d074d145b14691fba",
+        "dutch": "Beschrijving (Nederlands)",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Description (Dutch)",
+        "uiKey": "courseManagement.form.descriptionNL",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788d074d145b14691fbd",
+        "dutch": "Beschrijving (Engels)",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Description (English)",
+        "uiKey": "courseManagement.form.descriptionEN",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788d074d145b14691fc0",
+        "dutch": "Talen",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Languages",
+        "uiKey": "courseManagement.form.languages",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788d074d145b14691fc3",
+        "dutch": "Tags (komma gescheiden)",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Tags (comma-separated)",
+        "uiKey": "courseManagement.form.tags",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788d074d145b14691fc6",
+        "dutch": "Opslaan",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Save",
+        "uiKey": "courseManagement.form.save",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788d074d145b14691fc9",
+        "dutch": "Annuleren",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Cancel",
+        "uiKey": "courseManagement.form.cancel",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788d074d145b14691fcc",
+        "dutch": "Aanmaken...",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Creating...",
+        "uiKey": "courseManagement.form.creating",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788d074d145b14691fcf",
+        "dutch": "Bijwerken...",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Updating...",
+        "uiKey": "courseManagement.form.updating",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788d074d145b14691fd2",
+        "dutch": "Titel",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Title",
+        "uiKey": "courseManagement.table.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788d074d145b14691fd5",
+        "dutch": "Talen",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Languages",
+        "uiKey": "courseManagement.table.languages",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788d074d145b14691fd8",
+        "dutch": "Tags",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Tags",
+        "uiKey": "courseManagement.table.tags",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788d074d145b14691fdb",
+        "dutch": "Acties",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Actions",
+        "uiKey": "courseManagement.table.actions",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788d074d145b14691fde",
+        "dutch": "Bewerken",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Edit",
+        "uiKey": "courseManagement.actions.edit",
+        "__v": 0
+    },
+    {
+        "_id": "68f2788d074d145b14691fe1",
+        "dutch": "Verwijderen",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Delete",
+        "uiKey": "courseManagement.actions.delete",
+        "__v": 0
+    },
+    {
+        "_id": "68f27f7b074d145b14693144",
+        "dutch": "Je bent succesvol uitgelogd.",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "You have been logged out successfully.",
+        "uiKey": "logout.message",
+        "__v": 0
+    },
+    {
+        "_id": "68f27f7b074d145b14693148",
+        "dutch": "Uitloggen",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Logging Out",
+        "uiKey": "logout.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f27f7b074d145b14693146",
+        "dutch": "Doorverwijzen naar inlogpagina...",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Redirecting to login page...",
+        "uiKey": "logout.redirecting",
+        "__v": 0
+    },
+    {
+        "_id": "68f28422074d145b1469359c",
+        "dutch": "Installeren",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Install",
+        "uiKey": "pwa.install.button",
+        "__v": 0
+    },
+    {
+        "_id": "68f28422074d145b146935a2",
+        "dutch": "Installeer deze app op je apparaat voor een betere ervaring en offline toegang.",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Install this app on your device for a better experience and offline access.",
+        "uiKey": "pwa.install.description",
+        "__v": 0
+    },
+    {
+        "_id": "68f28422074d145b146935a0",
+        "dutch": "Installeer Elective Hub",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Install Elective Hub",
+        "uiKey": "pwa.install.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f28422074d145b146935af",
+        "dutch": "Sommige functies zijn mogelijk niet beschikbaar. Je kunt alle functies gebruiken wanneer je weer online bent.",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Some features may not be available. You'll be able to use all features when you're back online.",
+        "uiKey": "pwa.offline.description",
+        "__v": 0
+    },
+    {
+        "_id": "68f28422074d145b1469359e",
+        "dutch": "Niet nu",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Not now",
+        "uiKey": "pwa.install.dismiss",
+        "__v": 0
+    },
+    {
+        "_id": "68f28422074d145b146935b1",
+        "dutch": "Je bent offline",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "You're Offline",
+        "uiKey": "pwa.offline.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f291f9074d145b14699784",
+        "dutch": "Orphans Verwijderen",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Delete Orphaned",
+        "uiKey": "translationManagement.deleteOrphans",
+        "__v": 0
+    },
+    {
+        "_id": "68f291f9074d145b1469978e",
+        "dutch": "Orphan Vertalingen",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Orphaned Translations",
+        "uiKey": "translationManagement.orphansTitle",
+        "__v": 0
+    },
+    {
+        "_id": "68f291f9074d145b14699786",
+        "dutch": "Weet je zeker dat je alle Orphan vertalingen wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Are you sure you want to delete all orphaned translations? This action cannot be undone.",
+        "uiKey": "translationManagement.confirmDeleteOrphans",
+        "__v": 0
+    },
+    {
+        "_id": "68f291f9074d145b14699788",
+        "dutch": "Orphans Laden",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Load Orphaned",
+        "uiKey": "translationManagement.loadOrphans",
+        "__v": 0
+    },
+    {
+        "_id": "68f291f9074d145b1469978c",
+        "dutch": "Ongebruikte vertalingen die database ruimte verspillen",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Unused translations that waste database space",
+        "uiKey": "translationManagement.orphansSubtitle",
+        "__v": 0
+    },
+    {
+        "_id": "68f291f9074d145b1469978a",
+        "dutch": "Geen Orphan vertalingen gevonden. Klik op \"Orphans Laden\" om te controleren op ongebruikte vertalingen.",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "No orphaned translations found. Click \"Load Orphaned\" to check for unused translations.",
+        "uiKey": "translationManagement.noOrphans",
+        "__v": 0
+    },
+    {
+        "_id": "68f294c7074d145b1469a2c1",
+        "dutch": "Onbekende keuzemodule",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Unknown course",
+        "uiKey": "dashboard.course.noTitle",
+        "__v": 0
+    },
+    {
+        "_id": "68f294c7074d145b1469a2c3",
+        "dutch": "Geen beschrijving beschikbaar",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "No description available",
+        "uiKey": "dashboard.course.noDescription",
+        "__v": 0
+    },
+    {
+        "_id": "68f2993aff189f3c974e1ad6",
+        "dutch": "Subject Browsing & Filtering",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Subject Browsing & Filtering",
+        "uiKey": "about.epic1.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f2993aff189f3c974e1ae0",
+        "dutch": "PWA Feature",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "PWA Feature",
+        "uiKey": "about.epic6.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f2993aff189f3c974e1ae2",
+        "dutch": "Subject Detail Page",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Subject Detail Page",
+        "uiKey": "about.epic2.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f2993aff189f3c974e1ae4",
+        "dutch": "Recommendations",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Recommendations",
+        "uiKey": "about.epic4.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f2993aff189f3c974e1ae6",
+        "dutch": "Accessibility & Inclusivity",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Accessibility & Inclusivity",
+        "uiKey": "about.epic5.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f2993aff189f3c974e1ae8",
+        "dutch": "Security & Authentication",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Security & Authentication",
+        "uiKey": "about.epic7.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f2993aff189f3c974e1aea",
+        "dutch": "Favorites",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Favorites",
+        "uiKey": "about.epic3.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f2993aff189f3c974e1ada",
+        "dutch": "Study Selection",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Study Selection",
+        "uiKey": "about.epic11.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f2993aff189f3c974e1adc",
+        "dutch": "User Registration and Login",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "User Registration and Login",
+        "uiKey": "about.epic8.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f2993aff189f3c974e1ade",
+        "dutch": "Subject Management",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Subject Management",
+        "uiKey": "about.epic9.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f2993aff189f3c974e1ad8",
+        "dutch": "Translation Management",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Translation Management",
+        "uiKey": "about.epic10.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f2993aff189f3c974e1aec",
+        "dutch": "Backend",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Backend",
+        "uiKey": "about.status.backend",
+        "__v": 0
+    },
+    {
+        "_id": "68f2993aff189f3c974e1af0",
+        "dutch": "Frontend",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Frontend",
+        "uiKey": "about.status.frontend",
+        "__v": 0
+    },
+    {
+        "_id": "68f2993aff189f3c974e1aee",
+        "dutch": "Voltooid",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Completed",
+        "uiKey": "about.status.completed",
+        "__v": 0
+    },
+    {
+        "_id": "68f2993aff189f3c974e1af2",
+        "dutch": "Epics & User Stories",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "Epics & User Stories",
+        "uiKey": "about.epics.title",
+        "__v": 0
+    },
+    {
+        "_id": "68f2993aff189f3c974e1af4",
+        "dutch": "Dit is een project voor avans Informatica Jaar 2 Periode 1. het is een proof of concept voor de keuze module selectie app van avans. Hieronder kun je mijn gekozen epics en user stories vinden. Het was een uitdaging om het mobile telefoon installeer gedeelte en de vertalingen werkend te krijgen, maar het is gelukt :D",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "This is a project for Avans Informatics Year 2 Period 1. It is a proof of concept for the Avans elective module selection app. Below you can find my chosen epics and user stories. It was a challenge to get the mobile phone installation part and the translations working, but I succeeded :D",
+        "uiKey": "about.project.description",
+        "__v": 0
+    },
+    {
+        "_id": "68f8a0717d954953ea6bc693",
+        "dutch": "Bekijk Presentatie ",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "View Presentation Slides",
+        "uiKey": "about.hero.presentation",
+        "__v": 0
+    },
+    {
+        "_id": "68f8e9c27d954953ea6bcc7a",
+        "dutch": "presentation.next (nieuw)",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "presentation.next (new)",
+        "uiKey": "presentation.next",
+        "__v": 0
+    },
+    {
+        "_id": "68f8e9c27d954953ea6bcc7e",
+        "dutch": "presentation.previous (nieuw)",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "presentation.previous (new)",
+        "uiKey": "presentation.previous",
+        "__v": 0
+    },
+    {
+        "_id": "68f8e9c27d954953ea6bcc7c",
+        "dutch": "presentation.slide (nieuw)",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "presentation.slide (new)",
+        "uiKey": "presentation.slide",
+        "__v": 0
+    },
+    {
+        "_id": "68f8eb017d954953ea6bccd4",
+        "dutch": "presentation.counter (nieuw)",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "presentation.counter (new)",
+        "uiKey": "presentation.counter",
+        "__v": 0
+    },
+    {
+        "_id": "68f8eb017d954953ea6bccd8",
+        "dutch": "presentation.navigation.previous (nieuw)",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "presentation.navigation.previous (new)",
+        "uiKey": "presentation.navigation.previous",
+        "__v": 0
+    },
+    {
+        "_id": "68f8eb017d954953ea6bccd6",
+        "dutch": "presentation.navigation.next (nieuw)",
+        "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+        "english": "presentation.navigation.next (new)",
+        "uiKey": "presentation.navigation.next",
+        "__v": 0
+    }
 ]
