@@ -139,25 +139,6 @@ const Management: React.FC = () => {
                                 </Card.Body>
                             </Card>
                         </Col>
-
-                        {/* Placeholder for future tools */}
-                        <Col lg={6} xl={4}>
-                            <Card className="bg-darker-custom border-dark h-100 opacity-75">
-                                <Card.Header className="bg-dark-custom border-dark">
-                                    <h5 className="mb-0 text-muted-custom">
-                                        User Management
-                                    </h5>
-                                </Card.Header>
-                                <Card.Body className="d-flex flex-column">
-                                    <p className="text-muted-custom flex-grow-1">
-                                        Manage user accounts, roles, and permissions.
-                                    </p>
-                                    <Button variant="outline-secondary" className="w-100" disabled>
-                                        Coming Soon
-                                    </Button>
-                                </Card.Body>
-                            </Card>
-                        </Col>
                     </Row>
                 </Col>
             </Row>

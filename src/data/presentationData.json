@@ -5,7 +5,7 @@
   },
   {
     "title": "Inleiding",
-    "subtext": ["Research", "Technologie", "Structuur", "Demo"]
+    "subtext": ["Research", "Technologie", "Epics & Stories", "Structuur", "Demo"]
   },
   {
     "title": "Research",
@@ -42,6 +42,25 @@
     ]
   },
   {
+    "title": "Epics & Stories",
+    "subtext": [
+        {
+            "text": "alle epics",
+            "link": "https://oldmartijntje.github.io/Avans-2.1-LU1-POC-frontend/about"
+        }
+    ],
+    "images": [
+        {
+            "height": 400,
+            "src": "https://i.imgur.com/fpslGYy.png"
+        },
+        {
+            "height": 400,
+            "src": "https://i.imgur.com/glI4Z4j.png"
+        }
+    ]
+  },
+  {
     "title": "Structuur",
     "subtext": [
         {
@@ -64,6 +83,52 @@
         {
             "height": 400,
             "src": "https://i.imgur.com/EZYI94D.png"
+        }
+    ]
+  },
+  {
+    "title": "Structuur - NestJs",
+    "subtext": [
+        "MVC",
+        "modules",
+        "Enforced"
+    ],
+    "images": [
+        {
+            "height": 400,
+            "src": "https://i.imgur.com/46vkp1S.png"
+        },
+        {
+            "height": 400,
+            "src": "https://i.imgur.com/AjI6Q3J.png"
+        }
+    ]
+  },
+  {
+    "title": "Structuur - React",
+    "subtext": [
+        "Component Library",
+        "modules",
+        "lax"
+    ],
+    "images": [
+        {
+            "height": 600,
+            "src": "https://i.imgur.com/1Icy5dc.png"
+        }
+    ]
+  },
+  {
+    "title": "Demo",
+    "subtext": [
+        {
+            "text": "Mobiel"
+        }
+    ],
+    "images": [
+        {
+            "height": 400,
+            "src": "https://i.imgur.com/UlI7Ayg.png"
         }
     ]
   }

@@ -122,7 +122,7 @@ const Dashboard: React.FC = () => {
                                             </div>
                                             <div className="d-flex justify-content-between align-items-center">
                                                 <span className="fw-medium text-muted-custom">{t('dashboard.account.userId')}:</span>
-                                                <code className="text-primary small">{user.uuid}</code>
+                                                <code className="d-inline-block text-truncate text-primary small">{user.uuid}</code>
                                             </div>
                                         </div>
                                     </Card.Body>
