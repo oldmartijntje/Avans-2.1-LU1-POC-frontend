@@ -9,6 +9,7 @@ const About: React.FC = () => {
         'about.hero.electiveHub',
         'about.hero.subtitle',
         'about.hero.presentation',
+        'about.hero.presentation.old',
         'about.project.description',
         'about.epics.title',
         'about.epic1.title',
@@ -161,8 +162,11 @@ const About: React.FC = () => {
                     </div>
 
                     <div className="d-flex flex-column flex-sm-row gap-2 m-5 justify-content-center">
-                        <Link to="/presentation" className="text-decoration-none">
+                        <Link to="/presentation2" className="text-decoration-none">
                             <Button variant="primary" size="lg">{t('about.hero.presentation')}</Button>
+                        </Link>
+                        <Link to="/presentation" className="text-decoration-none">
+                            <Button variant="secondary" size="lg">{t('about.hero.presentation.old')}</Button>
                         </Link>
                     </div>
 

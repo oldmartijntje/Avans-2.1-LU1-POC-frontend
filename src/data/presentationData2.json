@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Presentation 2",
+    "subtext": ["Your second presentation", "Using the same system"]
+  },
+  {
+    "title": "Example Slide",
+    "subtext": ["Add your content here", "Modify this JSON file", "To create your presentation"]
+  },
+  {
+    "title": "Sample Slide with Image",
+    "subtext": ["You can add images", "And custom styling"],
+    "images": [
+      {
+        "height": 200,
+        "src": "https://via.placeholder.com/400x200"
+      }
+    ]
+  }
+]

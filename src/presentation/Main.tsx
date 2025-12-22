@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Button } from 'react-bootstrap';
 import presentationData from '../data/presentationData.json';
+import presentationData2 from '../data/presentationData2.json';
 import styles from './Presentation.module.css';
 
 interface BulletItem {
@@ -20,6 +21,10 @@ interface Slide {
     title: string;
     subtext: (string | BulletItem)[];
     images?: SlideImage[];
+}
+
+interface PresentationProps {
+    dataSource?: 'presentation1' | 'presentation2';
 }
 
 // Helper function to parse inline styles from string
@@ -42,9 +47,11 @@ const parseInlineStyles = (styleString: string): React.CSSProperties => {
     return styles;
 };
 
-const Presentation: React.FC = () => {
+const Presentation: React.FC<PresentationProps> = ({ dataSource = 'presentation1' }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
-    const [slides] = useState<Slide[]>(presentationData);
+    const [slides] = useState<Slide[]>(
+        dataSource === 'presentation2' ? presentationData2 : presentationData
+    );
 
     // Keyboard navigation
     useEffect(() => {

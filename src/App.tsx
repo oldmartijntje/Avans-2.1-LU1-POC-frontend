@@ -40,7 +40,8 @@ function App() {
                     {/* Anonymous routes - accessible to everyone */}
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
-                    <Route path="/presentation" element={<Presentation />} />
+                    <Route path="/presentation" element={<Presentation dataSource="presentation1" />} />
+                    <Route path="/presentation2" element={<Presentation dataSource="presentation2" />} />
 
                     {/* Logout route - accessible to everyone, handles logout and redirect */}
                     <Route path="/logout" element={<Logout />} />
