@@ -1,0 +1,1212 @@
+[
+  {
+    "_id": "68f279d8074d145b14692516",
+    "uuid": "7af37c4b-8c7f-454f-ab80-8b7a3eeae29a",
+    "title": {
+      "_id": "68f295e0074d145b1469a3c9",
+      "dutch": "Informatica",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "Informatics",
+      "__v": 0
+    },
+    "description": {
+      "_id": "68f295e0074d145b1469a3c6",
+      "dutch": "Een vak over het maken van apps en robots",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "A class about creating apps and robots",
+      "__v": 0
+    },
+    "languages": [
+      "NL",
+      "EN"
+    ],
+    "tags": [
+      {
+        "_id": "68f279d8074d145b14692505",
+        "tagName": "blazor",
+        "__v": 0
+      },
+      {
+        "_id": "68f278c4074d145b14692158",
+        "tagName": "backend",
+        "__v": 0
+      },
+      {
+        "_id": "68f279d8074d145b14692509",
+        "tagName": "php",
+        "__v": 0
+      },
+      {
+        "_id": "68f27973074d145b14692441",
+        "tagName": "c#",
+        "__v": 0
+      },
+      {
+        "_id": "68f278c4074d145b14692154",
+        "tagName": "experience",
+        "__v": 0
+      },
+      {
+        "_id": "68f279d8074d145b14692511",
+        "tagName": "asp.net",
+        "__v": 0
+      },
+      {
+        "_id": "68f279d8074d145b1469250f",
+        "tagName": "datascience",
+        "__v": 0
+      },
+      {
+        "_id": "68f902457d954953ea6be2a8",
+        "tagName": "development",
+        "__v": 0
+      },
+      {
+        "_id": "68f279d8074d145b14692507",
+        "tagName": "ai",
+        "__v": 0
+      },
+      {
+        "_id": "68f279d8074d145b1469250d",
+        "tagName": "python",
+        "__v": 0
+      },
+      {
+        "_id": "68f0c8c484d21988f4d6274a",
+        "tagName": "mongodb",
+        "__v": 0
+      },
+      {
+        "_id": "68f278c4074d145b14692152",
+        "tagName": "frontend",
+        "__v": 0
+      }
+    ],
+    "__v": 3
+  },
+  {
+    "_id": "68f902f87d954953ea6be5bd",
+    "uuid": "4de2cd06-53d8-4e2d-9504-a142ce6dd3a5",
+    "title": {
+      "_id": "68f8ffe47d954953ea6bdb78",
+      "dutch": "Game Development",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "Game Development",
+      "__v": 0
+    },
+    "description": {
+      "_id": "68f902f77d954953ea6be5ba",
+      "dutch": "Een studie over het ontwerpen en programmeren van videogames.",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "A study about designing and programming video games.",
+      "__v": 0
+    },
+    "languages": [
+      "NL",
+      "EN"
+    ],
+    "tags": [
+      {
+        "_id": "68f8ffe47d954953ea6bdb73",
+        "tagName": "3d",
+        "__v": 0
+      },
+      {
+        "_id": "68f279d8074d145b14692507",
+        "tagName": "ai",
+        "__v": 0
+      },
+      {
+        "_id": "68f8ffe47d954953ea6bdb71",
+        "tagName": "unity",
+        "__v": 0
+      },
+      {
+        "_id": "68f902f77d954953ea6be5ae",
+        "tagName": "level-design",
+        "__v": 0
+      },
+      {
+        "_id": "68f902f77d954953ea6be5ac",
+        "tagName": "animation",
+        "__v": 0
+      },
+      {
+        "_id": "68f902f77d954953ea6be5b0",
+        "tagName": "unreal",
+        "__v": 0
+      },
+      {
+        "_id": "68f902f77d954953ea6be5b2",
+        "tagName": "csharp",
+        "__v": 0
+      },
+      {
+        "_id": "68f902f77d954953ea6be5b4",
+        "tagName": "graphics",
+        "__v": 0
+      },
+      {
+        "_id": "68f902f77d954953ea6be5b6",
+        "tagName": "gameplay",
+        "__v": 0
+      },
+      {
+        "_id": "68f902f77d954953ea6be5b8",
+        "tagName": "physics",
+        "__v": 0
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "68f902fd7d954953ea6be5e1",
+    "uuid": "6a52eb5b-b1ab-4266-b668-df52b8328e6c",
+    "title": {
+      "_id": "68f902fd7d954953ea6be5df",
+      "dutch": "Cybersecurity",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "Cybersecurity",
+      "__v": 0
+    },
+    "description": {
+      "_id": "68f902fd7d954953ea6be5da",
+      "dutch": "Leren hoe je computers en netwerken beschermt tegen aanvallen.",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "Learning how to protect computers and networks from attacks.",
+      "__v": 0
+    },
+    "languages": [
+      "NL",
+      "EN"
+    ],
+    "tags": [
+      {
+        "_id": "68f8ffed7d954953ea6bdb8d",
+        "tagName": "networking",
+        "__v": 0
+      },
+      {
+        "_id": "68f8fefc7d954953ea6bdaf7",
+        "tagName": "linux",
+        "__v": 0
+      },
+      {
+        "_id": "68f8ffed7d954953ea6bdb89",
+        "tagName": "hacking",
+        "__v": 0
+      },
+      {
+        "_id": "68f8ffed7d954953ea6bdb8b",
+        "tagName": "security",
+        "__v": 0
+      },
+      {
+        "_id": "68f279d8074d145b1469250d",
+        "tagName": "python",
+        "__v": 0
+      },
+      {
+        "_id": "68f902fd7d954953ea6be5d2",
+        "tagName": "malware",
+        "__v": 0
+      },
+      {
+        "_id": "68f902fd7d954953ea6be5d4",
+        "tagName": "firewall",
+        "__v": 0
+      },
+      {
+        "_id": "68f902fd7d954953ea6be5d6",
+        "tagName": "forensics",
+        "__v": 0
+      },
+      {
+        "_id": "68f902fd7d954953ea6be5d8",
+        "tagName": "encryption",
+        "__v": 0
+      },
+      {
+        "_id": "68f902fd7d954953ea6be5dc",
+        "tagName": "pentesting",
+        "__v": 0
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "68f903067d954953ea6be5fb",
+    "uuid": "05b82274-c0aa-4986-93fd-7f7e523ba502",
+    "title": {
+      "_id": "68f8fffd7d954953ea6bdbc3",
+      "dutch": "Software Engineering",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "Software Engineering",
+      "__v": 0
+    },
+    "description": {
+      "_id": "68f903067d954953ea6be5f8",
+      "dutch": "Een studie gericht op het ontwerpen, bouwen en onderhouden van software.",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "A study focused on designing, building, and maintaining software.",
+      "__v": 0
+    },
+    "languages": [
+      "NL",
+      "EN"
+    ],
+    "tags": [
+      {
+        "_id": "68f278c4074d145b14692158",
+        "tagName": "backend",
+        "__v": 0
+      },
+      {
+        "_id": "68f8fffd7d954953ea6bdbbc",
+        "tagName": "architecture",
+        "__v": 0
+      },
+      {
+        "_id": "68f900137d954953ea6bdc0b",
+        "tagName": "devops",
+        "__v": 0
+      },
+      {
+        "_id": "68f902507d954953ea6be2ea",
+        "tagName": "agile",
+        "__v": 0
+      },
+      {
+        "_id": "68f902507d954953ea6be2f2",
+        "tagName": "scrum",
+        "__v": 0
+      },
+      {
+        "_id": "68f9016b7d954953ea6bdf7c",
+        "tagName": "docker",
+        "__v": 0
+      },
+      {
+        "_id": "68f8fffd7d954953ea6bdbbe",
+        "tagName": "testing",
+        "__v": 0
+      },
+      {
+        "_id": "68f901317d954953ea6bdea7",
+        "tagName": "api",
+        "__v": 0
+      },
+      {
+        "_id": "68f278c4074d145b14692152",
+        "tagName": "frontend",
+        "__v": 0
+      },
+      {
+        "_id": "68f903067d954953ea6be5f6",
+        "tagName": "version-control",
+        "__v": 0
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "68f9030e7d954953ea6be617",
+    "uuid": "e2886268-975d-412c-aaa5-5bcf919baf94",
+    "title": {
+      "_id": "68f9000b7d954953ea6bdbf4",
+      "dutch": "Data Analyse",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "Data Analysis",
+      "__v": 0
+    },
+    "description": {
+      "_id": "68f9030e7d954953ea6be612",
+      "dutch": "Het verwerken en interpreteren van data om inzichten te verkrijgen.",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "Processing and interpreting data to gain insights.",
+      "__v": 0
+    },
+    "languages": [
+      "NL",
+      "EN"
+    ],
+    "tags": [
+      {
+        "_id": "68f27973074d145b1469243b",
+        "tagName": "sql",
+        "__v": 0
+      },
+      {
+        "_id": "68f279d8074d145b1469250d",
+        "tagName": "python",
+        "__v": 0
+      },
+      {
+        "_id": "68f900897d954953ea6bdd5a",
+        "tagName": "statistics",
+        "__v": 0
+      },
+      {
+        "_id": "68f9001d7d954953ea6bdc27",
+        "tagName": "analytics",
+        "__v": 0
+      },
+      {
+        "_id": "68f9015c7d954953ea6bdf46",
+        "tagName": "data",
+        "__v": 0
+      },
+      {
+        "_id": "68f8fff37d954953ea6bdba3",
+        "tagName": "machine-learning",
+        "__v": 0
+      },
+      {
+        "_id": "68f9000b7d954953ea6bdbef",
+        "tagName": "excel",
+        "__v": 0
+      },
+      {
+        "_id": "68f9015c7d954953ea6bdf42",
+        "tagName": "visualization",
+        "__v": 0
+      },
+      {
+        "_id": "68f9030e7d954953ea6be610",
+        "tagName": "datasets",
+        "__v": 0
+      },
+      {
+        "_id": "68f9030e7d954953ea6be614",
+        "tagName": "tableau",
+        "__v": 0
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "68f903157d954953ea6be63b",
+    "uuid": "ebda6f5b-f847-42f7-9f55-6220bc0eee46",
+    "title": {
+      "_id": "68f900137d954953ea6bdc10",
+      "dutch": "Cloud Computing",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "Cloud Computing",
+      "__v": 0
+    },
+    "description": {
+      "_id": "68f903157d954953ea6be638",
+      "dutch": "Een studie over het beheren en gebruiken van servers in de cloud.",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "A study about managing and using servers in the cloud.",
+      "__v": 0
+    },
+    "languages": [
+      "NL",
+      "EN"
+    ],
+    "tags": [
+      {
+        "_id": "68f900137d954953ea6bdc07",
+        "tagName": "aws",
+        "__v": 0
+      },
+      {
+        "_id": "68f900137d954953ea6bdc05",
+        "tagName": "azure",
+        "__v": 0
+      },
+      {
+        "_id": "68f8ffed7d954953ea6bdb8d",
+        "tagName": "networking",
+        "__v": 0
+      },
+      {
+        "_id": "68f900137d954953ea6bdc0b",
+        "tagName": "devops",
+        "__v": 0
+      },
+      {
+        "_id": "68f903157d954953ea6be62c",
+        "tagName": "gcp",
+        "__v": 0
+      },
+      {
+        "_id": "68f903157d954953ea6be62e",
+        "tagName": "containers",
+        "__v": 0
+      },
+      {
+        "_id": "68f903157d954953ea6be630",
+        "tagName": "scalability",
+        "__v": 0
+      },
+      {
+        "_id": "68f903157d954953ea6be632",
+        "tagName": "storage",
+        "__v": 0
+      },
+      {
+        "_id": "68f903157d954953ea6be634",
+        "tagName": "virtualization",
+        "__v": 0
+      },
+      {
+        "_id": "68f903157d954953ea6be636",
+        "tagName": "kubernetes",
+        "__v": 0
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "68f903257d954953ea6be65d",
+    "uuid": "a65f273b-40bf-487e-88d9-63f2119463e2",
+    "title": {
+      "_id": "68f900477d954953ea6bdc79",
+      "dutch": "Psychologie",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "Psychology",
+      "__v": 0
+    },
+    "description": {
+      "_id": "68f903257d954953ea6be658",
+      "dutch": "De studie van menselijk gedrag, gedachten en emoties.",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "The study of human behavior, thoughts, and emotions.",
+      "__v": 0
+    },
+    "languages": [
+      "NL",
+      "EN"
+    ],
+    "tags": [
+      {
+        "_id": "68f900477d954953ea6bdc6e",
+        "tagName": "research",
+        "__v": 0
+      },
+      {
+        "_id": "68f900477d954953ea6bdc72",
+        "tagName": "behavior",
+        "__v": 0
+      },
+      {
+        "_id": "68f9021a7d954953ea6be1c4",
+        "tagName": "therapy",
+        "__v": 0
+      },
+      {
+        "_id": "68f900477d954953ea6bdc70",
+        "tagName": "mind",
+        "__v": 0
+      },
+      {
+        "_id": "68f902457d954953ea6be2a8",
+        "tagName": "development",
+        "__v": 0
+      },
+      {
+        "_id": "68f903257d954953ea6be650",
+        "tagName": "neuroscience",
+        "__v": 0
+      },
+      {
+        "_id": "68f903257d954953ea6be652",
+        "tagName": "cognition",
+        "__v": 0
+      },
+      {
+        "_id": "68f903257d954953ea6be654",
+        "tagName": "memory",
+        "__v": 0
+      },
+      {
+        "_id": "68f903257d954953ea6be656",
+        "tagName": "emotion",
+        "__v": 0
+      },
+      {
+        "_id": "68f903257d954953ea6be65a",
+        "tagName": "social",
+        "__v": 0
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "68f9032a7d954953ea6be67b",
+    "uuid": "a79e7f8f-262d-4e79-b00f-b8e1baf10a7e",
+    "title": {
+      "_id": "68f9032a7d954953ea6be679",
+      "dutch": "Economie en Bedrijfskunde",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "Economics and Business",
+      "__v": 0
+    },
+    "description": {
+      "_id": "68f9032a7d954953ea6be674",
+      "dutch": "Een studie over markten, geldstromen en ondernemerschap.",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "A study about markets, financial flows, and entrepreneurship.",
+      "__v": 0
+    },
+    "languages": [
+      "NL",
+      "EN"
+    ],
+    "tags": [
+      {
+        "_id": "68f9004d7d954953ea6bdc90",
+        "tagName": "finance",
+        "__v": 0
+      },
+      {
+        "_id": "68f9004d7d954953ea6bdc8c",
+        "tagName": "management",
+        "__v": 0
+      },
+      {
+        "_id": "68f9001d7d954953ea6bdc21",
+        "tagName": "marketing",
+        "__v": 0
+      },
+      {
+        "_id": "68f9015c7d954953ea6bdf46",
+        "tagName": "data",
+        "__v": 0
+      },
+      {
+        "_id": "68f9004d7d954953ea6bdc92",
+        "tagName": "leadership",
+        "__v": 0
+      },
+      {
+        "_id": "68f9004d7d954953ea6bdc8a",
+        "tagName": "strategy",
+        "__v": 0
+      },
+      {
+        "_id": "68f901d57d954953ea6be0b0",
+        "tagName": "innovation",
+        "__v": 0
+      },
+      {
+        "_id": "68f900897d954953ea6bdd58",
+        "tagName": "trade",
+        "__v": 0
+      },
+      {
+        "_id": "68f9032a7d954953ea6be676",
+        "tagName": "accounting",
+        "__v": 0
+      },
+      {
+        "_id": "68f9032a7d954953ea6be672",
+        "tagName": "investment",
+        "__v": 0
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "68f903307d954953ea6be6a1",
+    "uuid": "be93dc1c-3669-4787-b2ab-7d0a795b1501",
+    "title": {
+      "_id": "68f900577d954953ea6bdcad",
+      "dutch": "Geneeskunde",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "Medicine",
+      "__v": 0
+    },
+    "description": {
+      "_id": "68f903307d954953ea6be69c",
+      "dutch": "De studie van het menselijk lichaam en het genezen van ziektes.",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "The study of the human body and the treatment of diseases.",
+      "__v": 0
+    },
+    "languages": [
+      "NL",
+      "EN"
+    ],
+    "tags": [
+      {
+        "_id": "68f900477d954953ea6bdc6e",
+        "tagName": "research",
+        "__v": 0
+      },
+      {
+        "_id": "68f900577d954953ea6bdcaa",
+        "tagName": "health",
+        "__v": 0
+      },
+      {
+        "_id": "68f25b8c58df22f527e91f93",
+        "tagName": "biology",
+        "__v": 0
+      },
+      {
+        "_id": "68f903307d954953ea6be690",
+        "tagName": "pharmacology",
+        "__v": 0
+      },
+      {
+        "_id": "68f903307d954953ea6be692",
+        "tagName": "diagnosis",
+        "__v": 0
+      },
+      {
+        "_id": "68f903307d954953ea6be694",
+        "tagName": "patient-care",
+        "__v": 0
+      },
+      {
+        "_id": "68f903307d954953ea6be696",
+        "tagName": "disease",
+        "__v": 0
+      },
+      {
+        "_id": "68f903307d954953ea6be698",
+        "tagName": "anatomy",
+        "__v": 0
+      },
+      {
+        "_id": "68f903307d954953ea6be69a",
+        "tagName": "public-health",
+        "__v": 0
+      },
+      {
+        "_id": "68f903307d954953ea6be69e",
+        "tagName": "surgery",
+        "__v": 0
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "68f903357d954953ea6be6bd",
+    "uuid": "730268af-55a3-4ed7-bebb-7fc5e7ba120b",
+    "title": {
+      "_id": "68f900727d954953ea6bdd11",
+      "dutch": "Architectuur",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "Architecture",
+      "__v": 0
+    },
+    "description": {
+      "_id": "68f903357d954953ea6be6b6",
+      "dutch": "Het ontwerpen en plannen van gebouwen en ruimtes.",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "The design and planning of buildings and spaces.",
+      "__v": 0
+    },
+    "languages": [
+      "NL",
+      "EN"
+    ],
+    "tags": [
+      {
+        "_id": "68f901d57d954953ea6be0b4",
+        "tagName": "planning",
+        "__v": 0
+      },
+      {
+        "_id": "68f901dc7d954953ea6be0d8",
+        "tagName": "sustainability",
+        "__v": 0
+      },
+      {
+        "_id": "68f9022a7d954953ea6be21e",
+        "tagName": "interior",
+        "__v": 0
+      },
+      {
+        "_id": "68f900727d954953ea6bdd0c",
+        "tagName": "construction",
+        "__v": 0
+      },
+      {
+        "_id": "68f8ffe47d954953ea6bdb73",
+        "tagName": "3d",
+        "__v": 0
+      },
+      {
+        "_id": "68f8ff767d954953ea6bdb22",
+        "tagName": "art",
+        "__v": 0
+      },
+      {
+        "_id": "68f900727d954953ea6bdd0a",
+        "tagName": "engineering",
+        "__v": 0
+      },
+      {
+        "_id": "68f8ff767d954953ea6bdb28",
+        "tagName": "design",
+        "__v": 0
+      },
+      {
+        "_id": "68f903357d954953ea6be6b8",
+        "tagName": "landscape",
+        "__v": 0
+      },
+      {
+        "_id": "68f903357d954953ea6be6ba",
+        "tagName": "urban",
+        "__v": 0
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "68f9033c7d954953ea6be6dd",
+    "uuid": "d131721d-4dcf-4a07-b217-b497d64bae54",
+    "title": {
+      "_id": "68f9033c7d954953ea6be6db",
+      "dutch": "Communicatie en Media",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "Communication and Media",
+      "__v": 0
+    },
+    "description": {
+      "_id": "68f9033c7d954953ea6be6d8",
+      "dutch": "Een studie over hoe mensen informatie delen en beïnvloeden via media.",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "A study about how people share and influence information through media.",
+      "__v": 0
+    },
+    "languages": [
+      "NL",
+      "EN"
+    ],
+    "tags": [
+      {
+        "_id": "68f901f57d954953ea6be14e",
+        "tagName": "branding",
+        "__v": 0
+      },
+      {
+        "_id": "68f9001d7d954953ea6bdc21",
+        "tagName": "marketing",
+        "__v": 0
+      },
+      {
+        "_id": "68f8ff767d954953ea6bdb28",
+        "tagName": "design",
+        "__v": 0
+      },
+      {
+        "_id": "68f900657d954953ea6bdcdc",
+        "tagName": "writing",
+        "__v": 0
+      },
+      {
+        "_id": "68f902407d954953ea6be284",
+        "tagName": "video",
+        "__v": 0
+      },
+      {
+        "_id": "68f901857d954953ea6bdf99",
+        "tagName": "creativity",
+        "__v": 0
+      },
+      {
+        "_id": "68f901f57d954953ea6be154",
+        "tagName": "digital",
+        "__v": 0
+      },
+      {
+        "_id": "68f9033c7d954953ea6be6d2",
+        "tagName": "advertising",
+        "__v": 0
+      },
+      {
+        "_id": "68f9033c7d954953ea6be6d4",
+        "tagName": "journalism",
+        "__v": 0
+      },
+      {
+        "_id": "68f9033c7d954953ea6be6d6",
+        "tagName": "public-relations",
+        "__v": 0
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "68f903427d954953ea6be703",
+    "uuid": "dfdaf6dd-edab-4cd1-bd4d-4672df431ca2",
+    "title": {
+      "_id": "68f9005d7d954953ea6bdcc9",
+      "dutch": "Rechten",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "Law",
+      "__v": 0
+    },
+    "description": {
+      "_id": "68f903427d954953ea6be6fc",
+      "dutch": "De studie van wetten, regels en rechtssystemen.",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "The study of laws, regulations, and legal systems.",
+      "__v": 0
+    },
+    "languages": [
+      "NL",
+      "EN"
+    ],
+    "tags": [
+      {
+        "_id": "68f9005d7d954953ea6bdcc0",
+        "tagName": "justice",
+        "__v": 0
+      },
+      {
+        "_id": "68f9005d7d954953ea6bdcbe",
+        "tagName": "ethics",
+        "__v": 0
+      },
+      {
+        "_id": "68f900897d954953ea6bdd5c",
+        "tagName": "policy",
+        "__v": 0
+      },
+      {
+        "_id": "68f903427d954953ea6be6f2",
+        "tagName": "international",
+        "__v": 0
+      },
+      {
+        "_id": "68f903427d954953ea6be6f4",
+        "tagName": "civil",
+        "__v": 0
+      },
+      {
+        "_id": "68f903427d954953ea6be6f6",
+        "tagName": "criminal",
+        "__v": 0
+      },
+      {
+        "_id": "68f903427d954953ea6be6f8",
+        "tagName": "constitution",
+        "__v": 0
+      },
+      {
+        "_id": "68f903427d954953ea6be6fa",
+        "tagName": "rights",
+        "__v": 0
+      },
+      {
+        "_id": "68f903427d954953ea6be6fe",
+        "tagName": "lawyer",
+        "__v": 0
+      },
+      {
+        "_id": "68f903427d954953ea6be700",
+        "tagName": "contract",
+        "__v": 0
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "68f903487d954953ea6be71d",
+    "uuid": "6427077e-067b-4134-bef4-83654a1b6959",
+    "title": {
+      "_id": "68f903487d954953ea6be71b",
+      "dutch": "Pedagogiek",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "Education and Pedagogy",
+      "__v": 0
+    },
+    "description": {
+      "_id": "68f903487d954953ea6be718",
+      "dutch": "Leren hoe mensen leren, en hoe je hen het beste kunt onderwijzen.",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "Learning how people learn, and how to teach them effectively.",
+      "__v": 0
+    },
+    "languages": [
+      "NL",
+      "EN"
+    ],
+    "tags": [
+      {
+        "_id": "68f902207d954953ea6be1ee",
+        "tagName": "coaching",
+        "__v": 0
+      },
+      {
+        "_id": "68f902457d954953ea6be2a8",
+        "tagName": "development",
+        "__v": 0
+      },
+      {
+        "_id": "68f901c27d954953ea6be04c",
+        "tagName": "communication",
+        "__v": 0
+      },
+      {
+        "_id": "68f900477d954953ea6bdc6e",
+        "tagName": "research",
+        "__v": 0
+      },
+      {
+        "_id": "68f900817d954953ea6bdd3e",
+        "tagName": "teaching",
+        "__v": 0
+      },
+      {
+        "_id": "68f900817d954953ea6bdd40",
+        "tagName": "learning",
+        "__v": 0
+      },
+      {
+        "_id": "68f900817d954953ea6bdd44",
+        "tagName": "psychology",
+        "__v": 0
+      },
+      {
+        "_id": "68f902207d954953ea6be1f6",
+        "tagName": "training",
+        "__v": 0
+      },
+      {
+        "_id": "68f901fb7d954953ea6be178",
+        "tagName": "education",
+        "__v": 0
+      },
+      {
+        "_id": "68f900817d954953ea6bdd3c",
+        "tagName": "children",
+        "__v": 0
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "68f9034e7d954953ea6be73d",
+    "uuid": "68a4b52b-0dd1-404d-ab07-7dd99db492ee",
+    "title": {
+      "_id": "68f9034e7d954953ea6be73b",
+      "dutch": "Toerisme en Vrijetijdsmanagement",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "Tourism and Leisure Management",
+      "__v": 0
+    },
+    "description": {
+      "_id": "68f9034e7d954953ea6be732",
+      "dutch": "Een studie over reizen, gastvrijheid en evenementenorganisatie.",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "A study about travel, hospitality, and event organization.",
+      "__v": 0
+    },
+    "languages": [
+      "NL",
+      "EN"
+    ],
+    "tags": [
+      {
+        "_id": "68f9007a7d954953ea6bdd22",
+        "tagName": "culture",
+        "__v": 0
+      },
+      {
+        "_id": "68f901d57d954953ea6be0b4",
+        "tagName": "planning",
+        "__v": 0
+      },
+      {
+        "_id": "68f9007a7d954953ea6bdd28",
+        "tagName": "events",
+        "__v": 0
+      },
+      {
+        "_id": "68f9001d7d954953ea6bdc21",
+        "tagName": "marketing",
+        "__v": 0
+      },
+      {
+        "_id": "68f901dc7d954953ea6be0d8",
+        "tagName": "sustainability",
+        "__v": 0
+      },
+      {
+        "_id": "68f9004d7d954953ea6bdc8c",
+        "tagName": "management",
+        "__v": 0
+      },
+      {
+        "_id": "68f9007a7d954953ea6bdd24",
+        "tagName": "travel",
+        "__v": 0
+      },
+      {
+        "_id": "68f9034e7d954953ea6be734",
+        "tagName": "service",
+        "__v": 0
+      },
+      {
+        "_id": "68f9034e7d954953ea6be736",
+        "tagName": "customer",
+        "__v": 0
+      },
+      {
+        "_id": "68f9034e7d954953ea6be738",
+        "tagName": "hospitality",
+        "__v": 0
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "68f903557d954953ea6be75f",
+    "uuid": "b1a6438e-5257-4be2-8ba2-979bec2dfbd8",
+    "title": {
+      "_id": "68f903557d954953ea6be75d",
+      "dutch": "Biotechnologie",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "Biotechnology",
+      "__v": 0
+    },
+    "description": {
+      "_id": "68f903557d954953ea6be75a",
+      "dutch": "Een studie die biologie combineert met technologie om nieuwe oplossingen te creëren.",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "A study that combines biology with technology to create new solutions.",
+      "__v": 0
+    },
+    "languages": [
+      "NL",
+      "EN"
+    ],
+    "tags": [
+      {
+        "_id": "68f900727d954953ea6bdd0a",
+        "tagName": "engineering",
+        "__v": 0
+      },
+      {
+        "_id": "68f900477d954953ea6bdc6e",
+        "tagName": "research",
+        "__v": 0
+      },
+      {
+        "_id": "68f902397d954953ea6be264",
+        "tagName": "plants",
+        "__v": 0
+      },
+      {
+        "_id": "68f901d57d954953ea6be0b0",
+        "tagName": "innovation",
+        "__v": 0
+      },
+      {
+        "_id": "68f9021a7d954953ea6be1d0",
+        "tagName": "medicine",
+        "__v": 0
+      },
+      {
+        "_id": "68f9015c7d954953ea6bdf46",
+        "tagName": "data",
+        "__v": 0
+      },
+      {
+        "_id": "68f903557d954953ea6be752",
+        "tagName": "lab",
+        "__v": 0
+      },
+      {
+        "_id": "68f903557d954953ea6be754",
+        "tagName": "microbiology",
+        "__v": 0
+      },
+      {
+        "_id": "68f903557d954953ea6be756",
+        "tagName": "biochemistry",
+        "__v": 0
+      },
+      {
+        "_id": "68f903557d954953ea6be758",
+        "tagName": "genetics",
+        "__v": 0
+      }
+    ],
+    "__v": 0
+  },
+  {
+    "_id": "68f9035b7d954953ea6be77f",
+    "uuid": "acfc6d1f-3135-47d7-b0b5-2a66dfce034c",
+    "title": {
+      "_id": "68f9035b7d954953ea6be77d",
+      "dutch": "Kunstacademie",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "Art Academy",
+      "__v": 0
+    },
+    "description": {
+      "_id": "68f9035b7d954953ea6be774",
+      "dutch": "Een creatieve studie over schilderen, tekenen, beeldhouwen en conceptueel denken.",
+      "creatorUuid": "169ad315-039c-4d10-8cde-a0ae5c449d20",
+      "english": "A creative study about painting, drawing, sculpting, and conceptual thinking.",
+      "__v": 0
+    },
+    "languages": [
+      "NL",
+      "EN"
+    ],
+    "tags": [
+      {
+        "_id": "68f9024a7d954953ea6be2c8",
+        "tagName": "painting",
+        "__v": 0
+      },
+      {
+        "_id": "68f8ff767d954953ea6bdb28",
+        "tagName": "design",
+        "__v": 0
+      },
+      {
+        "_id": "68f900657d954953ea6bdcde",
+        "tagName": "media",
+        "__v": 0
+      },
+      {
+        "_id": "68f8ff767d954953ea6bdb2a",
+        "tagName": "drawing",
+        "__v": 0
+      },
+      {
+        "_id": "68f8ff767d954953ea6bdb22",
+        "tagName": "art",
+        "__v": 0
+      },
+      {
+        "_id": "68f901f57d954953ea6be152",
+        "tagName": "visuals",
+        "__v": 0
+      },
+      {
+        "_id": "68f901857d954953ea6bdf99",
+        "tagName": "creativity",
+        "__v": 0
+      },
+      {
+        "_id": "68f9035b7d954953ea6be776",
+        "tagName": "sculpture",
+        "__v": 0
+      },
+      {
+        "_id": "68f9035b7d954953ea6be778",
+        "tagName": "exhibition",
+        "__v": 0
+      },
+      {
+        "_id": "68f9035b7d954953ea6be77a",
+        "tagName": "concept",
+        "__v": 0
+      }
+    ],
+    "__v": 0
+  }
+]
