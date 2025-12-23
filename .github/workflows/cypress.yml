@@ -16,7 +16,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          start: npm start
+          start: npm run build
           wait-on: 'http://localhost:5173'
           record: true
           parallel: true
