@@ -23,3 +23,9 @@ dist-ssr
 *.sln
 *.sw?
 screenshots/
+
+# Cypress
+cypress/screenshots
+cypress/videos
+cypress/downloads
+.cypress-cache
