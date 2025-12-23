@@ -30,10 +30,11 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           start: npm run preview
-          wait-on: 'http://localhost:4173'
+          wait-on: 'http://localhost:4173/Avans-2.1-LU1-POC-frontend'
           wait-on-timeout: 120
           browser: chrome
           record: true
+          config: baseUrl=http://localhost:4173/Avans-2.1-LU1-POC-frontend
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
