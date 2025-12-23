@@ -3,7 +3,7 @@ import { defineConfig } from 'cypress';
 export default defineConfig({
     projectId: 'zrog4n',
     e2e: {
-        baseUrl: 'http://localhost:5173',
+        baseUrl: 'http://localhost:5173/Avans-2.1-LU1-POC-frontend',
         setupNodeEvents(on, config) {
             // implement node event listeners here
         },

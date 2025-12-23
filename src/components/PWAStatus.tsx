@@ -73,9 +73,9 @@ export const OfflineIndicator: React.FC = () => {
 
 export const PWAStatus: React.FC = () => {
     return (
-        <>
+        <div data-testid="pwa-status">
             <InstallAppPrompt />
             <OfflineIndicator />
-        </>
+        </div>
     );
 };

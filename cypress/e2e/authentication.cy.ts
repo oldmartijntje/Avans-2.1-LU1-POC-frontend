@@ -8,11 +8,13 @@ describe('Login Flow', () => {
         cy.get('input[name="username"]').should('be.visible');
         cy.get('input[name="password"]').should('be.visible');
         cy.get('button[type="submit"]').should('be.visible');
+        cy.contains(/sign in|inloggen/i).should('be.visible');
     });
 
-    it('should show validation errors for empty fields', () => {
-        cy.get('button[type="submit"]').click();
-        cy.contains(/required|verplicht/i).should('exist');
+    it('should have required fields validation', () => {
+        // Check that form fields are required
+        cy.get('input[name="username"]').should('have.attr', 'required');
+        cy.get('input[name="password"]').should('have.attr', 'required');
     });
 
     it('should allow user to type credentials', () => {
@@ -24,7 +26,7 @@ describe('Login Flow', () => {
     });
 
     it('should navigate to register page', () => {
-        cy.contains(/register|registreren/i).click();
+        cy.contains('a', /register|registreren/i).click();
         cy.url().should('include', '/register');
     });
 });

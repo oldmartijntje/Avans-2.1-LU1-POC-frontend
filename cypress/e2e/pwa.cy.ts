@@ -10,7 +10,7 @@ describe('PWA Features', () => {
         });
     });
 
-    it('should have service worker registered', () => {
+    it('should have service worker file', () => {
         cy.request('/sw.js').then((response) => {
             expect(response.status).to.eq(200);
         });
@@ -22,7 +22,7 @@ describe('PWA Features', () => {
         });
     });
 
-    it('should show PWA status indicator', () => {
-        cy.get('[data-testid="pwa-status"]').should('exist').or('get', 'body').should('exist');
+    it('should have PWA status component', () => {
+        cy.get('[data-testid="pwa-status"]').should('exist');
     });
 });

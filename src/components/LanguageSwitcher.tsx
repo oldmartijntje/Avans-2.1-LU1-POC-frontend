@@ -16,7 +16,7 @@ const LanguageSwitcher: React.FC = () => {
     const currentLang = languages.find(lang => lang.code === currentLanguage) || languages[0];
 
     return (
-        <Dropdown as={ButtonGroup}>
+        <Dropdown as={ButtonGroup} data-testid="language-switcher">
             <Button variant="outline-light" size="sm" disabled className="text-light-custom">
                 {currentLang.flag} {currentLang.name}
             </Button>
