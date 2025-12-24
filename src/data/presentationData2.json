@@ -1,20 +1,44 @@
 [
   {
-    "title": "Presentation 2",
-    "subtext": ["Your second presentation", "Using the same system"]
+    "title": "Avans Elective Hub",
+    "subtext": ["Stack keuze", "Onion architectuur", "Realisatie", "Testing", "CICD", "Database"]
   },
   {
-    "title": "Example Slide",
-    "subtext": ["Add your content here", "Modify this JSON file", "To create your presentation"]
-  },
-  {
-    "title": "Sample Slide with Image",
-    "subtext": ["You can add images", "And custom styling"],
+    "title": "Stack keuze",
+    "subtext": [
+        "React + Nestjs + MongoDB", 
+        {
+            "text": "onderzoeks vragen",
+            "link": "https://brightspace.avans.nl/d2l/le/lessons/251408/topics/1776894"
+        },
+        "BIAS"
+    ],
     "images": [
-      {
-        "height": 200,
-        "src": "https://via.placeholder.com/400x200"
-      }
+        {
+            "height": 430,
+            "src": "https://i.imgur.com/SeIrjRV.png"
+        },
+        {
+            "height": 430,
+            "src": "https://i.imgur.com/YuiMh1d.png"
+        }
+    ]
+  },
+  {
+    "title": "Stack keuze",
+    "subtext": [
+        "Documentatie, Adoptie, Typescript ondersteuning", 
+        "Documentatie, Testing, Typescript ondersteuning"
+    ]
+  },
+  {
+    "title": "Onion architectuur",
+    "subtext": ["Infrastructure, Domain, Application, Presentation"],
+    "images": [
+        {
+            "height": 600,
+            "src": "https://i.imgur.com/VCJAFxh.png"
+        }
     ]
   }
 ]
