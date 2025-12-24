@@ -52,20 +52,25 @@ const Presentation: React.FC<PresentationProps> = ({ dataSource = 'presentation1
     const [slides] = useState<Slide[]>(
         dataSource === 'presentation2' ? presentationData2 : presentationData
     );
+    const [selectedImage, setSelectedImage] = useState<SlideImage | null>(null);
 
     // Keyboard navigation
     useEffect(() => {
         const handleKeyPress = (event: KeyboardEvent) => {
-            if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
-                goToPreviousSlide();
-            } else if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
-                goToNextSlide();
+            if (selectedImage && event.key === 'Escape') {
+                setSelectedImage(null);
+            } else if (!selectedImage) {
+                if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
+                    goToPreviousSlide();
+                } else if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
+                    goToNextSlide();
+                }
             }
         };
 
         window.addEventListener('keydown', handleKeyPress);
         return () => window.removeEventListener('keydown', handleKeyPress);
-    }, [currentSlide]);
+    }, [currentSlide, selectedImage]);
 
     const goToNextSlide = () => {
         if (currentSlide < slides.length - 1) {
@@ -163,8 +168,11 @@ const Presentation: React.FC<PresentationProps> = ({ dataSource = 'presentation1
                                 className={styles.slideImage}
                                 style={{
                                     width: image.width ? `${image.width}px` : 'auto',
-                                    height: image.height ? `${image.height}px` : 'auto'
+                                    height: image.height ? `${image.height}px` : 'auto',
+                                    cursor: 'pointer'
                                 }}
+                                onClick={() => setSelectedImage(image)}
+                                title="Click to view full screen"
                             />
                         ))}
                     </div>
@@ -224,6 +232,64 @@ const Presentation: React.FC<PresentationProps> = ({ dataSource = 'presentation1
                     />
                 ))}
             </div>
+
+            {/* Image overlay */}
+            {selectedImage && (
+                <div
+                    style={{
+                        position: 'fixed',
+                        top: 0,
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                        backgroundColor: 'rgba(0, 0, 0, 0.9)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        zIndex: 9999,
+                        cursor: 'pointer'
+                    }}
+                    onClick={() => setSelectedImage(null)}
+                >
+                    <button
+                        onClick={() => setSelectedImage(null)}
+                        style={{
+                            position: 'absolute',
+                            top: '1rem',
+                            right: '1rem',
+                            background: 'rgba(255, 255, 255, 0.1)',
+                            border: '2px solid white',
+                            color: 'white',
+                            fontSize: '2rem',
+                            width: '3rem',
+                            height: '3rem',
+                            borderRadius: '50%',
+                            cursor: 'pointer',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            transition: 'background 0.3s ease',
+                            zIndex: 10000
+                        }}
+                        onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)'}
+                        onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)'}
+                        title="Close (ESC)"
+                    >
+                        ×
+                    </button>
+                    <img
+                        src={selectedImage.src}
+                        alt={selectedImage.alt || 'Full screen image'}
+                        style={{
+                            maxWidth: '95vw',
+                            maxHeight: '95vh',
+                            objectFit: 'contain',
+                            cursor: 'default'
+                        }}
+                        onClick={(e) => e.stopPropagation()}
+                    />
+                </div>
+            )}
         </Container>
     );
 };
