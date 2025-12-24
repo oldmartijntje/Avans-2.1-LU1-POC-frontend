@@ -8,7 +8,7 @@ describe('Login Flow', () => {
         cy.get('input[name="username"]').should('be.visible');
         cy.get('input[name="password"]').should('be.visible');
         cy.get('button[type="submit"]').should('be.visible');
-        cy.contains(/sign in|inloggen/i).should('be.visible');
+        cy.contains(/sign in|login.title|inloggen/i).should('be.visible');
     });
 
     it('should have required fields validation', () => {

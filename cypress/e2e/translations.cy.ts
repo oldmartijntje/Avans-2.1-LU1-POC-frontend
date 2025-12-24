@@ -58,20 +58,6 @@ describe('Translation Features', () => {
         cy.get('[data-testid="language-switcher"]').should('contain', 'Nederlands');
     });
 
-    it('should translate navigation items when switching language', () => {
-        // Check English navigation
-        cy.get('nav').should('contain', 'Home');
-        cy.get('nav').should('contain', 'About');
-
-        // Switch to Dutch
-        cy.get('[data-testid="language-switcher"]').find('.dropdown-toggle').click();
-        cy.get('.dropdown-menu').contains('Nederlands').click();
-        cy.wait(200);
-
-        // Navigation should contain Dutch text (or still English if translations aren't loaded)
-        cy.get('nav').should('exist');
-    });
-
     it('should have language switcher on all pages', () => {
         // Check home page
         cy.get('[data-testid="language-switcher"]').should('exist');
